@@ -6,6 +6,10 @@
     @apply inline-block py-3 px-6 uppercase tracking-[.2em] text-black border-black border transition;
 }
 
+.button-white {
+    @apply inline-block py-3 px-6 uppercase tracking-[.2em] text-white border-white border transition;
+}
+
 
 /* ------------ Cookie banner ------------ */
 

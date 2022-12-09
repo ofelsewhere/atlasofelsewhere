@@ -1,6 +1,13 @@
 ---
 layout: default
 title: Homepage
+image-banner:
+  bg-image: https://images.unsplash.com/photo-1670510521081-fe2e687c3153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80
+  text: Are you ready to take your business to the next level?
+  link-text: My services
+  link-url: 
+  overlay: true 
+
 ---
 
 <!------------- Intro ------------->
@@ -23,4 +30,52 @@ title: Homepage
       </p>
   </div>
 
+</section>
+
+<!------------- Image banner ------------->
+
+<section class=""> 
+  <div class="{% if page.image-banner.overlay == true %} bg-blend-multiply bg-neutral-400 text-white {% endif %} bg-fixed bg-cover h-[50vh] bg-center flex flex-col justify-center items-center"
+  style="background-image: url('{{page.image-banner.bg-image}}')">
+    <div class="text-lg pb-6">{{page.image-banner.text}}</div>
+    <a href="#" class="button-white">My services</a>
+  </div>
+</section>
+
+<!------------- Services ------------->
+
+<section class=""> 
+  <div class="grid grid-cols-2 gap-10 container mx-auto p-6">
+    <div class="">
+      <p>Elsewhere Brand design</p>
+      <h1>A travelling design studio</h1>
+      <p>Beautiful design is nice to look at but without the strategic foundation it lacks the longevity of a successful branding. Together we can figure out what sets you apart from the competition and uncover the true potential of your brand.</p>
+      <p>Services I offer include:</p>
+      <ul>
+        <li class="border-b border-black">Design Strategy</li>
+        <li class="border-b border-black">Design Strategy</li>
+        <li class="border-b border-black">Design Strategy</li>
+        <li class="border-b border-black">Design Strategy</li>
+        <li class="border-b border-black">Design Strategy</li>
+        <a href="#" class="button">My services</a> <a href="#" class="button">Case studies</a>
+      </ul>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1670510521081-fe2e687c3153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"
+           class="w-[30vw]">
+      <img src="https://images.unsplash.com/photo-1670510521081-fe2e687c3153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"
+      class="w-[30vw] ml-24">
+      
+    </div>
+  </div>
+</section>
+
+<!------------- Image banner ------------->
+
+<section class=""> 
+  <div class="{% if page.image-banner.overlay == true %} bg-blend-multiply bg-neutral-400 text-white {% endif %} bg-fixed bg-cover h-[50vh] bg-center flex flex-col justify-center items-center"
+  style="background-image: url('{{page.image-banner.bg-image}}')">
+    <div class="text-lg pb-6">{{page.image-banner.text}}</div>
+    <a href="#" class="button-white">My services</a>
+  </div>
 </section>

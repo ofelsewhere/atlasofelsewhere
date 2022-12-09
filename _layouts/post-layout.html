@@ -1,0 +1,57 @@
+---
+layout: default
+heading: Post title
+featured-image:
+banner-text: 
+overlay: true
+---
+
+<!------------------ Image banner ------------------>
+
+<section class="py-10"> 
+  <div class="{% if page.overlay == true %} bg-blend-multiply bg-neutral-300 text-white {% endif %} bg-fixed bg-cover h-[50vh] bg-center flex justify-center items-center text-2xl"
+  style="background-image: url('{{page.featured-image}}')">
+    <div class="text-lg">{{page.banner-text}}</div>
+  </div>
+</section>
+
+<!------------------ Title section ------------------>
+
+<section class="text-center py-10 container mx-auto px-4">
+
+  {% for item in page.categories %}
+  <a href="/archives/{{item}}" class="mx-1 inline-block border-b border-b-orange-400 pb-1 text-xs uppercase tracking-[.3em]">{{item}}</a>
+  {% endfor %}
+
+  <h1 class="text-5xl featured-text mt-4">{{page.title}}</h1>
+  <span class="text-sm block py-5 italic">by {{page.author}}</span>
+  <span class="text-xs uppercase tracking-[.3em] block">{{page.date | date: "%d %b %Y"}}</span>
+</section>
+
+<!------------------ Social sharing ------------------>
+
+{% include social-sharing.html %}
+
+<!------------------ Blocks ------------------>
+
+{% for block in page.page_blocks %}
+  {% include /blocks/{{block._id}}.html %}
+{% endfor %}
+
+<!------------------ Related posts ------------------>
+
+<section class="border-t border-t-black container mx-auto p-6 text-center mt-10">
+	<h4 class="my-10"> You may also enjoy:</h4>
+	<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+
+		{% assign pageCategory = page.categories[0] %}
+		{% assign relevant = site.categories[pageCategory] | where_exp:"post","post.url != page.url" %}
+  		{% for post in relevant limit:3 %}
+
+        {% include post-preview.html %}
+      		
+  		{% endfor %}
+  		
+	</div>
+
+</section>
