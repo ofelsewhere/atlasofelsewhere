@@ -12,9 +12,9 @@ image-banner:
 
 <!------------- Intro ------------->
 
-<section class="grid grid-cols-2 bg-slate-200 min-h-[85vh]">
+<section class="grid grid-cols-2 bg-sage-100 min-h-[85vh]">
   <div class="p-20">
-    <h1 class="text-[4rem] pb-5">
+    <h1 class="text-[4rem] font-display pb-5">
       Creating meaningful brand design while exploring the world.
     </h1>
     <div class="relative">
@@ -35,7 +35,7 @@ image-banner:
 <!------------- Image banner ------------->
 
 <section class=""> 
-  <div class="{% if page.image-banner.overlay == true %} bg-blend-multiply bg-neutral-400 text-white {% endif %} bg-fixed bg-cover h-[50vh] bg-center flex flex-col justify-center items-center"
+  <div class="{% if page.image-banner.overlay == true %} bg-blend-multiply bg-graphit-300 text-white {% endif %} bg-fixed bg-cover h-[50vh] bg-center flex flex-col justify-center items-center"
   style="background-image: url('{{page.image-banner.bg-image}}')">
     <div class="text-lg pb-6">{{page.image-banner.text}}</div>
     <a href="#" class="button-white">My services</a>
@@ -45,7 +45,7 @@ image-banner:
 <!------------- Services ------------->
 
 <section class=""> 
-  <div class="grid grid-cols-2 gap-10 container mx-auto p-6">
+  <div class="grid grid-cols-2 gap-10 container">
     <div class="">
       <p>Elsewhere Brand design</p>
       <h1>A travelling design studio</h1>
@@ -73,9 +73,18 @@ image-banner:
 <!------------- Image banner ------------->
 
 <section class=""> 
-  <div class="{% if page.image-banner.overlay == true %} bg-blend-multiply bg-neutral-400 text-white {% endif %} bg-fixed bg-cover h-[50vh] bg-center flex flex-col justify-center items-center"
+  <div class="{% if page.image-banner.overlay == true %} bg-blend-multiply bg-graphit-300 text-white {% endif %} bg-fixed bg-cover h-[50vh] bg-center flex flex-col justify-center items-center"
   style="background-image: url('{{page.image-banner.bg-image}}')">
     <div class="text-lg pb-6">{{page.image-banner.text}}</div>
     <a href="#" class="button-white">My services</a>
+  </div>
+</section>
+
+<!------------- Blog preview ------------->
+
+<section>
+  <div class="grid grid-cols-6 container">
+    <div class="col-span-2"><h2>Travel is my source of inspiration.</h2></div>
+    <div class="col-span-4"><p>Discovering new cities, exploring museums, trying new food and learning about different cultures – this is where my inspiration comes from. Design plays an important part – while deciding on hotels, restaurant or shops I always try to spot the most aesthetic place (while keeping it budget-friendly). If you love travelling as much as me I hope I can give you some valuable insight for your next trip.</p></div>
   </div>
 </section>
