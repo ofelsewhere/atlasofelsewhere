@@ -8,8 +8,8 @@ image-banner:
     link-url: 
     overlay: true
   - bg-image: https://images.unsplash.com/photo-1488831861984-179da3647265?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2428&q=80
-    text: So much world.<br>So little time.
-    link-text: My traveljournal
+    text: You are not sure which steps<br>to take next for your brand?
+    link-text: Book a free consultation
     link-url: 
     overlay: true    
   - bg-image: https://images.unsplash.com/photo-1670510521081-fe2e687c3153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80
@@ -22,21 +22,109 @@ image-banner:
 
 <!------------- Intro ------------->
 
-<section class="grid grid-cols-2 bg-sage-200 min-h-[100vh] -mt-[20vh] bg-cover bg-center z-0 relative" style="background-image: url('/assets/images/palmtree.png');">
-  <div class="pt-16 pl-36 mt-[20vh]">
+<section class="bg-sage-200 min-h-[100vh] -mt-[20vh] bg-cover bg-center z-0 overflow-hidden" style="background-image: url('/assets/images/palmtree.png');">
+
+
+  <div class="grid grid-cols-5 ">
+  
+  <div class="col-span-3 pt-16 pl-24 mt-[20vh]">
     <span class="subtitle">Elsewhere Brand Design | Services</span>
     <h1 class="text-[3rem] leading-[4rem] pt-6">
       The key to a successful design process is creating a brand that your audience trusts. Together we will uncover the true potential of your brand so you can achieve your next business goals.
     </h1>
   </div>
-  <div class="p-32 flex-col items-center mt-[10vh]">
+  
+  <div class="col-span-2 pt-32 px-24 flex-col items-center mt-[10vh]">
     <div class="flex justify-end"><img src="/assets/images/elsewherebranddesign.svg" class="h-36"></div>
     <p class="py-10">
-      Branding is my favorite part of design. A thoughtful and consistent brand elevates the customer's experience, connects you with your target audience and helps you reach your business goals.
-      After 6 years working in design agencies I realized, that you don’t necessarily need an office to construct unique and strategic brands. Luckily I can take my creativity and experience wherever I go – which leads us to Atlas of Elsewhere, a space where I combine my two passions: Design & Travel.
+      Storytelling, consistency, recognisability – these are only a few factors that play an important role in the design of your brand. It all starts with an idea that is based on your strategic foundation. This way we ensure your brand lives on, when trends are over or personal preferences change.
     </p>
     <a href="#" class="button">Explore more</a>
   </div>
-  <img src="/assets/images/illustrations/cloud.svg" class="absolute -bottom-20 -left-28 w-52">
+
+  </div>
+
+  <img class="opacity-20 h-52 -mb-6 -ml-6" src="/assets/images/illustrations/cloud.svg">
+  </section>
+
+<!------------- Image banner ------------->
+
+{% for item in page.image-banner limit:1 %}
+<section> 
+  <div class="{% if item.overlay == true %} bg-blend-multiply bg-graphit-300 text-white {% endif %} bg-fixed bg-cover h-[50vh] bg-center flex flex-col justify-center items-center"
+  style="background-image: url('{{item.bg-image}}')">
+    <h2 class="pb-6 text-center">{{item.text}}</h2>
+    <a href="{{item.link-url}}" class="button-white">{{item.link-text}}</a>
+  </div>
+</section>
+{% endfor %}
+
+<!------------- Service package | Branding ------------->
+
+<section class="bg-sage-200 py-20">
+
+  <div class="container grid grid-cols-3 gap-20">
+    
+    <!------------- Package details ------------->
+    <div class="col-span-2">
+      <h3 class="pb-5">Custom brand design</h3>
+      <p>Every brand and project is unique, so I tailor each proposal to your specific needs. To get an overview of what goes into a branding project, here are some of the (recommended) steps:</p>
+      
+      {% assign faqs = site.data.faqs | where:'product-type','branding' %}
+      {% include faqs.html %}
+    </div>
+
+    <!------------- Image + info ------------->
+    <div class="col-span-1">
+      <img src="https://images.unsplash.com/photo-1670510521081-fe2e687c3153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" class="h-96">
+      <span class="tinytitle block mt-5"><strong>Timing:</strong> 6-8 weeks</span>
+      <span class="tinytitle block mt-3 mb-5"><strong>Pricing:</strong> starting at 3500€</span>
+      <a href="" class="button">Get in touch</a>
+    </div>
+</section>
+
+<!------------- Service package | Website ------------->
+
+<section class="bg-white py-20">
+
+  <div class="container grid grid-cols-3 gap-20">
+
+    <!------------- Image + info ------------->
+    <div class="col-span-1">
+      <img src="https://images.unsplash.com/photo-1670510521081-fe2e687c3153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" class="h-96">
+      <span class="tinytitle block mt-5"><strong>Timing:</strong> 6-8 weeks</span>
+      <span class="tinytitle block mt-3 mb-5"><strong>Pricing:</strong> starting at 3500€</span>
+      <a href="" class="button">Get in touch</a>
+    </div>
+    
+    <!------------- Package details ------------->
+    <div class="col-span-2">
+      <h3 class="pb-5">Custom brand design</h3>
+      <p>Every brand and project is unique, so I tailor each proposal to your specific needs. To get an overview of what goes into a branding project, here are some of the (recommended) steps:</p>
+      
+      {% assign faqs = site.data.faqs | where:'product-type','branding' %}
+      {% include faqs.html %}
+    </div>
+
+</section>
+
+<!------------- Image banner ------------->
+
+{% for item in page.image-banner limit:1 offset:1 %}
+<section> 
+  <div class="{% if item.overlay == true %} bg-blend-multiply bg-graphit-300 text-white {% endif %} bg-fixed bg-cover h-[50vh] bg-center flex flex-col justify-center items-center"
+  style="background-image: url('{{item.bg-image}}')">
+    <h2 class="pb-6 text-center">{{item.text}}</h2>
+    <a href="{{item.link-url}}" class="button-white">{{item.link-text}}</a>
+  </div>
+</section>
+{% endfor %}
+
+<!--------------- Testimonials --------------->
+
+{% assign testimonials = site.data.testimonials %}
+<section class="bg-beige p-6">
+
+    {% include testimonials.html %}
 
 </section>

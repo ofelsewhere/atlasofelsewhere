@@ -5,6 +5,10 @@ collections:
   archives:
     output: true
 
+assets:
+   sources:
+       -_assets/fonts
+
 # This is for CloudCannon options 
 
 _select_data:

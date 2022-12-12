@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
  
+
 /* ------------ Typography styles ------------ */
 
 h1, h2, h3  { @apply font-display font-light text-[4rem] leading-[4.5rem]; }
@@ -28,8 +29,31 @@ li          { @apply border-b border-black text-sm uppercase tracking-[.2em] py-
 
 /* ------------ Cookie banner ------------ */
 
-#cookie-notice { @apply p-4 hidden text-center text-sm tracking-[.3em] fixed left-0 right-0 bottom-0 w-full bg-sage-900 text-white }
+#cookie-notice { @apply p-4 hidden text-center text-xs tracking-[.1em] fixed left-0 right-0 bottom-0 w-full bg-sage-900 text-white }
 
 #cookie-notice a { @apply inline-block cursor-pointer ml-2 }
 
 #close-cookie-banner { @apply p-4 cursor-pointer text-sm opacity-50 }
+
+/* ------------ FAQs Accordion ------------ */
+
+.expandable {
+  overflow: hidden;
+  max-height: 20rem; 
+  transition: 1s;
+}
+
+.hide-answer { 
+  max-height: 0;
+  transition: 0.5s;
+  margin-bottom: 0rem;
+}
+
+.expandButton .symbol::before {
+  content: '\002B';
+  margin-right: 0.5rem;
+}
+.expandButton.active .symbol::before {
+  content: '\2212';
+  margin-right: 0.5rem;
+}
