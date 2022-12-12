@@ -1,0 +1,81 @@
+collections:
+  posts:
+    output: true
+    permalink: /posts/:slug
+  archives:
+    output: true
+
+# This is for CloudCannon options 
+
+_select_data:
+  background-colors:
+    bg-sky-200: Light Background
+    bg-sky-500: Dark Background
+    bg-white: White Background
+  col-sizes:
+    md:grid-cols-1: 1 Column
+    md:grid-cols-2: 2 Columns
+    md:grid-cols-3: 3 Columns
+    md:grid-cols-4: 4 Columns
+  image-positions:
+    left: Left
+    right: Right
+  aspect-ratios:
+    aspect-[4/3]: Landscape
+    aspect-[3/4]: Portrait
+    aspect-square: Square        
+
+# This is for Page blocks
+
+page_blocks: []
+
+_array_structures:
+  page_blocks:
+    - label: Title section
+      icon: article
+      value: 
+        _id: title_section
+        title: Title section
+        heading: What to do in Vancouver
+        author: Tara Hunka
+        category: travel
+        date: 2022-11-21
+    - label: Social Sharing
+      icon: article
+      value: 
+        _id: social_sharing   
+      icon: article
+      value: 
+        _id: cta_banner
+        title: CTA banner
+        cta-banner: true
+        cta-link: https://images.unsplash.com/photo-1511489731872-324afc650052?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80   
+    - label: Image banner
+      icon: article
+      value: 
+        _id: image_banner
+        title: Image banner
+        text: Write your text here
+        featured-image: https://images.unsplash.com/photo-1511489731872-324afc650052?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80
+        overlay: true
+    - label: Flex content section
+      icon: article
+      value:    
+        _id: flex_content_section
+        title: Flex_content section
+        col-size: md:grid-cols-2
+        background-color: bg-white        
+
+  columns:
+    - label: Image
+      icon: photo_camera
+      value:    
+        _type: image
+        image: 
+    - label: Text
+      icon: description
+      value:    
+        _type: text
+        title: text
+        image: 
+      

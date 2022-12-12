@@ -1,0 +1,25 @@
+<!------------------ Text / Image block ------------------>
+
+<section class="{{block.background-color}} py-6">
+  <div class="grid {{block.col-size}} gap-20 my-10 container mx-auto">
+    
+    {% for item in block.columns %}
+    
+    <!------------------ Text ------------------>
+    {% if item._type == 'text' %}
+
+    <div class="h-auto">{{item.copy_html}}</div>
+
+    <!------------------ Image ------------------>
+    {% elsif item._type == 'image' %}
+    
+    <div class="relative">
+      <img src="{{item.image}}" class="absolute h-full w-full object-cover object-cover">
+    </div>    
+    
+    {% endif %}
+    
+    {% endfor %}
+
+  </div>
+</section>

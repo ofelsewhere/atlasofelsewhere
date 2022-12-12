@@ -2,40 +2,34 @@
 @tailwind components;
 @tailwind utilities;
  
+/* ------------ Typography styles ------------ */
+
+h1, h2, h3  { @apply font-display font-light text-[4rem] leading-[4.5rem]; }
+
+p           { @apply leading-8; }
+
+nav         { @apply inline-block py-3 px-6 text-sm uppercase tracking-[.2em]; }
+
+.subtitle   { @apply text-sm uppercase tracking-[.2em] }
+
+.tinytitle  { @apply text-xs uppercase tracking-[.3em] }
+
+li          { @apply border-b border-black text-sm uppercase tracking-[.2em] py-2 }
+
+/* ------------ Button styles ------------ */
+
 .button {
-    @apply inline-block py-3 px-6 uppercase tracking-[.2em] text-black border-black border transition;
+  @apply inline-block py-3 px-6 text-sm uppercase tracking-[.2em] text-black border-black border hover:bg-sage-500/20 transition;
 }
 
 .button-white {
-    @apply inline-block py-3 px-6 uppercase tracking-[.2em] text-white border-white border transition;
+  @apply inline-block py-3 px-6 text-sm uppercase tracking-[.2em] text-white border-white border hover:bg-white/20 transition;
 }
-
 
 /* ------------ Cookie banner ------------ */
 
-#cookie-notice {
-    padding: 1rem 1rem;
-    display: none;
-    text-align: center;
-    font-size: 0.8rem;
-    letter-spacing: 0.08em;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    background: #505050;
-    color: rgba(255,255,255,0.8);
-  }
-  #cookie-notice a {
-    display: inline-block;
-    cursor: pointer;
-    margin-left: 0.5rem;
-  }
-  
-  #close-cookie-banner {
-  padding: 1rem;
-  cursor: pointer;
-  font-size: 0.8rem;
-  opacity: 0.5
-  }
+#cookie-notice { @apply p-4 hidden text-center text-sm tracking-[.3em] fixed left-0 right-0 bottom-0 w-full bg-sage-900 text-white }
+
+#cookie-notice a { @apply inline-block cursor-pointer ml-2 }
+
+#close-cookie-banner { @apply p-4 cursor-pointer text-sm opacity-50 }

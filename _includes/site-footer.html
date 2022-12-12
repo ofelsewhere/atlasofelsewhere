@@ -1,0 +1,65 @@
+<!------------------ Header ------------------>
+
+<footer class="py-10 bg-sage-600">
+<div class="container flex justify-between items-center">
+
+  <!------------------ Search ------------------>
+  <div class="pt-10 w-[30vw]">
+
+    <div>
+    <!-- HTML elements for search -->
+  <input class="border-b border-white bg-sage-600 text-s font-light uppercase tracking-[.3em] text-xs placeholder-white focus:placeholder-gray-400 focus:outline-none text-white focus:border-gray-400 py-3 w-full" type="text" id="search-input" placeholder="Search">
+  <ul class="grid grid-cols-1 my-5" id="results-container"></ul>
+
+  <!-- or without installing anything -->
+  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+
+  <!-- Javascript -->
+  <script>
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/search.json',
+      searchResultTemplate: '<div class="m-1"><a href="{{ site.url }}{url}" class="p-4 border-b block"><h2>{title}</h2><p class="text-xs uppercase leading-7 tracking-[.2em]">{categories}</p></a></div>',
+      noResultsText: '<div class="">Sorry no luck</div>'
+    })
+  </script>
+</div>
+
+  </div>
+
+  <!------------------ Social ------------------>
+  <div class="">
+    <div class="flex flex-row space-x-10 justify-center text-white">
+
+      <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
+        <i class="fab fa-twitter hover:opacity-60"></i>
+      </a>
+      <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
+        <i class="fab fa-facebook-f hover:opacity-60"></i>
+      </a>
+      <a href="http://pinterest.com/pin/create/link/?url={{page.url}}&description={{page.title}}" rel="nofollow" target="_blank" title="Share on Pinterest">
+        <i class="fab fa-pinterest-p hover:opacity-60"></i>
+      </a>
+
+    </div>
+  </div>
+
+  <!------------------ Imprint ------------------>
+  <div class="text-white tinytitle">
+    <a href="" class="hover:opacity-60">Privacy</a>
+    <a href="" class="ml-4 hover:opacity-60">Impressum</a>
+  </div>
+</div>
+
+</footer>
+
+<section class="bg-black/90">
+  <div class="container flex justify-between text-white text-[0.6rem] tracking-[.1em] font-light py-8">
+    <div class="">
+      Copyrights ©Tara Hunka 2022 | All rights Reserved 
+    </div>
+      <div>Back to the top<i class="ml-4 fab fa-facebook-f hover:text-orange-400"></i></div> 
+    </div>
+  </div>
+</section>
