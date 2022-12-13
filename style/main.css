@@ -5,26 +5,26 @@
 
 /* ------------ Typography styles ------------ */
 
-h1, h2, h3  { @apply font-display font-light text-[4rem] leading-[4.5rem]; }
+h1, h2, h3  { @apply font-display font-light text-[4rem] leading-[4.5rem] tracking-[.03em]; }
 
 p           { @apply leading-8; }
 
-nav         { @apply inline-block py-3 px-6 text-sm uppercase tracking-[.2em]; }
+nav         { @apply inline-block py-3 px-6 text-xs font-semibold uppercase tracking-[.2em]; }
 
 .subtitle   { @apply text-sm uppercase tracking-[.2em] }
 
-.tinytitle  { @apply text-xs uppercase tracking-[.3em] }
+.tinytitle  { @apply text-xs uppercase tracking-[.3em] font-semibold }
 
 li          { @apply border-b border-black text-sm uppercase tracking-[.2em] py-2 }
 
 /* ------------ Button styles ------------ */
 
 .button {
-  @apply inline-block py-3 px-6 text-sm uppercase tracking-[.2em] text-black border-black border hover:bg-sage-500/20 transition;
+  @apply inline-block rounded-full text-black border-black border hover:bg-sage-500/20 transition;
 }
 
 .button-white {
-  @apply inline-block py-3 px-6 text-sm uppercase tracking-[.2em] text-white border-white border hover:bg-white/20 transition;
+  @apply inline-block rounded-full py-3 px-6 text-sm font uppercase tracking-[.2em] text-white border-white border hover:bg-white/20 transition;
 }
 
 /* ------------ Cookie banner ------------ */
