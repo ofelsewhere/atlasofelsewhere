@@ -7,7 +7,7 @@
 
 h1, h2, h3  { @apply font-display font-light text-[3.5rem] leading-[4.5rem] tracking-[.02em]; }
 
-p           { @apply leading-8 text-[0.9rem]; }
+p           { @apply leading-8 text-[0.9rem] tracking-[0.03em]; }
 
 nav         { @apply inline-block py-3 px-6 text-xs font-semibold uppercase tracking-[.2em]; }
 
@@ -15,7 +15,7 @@ nav         { @apply inline-block py-3 px-6 text-xs font-semibold uppercase trac
 
 .tinytitle  { @apply text-xs uppercase tracking-[.3em] font-semibold }
 
-li          { @apply border-b border-black text-sm uppercase tracking-[.2em] py-2 }
+li          { @apply border-b border-black text-xs uppercase tracking-[.3em] font-semibold py-2 }
 
 /* ------------ Button styles ------------ */
 

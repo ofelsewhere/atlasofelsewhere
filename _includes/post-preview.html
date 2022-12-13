@@ -1,7 +1,7 @@
 <!------------------ This is the blog post preview for index / related posts ------------------>
 
-<div class="py-4 text-center">
-  <a href="{{post.url}}"><img class="aspect-[3/4] object-cover mb-5" src="{{post.featured-image}}"></a>
+<div class="text-center first:border-l border-r pb-20">
+  <a href="{{post.url}}"><img class="aspect-[3/4] object-cover mb-16" src="{{post.featured-image}}"></a>
   
   <div class="block">
   {% for item in post.categories %}
@@ -9,7 +9,7 @@
   {% endfor %}
   </div>
 
-  <a href="{{post.url}}" class="inline-block font-display font-light tracking-[.03em] text-4xl featured-text my-8">{{post.title}}</a>
-  <!-- <span class="text-sm block py-5">{{post.author}}</span> -->
+  <a href="{{post.url}}" class="inline-block font-display font-light tracking-[.03em] text-6xl featured-text my-8">{{post.title}}</a>
+
   <span class="text-xs uppercase tracking-[.3em] block"><strong>{{post.date | date: "%d %b %Y"}}</strong></span>
 </div>
