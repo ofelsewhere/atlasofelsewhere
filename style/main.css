@@ -5,7 +5,7 @@
 
 /* ------------ Typography styles ------------ */
 
-h1, h2, h3  { @apply font-display font-light text-[4rem] leading-[4.5rem] tracking-[.03em]; }
+h1, h2, h3  { @apply font-display font-light text-[3.5rem] leading-[4.5rem] tracking-[.02em]; }
 
 p           { @apply leading-8 text-[0.9rem]; }
 
@@ -19,13 +19,9 @@ li          { @apply border-b border-black text-sm uppercase tracking-[.2em] py-
 
 /* ------------ Button styles ------------ */
 
-.button {
-  @apply inline-block rounded-full text-black border-black border hover:bg-sage-500/20 transition;
-}
+.button { @apply inline-block py-3 px-6 text-xs font-semibold uppercase tracking-[.2em] rounded-full text-black border-black border hover:bg-sage-500/20 transition; }
 
-.button-white {
-  @apply inline-block rounded-full py-3 px-6 text-sm font uppercase tracking-[.2em] text-white border-white border hover:bg-white/20 transition;
-}
+.button-white { @apply inline-block py-3 px-6 text-xs font-semibold uppercase tracking-[.2em] rounded-full text-white border-white border hover:bg-white/20 transition; }
 
 /* ------------ Cookie banner ------------ */
 

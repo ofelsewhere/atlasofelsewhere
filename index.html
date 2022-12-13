@@ -2,7 +2,7 @@
 layout: default
 title: Homepage
 image-banner:
-  - bg-image: https://images.unsplash.com/photo-1670510521081-fe2e687c3153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80
+  - bg-image: /assets/images/tbd/MoyoFreePhoto29.jpg
     text: Are you ready to take<br>your business to the next level?
     link-text: My services
     link-url: 
@@ -20,7 +20,59 @@ image-banner:
 
 ---
 
-<!------------- Intro ------------->
+<!-- ----------- Intro ----------- -->
+
+<div class="absolute w-full h-full z-50 -mt-[20vh]" style="background-image: url('/assets/images/palmtree.png');"></div>
+
+<section class="bg-sage-200 max-h-[100vh] -mt-[20vh] bg-cover bg-center z-30 overflow-hidden">
+
+    <div class="grid grid-cols-2 pt-48">
+      <div class="col-span-1 pl-24 pt-16 w-[40vw]">
+        <h1 class="text-[4.5vw] leading-[5vw] mb-10">
+          Creating meaningful brand design inspired by the wonders of the world.
+        </h1>
+        <a href="" class="button">Explore more</a>
+      </div>
+      <div class="col-span-1 relative z-0 mr-24">
+        <img src="/assets/images/tbd/MoyoFreePhoto29.jpg" class="h-[45vh] w-full object-cover border p-6">
+        <div class="w-[20vw] z-0 absolute -left-20 bottom-0">
+          <img src="/assets/images/tbd/atlasofelsewhere_emye.png" class="">
+        </div>
+      </div>  
+    </div>
+    <img class="opacity-20 h-64 ml-[75vw] -mt-20" src="/assets/images/illustrations/cloud.svg">
+</section>
+
+<hr>
+
+<section class="text-center py-2 bg-sage-200">
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam beatae sint autem dolorem maiores perspiciatis quia dolorum tempora.</div>
+</section>
+
+<hr>
+
+<section class="">
+  <div class="grid grid-cols-2 text-center items-center">
+    <a href="" class="border-r py-52 bg-cover bg-center relative w-full h-full" style="background-image: url('/assets/images/tbd/MoyoFreePhoto29.jpg');">
+      <div class="absolute text-center inset-0 flex justify-center items-center cursor-pointer bg-sage-200/[.95] hover:bg-sage-200/[.85] transition duration-300">
+      <h2 class="z-20">Design</h2>
+      </div>
+    </a>
+    <a href="" class="border-r py-52 bg-cover bg-center relative w-full h-full" style="background-image: url('/assets/images/tbd/MoyoFreePhoto45.jpg');">
+      <div class="absolute text-center inset-0 flex justify-center items-center cursor-pointer bg-sage-200/[.95] hover:bg-sage-200/[.85] transition duration-300">
+      <h2 class="z-20">Travel</h2>
+      </div>
+    </a>
+  </div>
+  <hr>
+</section>
+<!-- ----------- Intro -----------
+
+      <div class="w-[50vw] relative right-20">
+        <img src="/assets/images/CarmenPHOTO10.jpg">
+        <div class="w-[20vw] absolute right-0 bottom-0">
+          <img src="/assets/images/CarmenPHOTO10.jpg">
+        </div>
 
 <section class="grid grid-cols-2 bg-sage-200 min-h-[100vh] -mt-[20vh] bg-cover bg-center z-0" style="background-image: url('/assets/images/palmtree.png');">
   <div class="pt-16 pl-36 mt-[20vh]">
@@ -36,49 +88,37 @@ image-banner:
   </div>
   <div class="p-32 flex items-center mt-[20vh]">
     <p>
-      Branding is my favorite part of design. A thoughtful and consistent brand elevates the customer's experience, connects you with your target audience and helps you reach your business goals.
+      Branding is my favorite part of design. A thoughtful and consistent brand elevates the customer's experience, connects you with your target audience and helps you reach your business goals.<br><br>
       After 6 years working in design agencies I realized, that you don’t necessarily need an office to construct unique and strategic brands. Luckily I can take my creativity and experience wherever I go – which leads us to Atlas of Elsewhere, a space where I combine my two passions: Design & Travel.
       </p>
   </div>
 
-</section>
-
-<!------------- Image banner ------------->
-
-{% for item in page.image-banner limit:1 %}
-<section> 
-  <div class="{% if item.overlay == true %} bg-blend-multiply bg-graphit-300 text-white {% endif %} bg-fixed bg-cover h-[50vh] bg-center flex flex-col justify-center items-center"
-  style="background-image: url('{{item.bg-image}}')">
-    <h2 class="pb-6 text-center">{{item.text}}</h2>
-    <a href="{{item.link-url}}" class="button-white">{{item.link-text}}</a>
-  </div>
-</section>
-{% endfor %}
+</section> -->
 
 <!------------- Services ------------->
 
 <section class=""> 
-  <div class="container grid grid-cols-2 gap-20 py-20">
+  <div class="container grid grid-cols-2 gap-20 relative w-full h-[95vh]">
+    <div>
+      <img src="/assets/images/elsewherebranddesign.svg"
+           class="w-32 absolute top-20 z-20">
+      <img src="/assets/images/tbd/atlasofelsewhere_emye.png"
+           class="w-[30vw] absolute top-40 left-28">
+      <img src="/assets/images/tbd/atlasofelsewhere_buencamino2-1.png"
+           class="w-[30vw] absolute bottom-20">
+    </div>
     <div class="">
       <span class="subtitle">Elsewhere Brand Design</span>
       <h1 class="my-5">A travelling design studio</h1>
       <p class="my-5">Beautiful design is nice to look at but without the strategic foundation it lacks the longevity of a successful branding. Together we can figure out what sets you apart from the competition and uncover the true potential of your brand.</p>
       <p class="my-5">Services I offer include:</p>
       <ul class="">
-        <li class="border-b border-black uppercase tracking-[.2em] py-2">Design Strategy</li>
-        <li class="border-b border-black">Design Strategy</li>
-        <li class="border-b border-black">Design Strategy</li>
-        <li class="border-b border-black">Design Strategy</li>
-        <li class="border-b border-black">Design Strategy</li>
+        <li class="border-b border-black py-4">Design Strategy</li>
+        <li class="border-b border-black py-4">Brand Design</li>
+        <li class="border-b border-black py-4">Web Design & Development</li>
+        <li class="border-b border-black py-4">Editorial Design</li>
         <a href="#" class="button mt-10 mr-5">My services</a> <a href="#" class="button">Case studies</a>
       </ul>
-    </div>
-    <div>
-      <img src="/assets/images/tbd/atlasofelsewhere_emye.png"
-           class="w-[30vw] ml-24 my-10">
-      <img src="/assets/images/tbd/atlasofelsewhere_buencamino2-1.png"
-      class="w-[30vw]">
-      
     </div>
   </div>
 </section>
@@ -87,7 +127,7 @@ image-banner:
 
 {% for item in page.image-banner limit:1 offset:1 %}
 <section> 
-  <div class="{% if item.overlay == true %} bg-blend-multiply bg-graphit-300 text-white {% endif %} bg-fixed bg-cover h-[50vh] bg-center flex flex-col justify-center items-center"
+  <div class="{% if item.overlay == true %} bg-blend-multiply bg-black-200 text-white {% endif %} bg-fixed bg-cover h-[50vh] bg-center flex flex-col justify-center items-center"
   style="background-image: url('{{item.bg-image}}')">
     <h2 class="pb-6 text-center">{{item.text}}</h2>
     <a href="{{item.link-url}}" class="button-white">{{item.link-text}}</a>
@@ -102,7 +142,7 @@ image-banner:
     <div class="col-start-1 col-end-3 mb-20"><h2>Travel is my source of inspiration.</h2></div>
     <div class="col-start-4 col-end-7 mb-20"><p>Discovering new cities, exploring museums, trying new food and learning about different cultures – this is where my inspiration comes from. Design plays an important part – while deciding on hotels, restaurant or shops I always try to spot the most aesthetic place (while keeping it budget-friendly). If you love travelling as much as me I hope I can give you some valuable insight for your next trip. </p></div>
   </div>
-  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 container">
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 border container">
 
   		{% for post in site.posts limit:3 %}
 
