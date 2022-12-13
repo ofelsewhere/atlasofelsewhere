@@ -1,15 +1,17 @@
 <!------------------ This is the blog post preview for index / related posts ------------------>
 
-<div class="text-center first:border-l border-r pb-20">
-  <a href="{{post.url}}"><img class="aspect-[3/4] object-cover mb-16" src="{{post.featured-image}}"></a>
+<a href="{{post.url}}" class="bg-sage-200 hover:bg-sage-300/30 first:border-l border-r text-center pb-28">
   
-  <div class="block">
-  {% for item in post.categories %}
-    <a href="/archives/{{item}}" class="mx-1 inline-block border-b border-b-orange-400 pb-1 text-xs uppercase tracking-[.3em]">{{item}}</a>
-  {% endfor %}
-  </div>
+  <img class="h-[75vh] w-full object-cover mb-16" src="{{post.featured-image}}">
 
-  <a href="{{post.url}}" class="inline-block font-display font-light tracking-[.03em] text-6xl featured-text my-8">{{post.title}}</a>
+  <span class="block">
+    {% for item in post.categories %}
+      <div class="mx-1 inline-block border-b border-b-orange-400 pb-1 text-xs uppercase tracking-[.3em]">{{item}}</div>
+    {% endfor %}
+  </span>
 
+  <h2 class="text-center inline-block font-display font-light tracking-[.03em] text-6xl featured-text my-8">{{post.title}}</h2>
+  
   <span class="text-xs uppercase tracking-[.3em] block"><strong>{{post.date | date: "%d %b %Y"}}</strong></span>
-</div>
+
+</a>

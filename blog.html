@@ -1,0 +1,69 @@
+---
+layout: default
+title: Travel Journal
+---
+
+<!------------- Intro ------------->
+<section class="bg-sage-200 -mt-[20vh] z-0 overflow-hidden">
+
+  <div class="relative">
+
+    <!------------- Title ------------->
+    <div class="col-span-3 pt-20 mt-[20vh] text-center">
+      <span class="tinytitle">Travel Journal & Recommendations</span>
+      <h1 class="text-[5rem] leading-[5.5rem] pt-6">Life is not meant to<br>be lived in one place.</h1>
+      <p class="w-[40vw] mx-auto mt-5 mb-20"> Discovering new cities, exploring museums, trying new food and learning about different cultures – this is where my inspiration comes from. Design plays an important part – while deciding on hotels, restaurant or shops I always try to spot the most aesthetic place (while keeping it budget-friendly).<br>If you love travelling as much as me I hope I can give you some valuable insight for your next trip.</p>
+    </div>
+
+  </div>
+
+  <!------------- Illustration ------------->
+  <img class="opacity-20 w-[40vw] rotate-12 absolute top-72 -left-36" src="/assets/images/illustrations/palmtree2.svg">
+  <img class="opacity-20 w-[40vw] -rotate-12 absolute top-40 -right-40" src="/assets/images/illustrations/palmtree1.svg">
+</div>
+
+</section>      
+
+<!------------- Categories ------------->
+
+<section class="bg-sage-200 py-10 text-center">
+  <div class="container">
+        
+        {% for item in site.archives %}
+        {% if item.nav-bar == true %}
+        <a class="inline-block button mr-5 last:mr-0" href="{{item.url}}">{{item.title}}</a>
+        {% endif %}
+        {% endfor %}
+  </div>
+</section>
+
+<!------------- Blog preview ------------->
+<section class="bg-sage-200 pb-32">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 container">
+
+      {% for post in site.posts limit:9 %}
+
+      <a href="{{post.url}}" class="bg-sage-200 hover:bg-sage-300/30 border text-center pb-20">
+        
+        <!------------- Image ------------->
+        <img class="h-[60vh] w-full object-cover mb-10 p-4" src="{{post.featured-image}}">
+        
+        <!------------- Categories ------------->
+        <span class="block">
+          {% for item in post.categories %}
+            <div class="mx-1 inline-block border-b border-b-orange-400 pb-1 text-xs uppercase tracking-[.3em]">{{item}}</div>
+          {% endfor %}
+        </span>
+        
+        <!------------- Title ------------->
+        <h2 class="text-center inline-block font-display font-light tracking-[.03em] text-6xl featured-text my-8">{{post.title}}</h2>
+        
+        <!------------- Date ------------->
+        <span class="text-xs uppercase tracking-[.3em] block"><strong>{{post.date | date: "%d %b %Y"}}</strong></span>
+      
+      </a>
+          
+      {% endfor %}
+
+    </div>
+</section>

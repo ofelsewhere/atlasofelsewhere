@@ -12,9 +12,9 @@ image-banner:
     link-text: Read the blog
     link-url: 
     overlay: true    
-  - bg-image: https://images.unsplash.com/photo-1670510521081-fe2e687c3153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80
-    text: Are you interested in<br>collaborating?
-    link-text: Let's talk
+  - bg-image: /assets/images/tbd/MoyoFreePhoto28.jpg
+    text: Let’s work<br><em>together</em>
+    link-text: Apply now
     link-url: 
     overlay: true    
 
@@ -24,10 +24,10 @@ image-banner:
 
 <section class="bg-sage-200 max-h-[100vh] -mt-[20vh] bg-cover bg-center z-30 overflow-hidden" style="background-image: url('/assets/images/palmtree.png');">
 
-    <div class="grid grid-cols-2 pt-52">
+    <div class="grid grid-cols-2 pt-44">
 
       <!------------- Left column ------------->
-      <div class="col-span-1 pl-24 pt-16 w-[40vw]">
+      <div class="col-span-1 pl-24 pt-20 w-[40vw]">
         <h1 class="text-[4.5vw] leading-[5vw] mb-10">
           Discovering and developing <em>unique design solutions</em> across the globe.
         </h1>
@@ -37,7 +37,7 @@ image-banner:
       <!------------- Right column ------------->
       <div class="col-span-1 relative z-0 mr-24">
         <img src="/assets/images/tbd/MoyoFreePhoto29.jpg" class="h-[45vh] w-full object-cover">
-        <div class="w-[25vw] z-0 absolute -left-20 -bottom-28">
+        <div class="w-[25vw] z-0 absolute -left-32 -bottom-28">
           <img src="/assets/images/tbd/atlasofelsewhere_emye.png" class="">
         </div>
       </div>  
@@ -52,7 +52,7 @@ image-banner:
 
 <hr>
 
-<section class="text-center py-2 bg-sage-200">
+<section class="text-center py-3 bg-sage-200">
   <span class="text-sm">This space is dedicated to my two passions in life: Design & Travel</span>
 </section>
 
@@ -64,15 +64,15 @@ image-banner:
   <div class="grid grid-cols-2 text-center items-center">
 
     <!------------- Design ------------->
-    <a href="" class="border-r py-52 bg-cover bg-top relative w-full h-full" style="background-image: url('/assets/images/tbd/MoyoFreePhoto45.jpg');">
-      <div class="absolute text-center text-white inset-0 flex justify-center items-center cursor-pointer bg-black/[.2] hover:bg-sage-200/[.85] transition duration-300">
+    <a href="" class="border-r py-64 bg-cover bg-top relative w-full h-full" style="background-image: url('/assets/images/tbd/MoyoFreePhoto45.jpg');">
+      <div class="absolute text-center text-white inset-0 flex justify-center items-center cursor-pointer bg-black/[.3] hover:bg-black/[.5] transition duration-300">
       <h2 class="z-20 text-[5rem]">Design</h2>
       </div>
     </a>
 
     <!------------- Travel ------------->
-    <a href="" class="border-r py-52 bg-cover bg-top relative w-full h-full" style="background-image: url('/assets/images/tbd/MoyoFreePhoto29.jpg');">
-      <div class="absolute text-center text-white inset-0 flex justify-center items-center cursor-pointer bg-black/[.1] hover:bg-sage-200/[.85] transition duration-300">
+    <a href="" class="border-r py-64 bg-cover bg-center relative w-full h-full" style="background-image: url('/assets/images/tbd/MoyoFreePhoto33.jpg');">
+      <div class="absolute text-center text-white inset-0 flex justify-center items-center cursor-pointer bg-black/[.2] hover:bg-black/[.3] transition duration-300">
       <h2 class="z-20 text-[5rem]">Travel</h2>
       </div>
     </a>
@@ -82,7 +82,7 @@ image-banner:
 
 <!------------- Services ------------->
 
-<section class="py-24 relative w-full h-full"> 
+<section class="py-32 relative w-full h-full"> 
   <div class="container grid grid-cols-2 gap-20">
 
     <!------------- Left column ------------->
@@ -92,21 +92,21 @@ image-banner:
       <img src="/assets/images/tbd/atlasofelsewhere_emye.png"
            class="h-[35vh] w-[30vw] object-cover absolute top-40 left-48">
       <img src="/assets/images/tbd/atlasofelsewhere_buencamino2-1.png"
-           class="h-[45vh] w-[25vw] object-cover absolute top-96 left-20 mb-20">
+           class="h-[45vh] w-[25vw] object-cover absolute top-[27rem] left-20 mb-20">
     </div>
 
     <!------------- Right column ------------->
-    <div class="">
+    <div class="flex-col items-center">
       <span class="tinytitle">Elsewhere Design Studio</span>
       <h1 class="my-5">Uncover your brands<br><em>full potential</em></h1>
-      <p class="my-5">Beautiful design is nice to look at but without the strategic foundation it lacks the longevity of a successful branding. Together we will get to the core of your brand and discover what sets you apart from the competition.</p>
+      <p class="my-5">Beautiful design is nice to look at but without a strategic foundation it lacks the longevity of a successful branding. Together we will get to the core of your brand and discover what sets you apart from the competition.</p>
       <p class="my-5">Services I offer include:</p>
       <ul class="">
         <li class="border-b border-black py-4">Design Strategy</li>
         <li class="border-b border-black py-4">Brand Design</li>
         <li class="border-b border-black py-4">Web Design & Development</li>
         <li class="border-b border-black py-4">Editorial Design</li>
-        <a href="#" class="button mt-10 mr-5">My services</a> <a href="#" class="button">Case studies</a>
+        <a href="#" class="button mt-10 mr-5">The packages</a> <a href="#" class="button">Portfolio</a>
       </ul>
     </div>
   </div>
@@ -116,9 +116,9 @@ image-banner:
 
 {% for item in page.image-banner limit:1 offset:1 %}
 <section> 
-  <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/50 text-white {% endif %} bg-fixed bg-cover h-[50vh] bg-center flex flex-col justify-center items-center"
+  <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/50 text-white {% endif %} bg-fixed bg-cover h-[60vh] bg-center flex flex-col justify-center items-center"
   style="background-image: url('{{item.bg-image}}')">
-    <h2 class="text-[4rem] pb-6 text-center">{{item.text}}</h2>
+    <h2 class="text-[5rem] leading-[5.5rem] pb-6 text-center">{{item.text}}</h2>
     <a href="{{item.link-url}}" class="button-white">{{item.link-text}}</a>
   </div>
 </section>
@@ -126,7 +126,7 @@ image-banner:
 
 <!------------- Blog preview ------------->
 
-<section class="bg-sage-200 pt-20 pb-32">
+<section class="bg-sage-200 pt-20">
 
   <!------------- Blog description ------------->
   <div class="grid grid-cols-7 container items-center">
@@ -140,7 +140,7 @@ image-banner:
   <hr>
 
   <!------------- Blog preview ------------->
-  <div class="container grid md:grid-cols-2 lg:grid-cols-3">
+  <div class="grid md:grid-cols-2 lg:grid-cols-3">
 
   		{% for post in site.posts limit:3 %}
 
@@ -153,18 +153,37 @@ image-banner:
 
   <!------------- Blog link ------------->
   <div class="text-center items-center relative">
-    <div class="absolute -top-6 w-full mx-auto"><a href="" class="button bg-sage-200 hover:bg-sage-300">Explore more</a></div>
+    <div class="absolute -top-6 w-full mx-auto"><a href="" class="button bg-sage-200 hover:bg-sage-300">More posts</a></div>
  </div>   
 </section>
 
+<!------------- About me ------------->
+<section class="bg-sage-200">
+  <div class="grid grid-cols-2 gap-20 items-center py-32 container">
+    
+    <!------------- Description ------------->
+    <div>
+      <h2>Hey, my name is <em>Tara.</em></h2>
+      <p class="my-10">
+        Branding is my favorite part of design. A thoughtful and consistent brand elevates the customer's experience, connects you with your target audience and helps you reach your business goals.
+        <br><br>
+        After 6 years working in design agencies I realized, that you don’t necessarily need an office to construct unique and strategic brands. Luckily I can take my creativity and experience wherever I go – which leads us to Atlas of Elsewhere, a space where I combine my two passions: Design & Travel.</p>
+      <a href="" class="button">Learn more</a>
+    </div>
+
+    <!------------- Image ------------->
+    <div class="">
+      <img src="/assets/images/elsewhere_blog_icefields.jpg" class="h-[75vh] w-full object-cover border p-6">
+    </div>
+  </div>
+</section>
+
 <!------------- Image banner ------------->
-
-
 {% for item in page.image-banner limit:1 offset:2 %}
 <section> 
-  <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/50 text-white {% endif %} bg-fixed bg-cover h-[50vh] bg-center flex flex-col justify-center items-center"
+  <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/50 text-white {% endif %} bg-fixed bg-cover h-[60vh] bg-center flex flex-col justify-center items-center"
   style="background-image: url('{{item.bg-image}}')">
-    <h2 class="text-[4rem] pb-6 text-center">{{item.text}}</h2>
+    <h2 class="text-[5rem] leading-[5.5rem] pb-6 text-center">{{item.text}}</h2>
     <a href="{{item.link-url}}" class="button-white">{{item.link-text}}</a>
   </div>
 </section>
