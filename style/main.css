@@ -7,7 +7,7 @@
 
 h1, h2, h3  { @apply font-display font-light text-[4rem] leading-[4.5rem] tracking-[.03em]; }
 
-p           { @apply leading-8; }
+p           { @apply leading-8 text-[0.9rem]; }
 
 nav         { @apply inline-block py-3 px-6 text-xs font-semibold uppercase tracking-[.2em]; }
 
