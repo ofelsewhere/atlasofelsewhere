@@ -1,0 +1,148 @@
+---
+layout: default
+title: Homepage
+image-banner:
+  - bg-image: /assets/images/tbd/MoyoFreePhoto28.jpg
+    text: Let’s work<br><em>together</em>
+    link-text: Apply now
+    link-url: 
+    overlay: true    
+
+---
+
+<!-------------------------- Intro -------------------------->
+
+<section class="bg-sage-200 min-h-[75vh] z-0">
+
+
+  <div class="grid grid-cols-5">
+  
+    <!------------- Left column ------------->
+    <div class="col-span-3 pt-16 pl-24">
+      <span class="tinytitle">Elsewhere Brand Design | Services</span>
+      <h1 class="text-[4.5rem] leading-[5rem] pt-6">
+        I've been lucky to work with some amazing clients. Here are of my favorite recent projects.
+      </h1>
+    </div>
+    
+    <!------------- Right column ------------->
+    <div class="col-span-2 pt-10 px-24 flex-col items-center">
+      <div class="flex justify-end"><img src="/assets/images/elsewherebranddesign.svg" class="h-32"></div>
+      <p class="pt-28 pb-10">
+        During my time in the agency I worked on many projects for a variety of industries. It never got boring and I learned you can even turn the most mundane business into a modern and aesthetic brand. 
+      </p>
+      <a href="#" class="button mr-5">Explore more</a><a href="#" class="button">Explore more</a>
+    </div>
+
+  </div>
+
+  </section>
+
+  <hr>
+
+<!-------------------------- Portfolio -------------------------->  
+
+<!---------------------- EMYE ---------------------->
+
+<section class="grid grid-cols-8 border-b">
+    
+  <!------------- Project image ------------->
+  <div class="col-span-5 p-20 border-r">
+    <img src="/assets/images/tbd/atlasofelsewhere_emye.png" class="w-full h-full object-cover">
+  </div>
+
+  <!------------- Project description ------------->
+  <div class="col-span-3 p-20">
+    <span class="tinytitle">Emye | Branding</span>
+    <h2 class="text-[4rem] leading-[4.5rem] mt-5">Brand design meets <br><em>Interior Design</em></h2>
+    <p class="py-5">
+      During my time in the agency I worked on many projects for a variety of industries. It never got boring and I learned you can even turn the most mundane business into a modern and aesthetic brand. 
+    </p>
+    <a href="#" class="button mr-5">Explore more</a>
+  </div>
+
+</section>
+
+<!---------------------- Buen Camino ---------------------->
+
+<section class="grid grid-cols-8 border-b">
+    
+  <!------------- Project description ------------->
+  <div class="col-span-3 p-20 border-r">
+    <span class="tinytitle">Emye | Branding</span>
+    <h2 class="text-[4rem] leading-[4.5rem] mt-5">Brand design meets <br><em>Interior Design</em></h2>
+    <p class="py-5">
+      During my time in the agency I worked on many projects for a variety of industries. It never got boring and I learned you can even turn the most mundane business into a modern and aesthetic brand. 
+    </p>
+    <a href="#" class="button mr-5">Explore more</a>
+  </div>  
+
+  <!------------- Project image ------------->
+  <div class="col-span-5 p-20">
+    <img src="/assets/images/tbd/atlasofelsewhere_buencamino2-1.png" class="w-full h-full object-cover">
+  </div>
+
+</section>
+
+<!---------------------- EMYE ---------------------->
+
+<section class="grid grid-cols-8 border-b items-center">
+    
+  <!------------- Project image ------------->
+  <div class="col-span-5 p-20 border-r">
+    <img src="/assets/images/tbd/atlasofelsewhere_emye.png" class="w-full h-full object-cover">
+  </div>
+
+  <!------------- Project description ------------->
+  <div class="col-span-3 p-20">
+      <span class="tinytitle">Emye | Branding</span>
+      <h2 class="text-[4rem] leading-[4.5rem] mt-5">Brand design meets <br><em>Interior Design</em></h2>
+      <p class="py-5">
+        During my time in the agency I worked on many projects for a variety of industries. It never got boring and I learned you can even turn the most mundane business into a modern and aesthetic brand. 
+      </p>
+      <a href="#" class="button mr-5">Explore more</a>
+  </div>
+
+</section>
+
+<!---------------------- Buen Camino ---------------------->
+
+<section class="grid grid-cols-8 border-b">
+    
+  <!------------- Project description ------------->
+  <div class="col-span-3 p-20 border-r">
+    <span class="tinytitle">Emye | Branding</span>
+    <h2 class="text-[4rem] leading-[4.5rem] mt-5">Brand design meets <br><em>Interior Design</em></h2>
+    <p class="py-5">
+      During my time in the agency I worked on many projects for a variety of industries. It never got boring and I learned you can even turn the most mundane business into a modern and aesthetic brand. 
+    </p>
+    <a href="#" class="button mr-5">Explore more</a>
+  </div>
+
+  <!------------- Project image ------------->
+  <div class="col-span-5 p-20">
+    <img src="/assets/images/tbd/atlasofelsewhere_buencamino2-1.png" class="w-full h-full object-cover">
+  </div>
+
+</section>
+
+<!-------------------------- Testimonials -------------------------->
+
+{% assign testimonials = site.data.testimonials %}
+<section class="bg-sage-200 p-6">
+
+    {% include testimonials.html %}
+
+</section>
+
+<!-------------------------- Image banner -------------------------->
+
+{% for item in page.image-banner limit:1 %}
+<section> 
+  <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/50 text-white {% endif %} bg-fixed bg-cover h-[60vh] bg-center flex flex-col justify-center items-center"
+  style="background-image: url('{{item.bg-image}}')">
+    <h2 class="text-[5rem] leading-[5.5rem] pb-6 text-center">{{item.text}}</h2>
+    <a href="{{item.link-url}}" class="button-white">{{item.link-text}}</a>
+  </div>
+</section>
+{% endfor %}

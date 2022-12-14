@@ -55,3 +55,51 @@ li          { @apply border-b border-black text-xs uppercase tracking-[.3em] fon
   content: '\2212';
   margin-right: 0.5rem;
 }
+
+/* ------------ Slick Slider ------------ */
+
+.slick-dots {
+  right:0;
+  bottom: -4rem;
+  border-bottom: none;
+}
+
+.slick-dots li {
+  border-bottom: none;
+}
+
+.slick-next::before, .slick-prev::before {
+  font-family: Mons;
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: #fff;
+  color: rgb(90, 90, 90);
+}
+
+.slick-prev::before {
+  content: '←';
+}
+
+.slick-next::before {
+  content: '→';
+}
+
+.slick-prev {
+  left: -4rem;
+  z-index: 6;
+}
+
+.slick-next {
+  right: -4rem;
+}
+
+.slick-track {
+  display: flex;
+}
+.slick-track .slick-slide {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
