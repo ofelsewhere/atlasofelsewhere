@@ -2,13 +2,13 @@
 layout: default
 title: Homepage
 image-banner:
-  - bg-image: /assets/images/SiennaPhoto9.jpg
-    text: You are not sure which steps<br>to take next for your brand?
-    link-text: Book a free consultation
+  - bg-image: /assets/images/tbd/MoyoFreePhoto29.jpg
+    text: Let's take your brand<br><em>to the next level</em>
+    link-text: Apply now
     link-url: 
     overlay: true
   - bg-image: https://images.unsplash.com/photo-1488831861984-179da3647265?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2428&q=80
-    text: You are not sure which steps<br>to take next for your brand?
+    text: Unclear of your<br>next steps?
     link-text: Book a free consultation
     link-url: 
     overlay: true    
@@ -22,21 +22,21 @@ image-banner:
 
 <!------------- Intro ------------->
 
-<section class="bg-sage-200 min-h-[100vh] -mt-[20vh] z-0 overflow-hidden">
+<section class="bg-sage-200 min-h-[80vh] z-0 relative w-full h-full overflow-hidden">
 
 
-  <div class="grid grid-cols-5 -mb-20">
+  <div class="grid grid-cols-5">
   
     <!------------- Left column ------------->
-    <div class="col-span-3 pt-20 pl-28 mt-[20vh]">
+    <div class="col-span-3 pt-16 pl-24">
       <span class="tinytitle">Elsewhere Brand Design | Services</span>
-      <h1 class="text-[2.8rem] leading-[3.5rem] pt-6">
+      <h1 class="text-[3.5rem] leading-[4rem] pt-6">
         The key to a successful design process is creating a brand that your audience trusts. Together we will uncover the true potential of your brand so you can achieve your next business goals.
       </h1>
     </div>
     
     <!------------- Right column ------------->
-    <div class="col-span-2 pt-28 px-28 flex-col items-center mt-[10vh]">
+    <div class="col-span-2 pt-10 px-24 flex-col items-center">
       <div class="flex justify-end"><img src="/assets/images/elsewherebranddesign.svg" class="h-32"></div>
       <p class="pt-28 pb-10">
         Storytelling, consistency, recognisability – these are only a few factors that play an important role in the design of your brand. It all starts with an idea that is based on your strategic foundation. This way we ensure your brand lives on, when trends are over or personal preferences change.
@@ -47,16 +47,16 @@ image-banner:
   </div>
 
   <!------------- Illustration ------------->
-  <img class="opacity-20 h-48 -mb-6 -ml-6" src="/assets/images/illustrations/cloud.svg">
+  <img class="opacity-20 h-48 absolute -bottom-10" src="/assets/images/illustrations/cloud.svg">
   </section>
 
-<!------------- Image banner ------------->
+<!-------------------------- Image banner -------------------------->
 
 {% for item in page.image-banner limit:1 %}
 <section> 
-  <div class="{% if item.overlay == true %} bg-blend-multiply bg-graphit-300 text-white {% endif %} bg-fixed bg-cover h-[70vh] bg-center flex flex-col justify-center items-center"
+  <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/50 text-white {% endif %} bg-fixed bg-cover h-[60vh] bg-center flex flex-col justify-center items-center"
   style="background-image: url('{{item.bg-image}}')">
-    <h2 class="pb-6 text-center">{{item.text}}</h2>
+    <h2 class="text-[5rem] leading-[5.5rem] pb-6 text-center">{{item.text}}</h2>
     <a href="{{item.link-url}}" class="button-white">{{item.link-text}}</a>
   </div>
 </section>
@@ -64,60 +64,62 @@ image-banner:
 
 <!------------- Service package | Branding ------------->
 
-<section class="bg-sage-200 py-20">
-
-  <div class="container grid grid-cols-3 gap-28">
+<section class="grid grid-cols-8 border-b">
     
     <!------------- Package details ------------->
-    <div class="col-span-2">
-      <h3 class="pb-4">Strategic brand design</h3>
-      <p>Every brand and project is unique, so I tailor each proposal to your specific needs. To get an overview of what goes into a branding project, here are some of the (recommended) steps:</p>
-      
-      {% assign faqs = site.data.faqs | where:'product-type','branding' %}
-      {% include faqs.html %}
+    <div class="col-span-5 bg-sage-200 p-20 border-r">
+      <h3 class="text-[5rem] leading-[5.5rem] pb-4">Strategic<br><em>brand design</em></h3>
+      <div class="pr-32">
+        <p>Every brand and project is unique, so I tailor each proposal to your specific needs. To get an overview of what goes into a branding project, here are some of the (recommended) steps:</p>
+      </div>
+      <div class="">
+        {% assign faqs = site.data.faqs | where:'product-type','branding' %}
+        {% include faqs.html %}
+      </div>
     </div>
 
     <!------------- Image + info ------------->
-    <div class="col-span-1">
-      <img src="/assets/images/tbd/Business-Card-with-Hand-Mockup-1.png" class="h-80 object-cover">
+    <div class="col-span-3 w-full bg-sage-300 p-20">
+      <img src="/assets/images/tbd/Business-Card-with-Hand-Mockup-1.png" class="h-96 object-cover">
       <span class="tinytitle block mt-8"><strong>Timing:</strong> 6-8 weeks</span>
       <span class="tinytitle block mt-3 mb-6"><strong>Pricing:</strong> starting at 3500€</span>
       <a href="" class="button">Get in touch</a>
     </div>
 </section>
 
-<!------------- Service package | Website ------------->
+<!------------- Service package | Web Design ------------->
 
-<section class="bg-white py-20">
-
-  <div class="container grid grid-cols-3 gap-28">
+<section class="grid grid-cols-8 border-b">
 
     <!------------- Image + info ------------->
-    <div class="col-span-1">
-      <img src="https://images.unsplash.com/photo-1670510521081-fe2e687c3153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" class="h-96">
-      <span class="tinytitle block mt-5"><strong>Timing:</strong> 6-8 weeks</span>
-      <span class="tinytitle block mt-3 mb-5"><strong>Pricing:</strong> starting at 3500€</span>
+    <div class="col-span-3 w-full bg-sage-300 p-20 border-r">
+      <img src="/assets/images/tbd/atlasofelsewhere_emye.png" class="h-96 object-cover">
+      <span class="tinytitle block mt-8"><strong>Timing:</strong> 6-8 weeks</span>
+      <span class="tinytitle block mt-3 mb-6"><strong>Pricing:</strong> starting at 3500€</span>
       <a href="" class="button">Get in touch</a>
     </div>
     
-    <!------------- Package details ------------->
-    <div class="col-span-2">
-      <h3 class="pb-5">Web design & development</h3>
+  <!------------- Package details ------------->
+  <div class="col-span-5 bg-sage-200 p-20">
+    <h3 class="text-[5rem] leading-[5.5rem] pb-4">Web design<br><em>& development</em></h3>
+    <div class="pr-32">
       <p>Every brand and project is unique, so I tailor each proposal to your specific needs. To get an overview of what goes into a branding project, here are some of the (recommended) steps:</p>
-      
+    </div>
+    <div class="">
       {% assign faqs = site.data.faqs | where:'product-type','branding' %}
       {% include faqs.html %}
     </div>
+  </div>
 
-</section>
+</section>  
 
-<!------------- Image banner ------------->
+<!-------------------------- Image banner -------------------------->
 
 {% for item in page.image-banner limit:1 offset:1 %}
 <section> 
-  <div class="{% if item.overlay == true %} bg-blend-multiply bg-graphit-300 text-white {% endif %} bg-fixed bg-cover h-[50vh] bg-center flex flex-col justify-center items-center"
+  <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/50 text-white {% endif %} bg-fixed bg-cover h-[60vh] bg-center flex flex-col justify-center items-center"
   style="background-image: url('{{item.bg-image}}')">
-    <h2 class="pb-6 text-center">{{item.text}}</h2>
+    <h2 class="text-[5rem] leading-[5.5rem] pb-6 text-center">{{item.text}}</h2>
     <a href="{{item.link-url}}" class="button-white">{{item.link-text}}</a>
   </div>
 </section>

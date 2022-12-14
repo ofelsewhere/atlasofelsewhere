@@ -1,6 +1,12 @@
 ---
 layout: default
 title: About me
+image-banner:
+  - bg-image: /assets/images/tbd/MoyoFreePhoto28.jpg
+    text: Let’s work<br><em>together</em>
+    link-text: Apply now
+    link-url: 
+    overlay: true   
 ---
 
 <!------------- About me ------------->
@@ -24,14 +30,15 @@ title: About me
 
   <!------------- Illustration ------------->
   <img class="opacity-20 h-64 absolute bottom-0 -left-40 z-0" src="/assets/images/illustrations/cloud.svg">    
+
 </section>
 
 <!------------- Details ------------->
 
-<section class="bg-sage-200 relative min-h-[100vh] w-full relative overflow-hidden">
+<section class="bg-sage-200 min-h-[180vh] w-full relative overflow-hidden">
 
     <!------------- Clients ------------->
-    <div class="grid grid-cols-4 gap-10 items-center w-[50vw] absolute left-[50vw] top-[0vh]">
+    <div class="grid grid-cols-4 gap-10 items-center w-[50vw] absolute left-[55vw] top-[0vh]">
       <div class="col-span-1">
         <img src="/assets/images/CarmenPHOTO10.jpg" class="h-60 w-40 object-cover">
       </div>
@@ -43,8 +50,8 @@ title: About me
       </div>
     </div>
 
-    <!------------- Clients ------------->
-    <div class="grid grid-cols-4 gap-10 items-center w-[50vw] absolute left-[5vw] top-[25vh]">
+    <!------------- Services ------------->
+    <div class="grid grid-cols-4 gap-10 items-center w-[50vw] absolute left-[5vw] top-[20vh]">
       <div class="col-span-1">
         <img src="/assets/images/CarmenPHOTO10.jpg" class="h-60 w-40 object-cover">
       </div>
@@ -58,7 +65,7 @@ title: About me
       </div>
     </div>
 
-    <!------------- Clients ------------->
+    <!------------- Awards ------------->
     <div class="grid grid-cols-4 gap-10 items-center w-[50vw] absolute left-[30vw] top-[55vh]">
       <div class="col-span-1">
         <img src="/assets/images/CarmenPHOTO10.jpg" class="h-60 w-40 object-cover">
@@ -69,7 +76,56 @@ title: About me
         <p class="text-[0.8rem] leading-6"><a href="https://ifworlddesignguide.com/entry/280808-saram-human-identity" target="_blank">iF Design Award 2020</a>, <a href="https://www.ddc.de/de/wettbewerb/gute-gestaltung-2019/identity/saram-human-identity.php" target="_blank">DDC 2019</a>, ADC 2019, <a href="https://www.red-dot.org/de/project/saram-human-identity-40703" target="_blank">Red Dot 2019</a>, <a href="https://ifworlddesignguide.com/entry/256924-romerturm-paper-tradition-fit-for-the-future" target="_blank">iF Design Award 2019</a>, <a href="https://www.corporate-design-preis.de/nc/alle-preistraeger/cdp-2018/id/2163/projekt/2/" target="_blank">Corporate Design Preis 2018</a>, <a href="https://ifworlddesignguide.com/entry/201522-inec-the-real-time-brand" target="_blank">DDC 2017</a> <a href="https://ifworlddesignguide.com/entry/201522-inec-the-real-time-brand" target="_blank">iF Design Award 2017</a>, Cannes Lions 2016, <a href="https://www.red-dot.org/de/project/the-real-time-brand-13780-13780" target="_blank">Red Dot 2016</a></p>
       </div>
     </div> 
-    
+
+    <!------------- Countries ------------->
+    <div class="grid grid-cols-4 gap-10 items-center w-[50vw] absolute left-[10vw] top-[95vh]">
+      <div class="col-span-1">
+        <img src="/assets/images/CarmenPHOTO10.jpg" class="h-60 w-40 object-cover">
+      </div>
+
+      <div class="col-span-2 py-5">
+        <h2 class="text-3xl pb-2">Countries</h2>
+        <p class="text-[0.8rem] leading-6">Belgium, Canada, France, Germany, Indonesia, Netherlands, Taiwan, Vietnam</p>
+      </div>
+    </div> 
+
+    <!------------- Favorites ------------->
+    <div class="grid grid-cols-4 gap-10 items-center w-[50vw] absolute left-[60vw] top-[95vh]">
+      <div class="col-span-1">
+        <img src="/assets/images/CarmenPHOTO10.jpg" class="h-60 w-40 object-cover">
+      </div>
+
+      <div class="col-span-2 py-5">
+        <h2 class="text-3xl pb-2">What I love</h2>
+        <p class="text-[0.8rem] leading-6">
+           Humor, NYC, Mean Girls, Moscow Mules, Aesop,
+        </p>
+      </div>
+    </div> 
+ 
+    <!------------- Friends ------------->
+    <div class="grid grid-cols-4 gap-10 items-center w-[50vw] absolute left-[45vw] top-[135vh]">
+      <div class="col-span-1">
+        <img src="/assets/images/CarmenPHOTO10.jpg" class="h-60 w-40 object-cover">
+      </div>
+
+      <div class="col-span-2 py-5">
+        <h2 class="text-3xl pb-2">Friends</h2>
+        <p class="text-[0.8rem] leading-6">Second Floor, </p>
+      </div>
+    </div> 
+
     <!------------- Illustration ------------->
     <img class="opacity-20 h-64 absolute -bottom-10 -right-20" src="/assets/images/illustrations/cloud.svg">
 </section>
+
+<!------------- Image banner ------------->
+{% for item in page.image-banner limit:1 %}
+<section> 
+  <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/50 text-white {% endif %} bg-fixed bg-cover h-[60vh] bg-center flex flex-col justify-center items-center"
+  style="background-image: url('{{item.bg-image}}')">
+    <h2 class="text-[5rem] leading-[5.5rem] pb-6 text-center">{{item.text}}</h2>
+    <a href="{{item.link-url}}" class="button-white">{{item.link-text}}</a>
+  </div>
+</section>
+{% endfor %}

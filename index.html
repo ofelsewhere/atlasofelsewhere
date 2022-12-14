@@ -20,7 +20,7 @@ image-banner:
 
 ---
 
-<!-- ----------- Intro ----------- -->
+<!-------------------------- Intro -------------------------->
 
 <section class="bg-sage-200 max-h-[100vh] -mt-[20vh] bg-cover bg-center z-30 overflow-hidden" style="background-image: url('/assets/images/palmtree.png');">
 
@@ -37,7 +37,7 @@ image-banner:
       <!------------- Right column ------------->
       <div class="col-span-1 relative z-0 mr-24">
         <img src="/assets/images/tbd/MoyoFreePhoto29.jpg" class="h-[45vh] w-full object-cover">
-        <div class="w-[25vw] z-0 absolute -left-32 -bottom-28">
+        <div class="w-[20vw] z-0 absolute -left-28 -bottom-16">
           <img src="/assets/images/tbd/atlasofelsewhere_emye.png" class="">
         </div>
       </div>  
@@ -48,7 +48,7 @@ image-banner:
 </section>
 
 
-<!------------- CTA ------------->
+<!-------------------------- CTA -------------------------->
 
 <hr>
 
@@ -58,7 +58,7 @@ image-banner:
 
 <hr>
 
-<!------------- Categories ------------->
+<!-------------------------- Categories -------------------------->
 
 <section class="">
   <div class="grid grid-cols-2 text-center items-center">
@@ -80,7 +80,7 @@ image-banner:
   <hr>
 </section>
 
-<!------------- Services ------------->
+<!-------------------------- Services -------------------------->
 
 <section class="py-32 relative w-full h-full"> 
   <div class="container grid grid-cols-2 gap-20">
@@ -88,17 +88,17 @@ image-banner:
     <!------------- Left column ------------->
     <div class="">
       <img src="/assets/images/elsewherebranddesign.svg"
-           class="w-32 absolute top-20 left-20 z-20">
-      <img src="/assets/images/tbd/atlasofelsewhere_emye.png"
-           class="h-[35vh] w-[30vw] object-cover absolute top-40 left-48">
+           class="w-36 absolute top-20 left-20 z-20">
+      <img src="/assets/images/tbd/Business-Card-with-Hand-Mockup-1.png"
+           class="h-[35vh] w-[30vw] object-cover absolute top-36 left-48 z-0">
       <img src="/assets/images/tbd/atlasofelsewhere_buencamino2-1.png"
-           class="h-[45vh] w-[25vw] object-cover absolute top-[27rem] left-20 mb-20">
+           class="h-[45vh] w-[25vw] object-cover absolute top-[26rem] left-30 mb-20">
     </div>
 
     <!------------- Right column ------------->
     <div class="flex-col items-center">
       <span class="tinytitle">Elsewhere Design Studio</span>
-      <h1 class="my-5">Uncover your brands<br><em>full potential</em></h1>
+      <h1 class="my-5">Uncover your brands<br><em>full potential.</em></h1>
       <p class="my-5">Beautiful design is nice to look at but without a strategic foundation it lacks the longevity of a successful branding. Together we will get to the core of your brand and discover what sets you apart from the competition.</p>
       <p class="my-5">Services I offer include:</p>
       <ul class="">
@@ -112,7 +112,7 @@ image-banner:
   </div>
 </section>
 
-<!------------- Image banner ------------->
+<!-------------------------- Image banner -------------------------->
 
 {% for item in page.image-banner limit:1 offset:1 %}
 <section> 
@@ -124,7 +124,7 @@ image-banner:
 </section>
 {% endfor %}
 
-<!------------- Blog preview ------------->
+<!-------------------------- Travel blog -------------------------->
 
 <section class="bg-sage-200 pt-20">
 
@@ -157,7 +157,8 @@ image-banner:
  </div>   
 </section>
 
-<!------------- About me ------------->
+<!-------------------------- About me -------------------------->
+
 <section class="bg-sage-200">
   <div class="grid grid-cols-2 gap-20 items-center py-32 container">
     
@@ -178,7 +179,7 @@ image-banner:
   </div>
 </section>
 
-<!------------- Image banner ------------->
+<!-------------------------- Image banner -------------------------->
 {% for item in page.image-banner limit:1 offset:2 %}
 <section> 
   <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/50 text-white {% endif %} bg-fixed bg-cover h-[60vh] bg-center flex flex-col justify-center items-center"
