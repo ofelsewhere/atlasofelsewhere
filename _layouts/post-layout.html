@@ -6,26 +6,136 @@ banner-text:
 overlay: true
 ---
 
-<!------------------ Image banner ------------------>
+<!------------------------------ Title section ------------------------------>
 
-<section class="py-10"> 
-  <div class="{% if page.overlay == true %} bg-blend-multiply bg-neutral-300 text-white {% endif %} bg-fixed bg-cover h-[50vh] bg-center flex justify-center items-center text-2xl"
-  style="background-image: url('{{page.featured-image}}')">
-    <div class="text-lg">{{page.banner-text}}</div>
+<section class="bg-sage-200 py-20">
+  <div class="container text-center">
+    {% for item in page.categories %}
+    <a href="/archives/{{item}}" class="mx-1 inline-block border-b border-b-orange-400 pb-1 text-xs uppercase tracking-[.3em]">{{item}}</a>
+    {% endfor %}
+
+    <h1 class="text-[5rem] leading-[5.5rem] mt-4">{{page.title}}</h1>
+    <span class="text-sm block py-5 italic">by {{page.author}}</span>
+    <span class="text-xs uppercase tracking-[.3em] block">{{page.date | date: "%d %b %Y"}}</span>
   </div>
 </section>
 
-<!------------------ Title section ------------------>
+<!------------------ Image banner ------------------>
 
-<section class="text-center py-10 container mx-auto px-4">
+<section class="bg-sage-200"> 
+  <img src="{{page.featured-image}}" class="container max-h-[50vh] w-full object-cover">
+  </div>
+</section>
 
-  {% for item in page.categories %}
-  <a href="/archives/{{item}}" class="mx-1 inline-block border-b border-b-orange-400 pb-1 text-xs uppercase tracking-[.3em]">{{item}}</a>
-  {% endfor %}
+<!------------------------------ Description ------------------------------>
 
-  <h1 class="text-5xl featured-text mt-4">{{page.title}}</h1>
-  <span class="text-sm block py-5 italic">by {{page.author}}</span>
-  <span class="text-xs uppercase tracking-[.3em] block">{{page.date | date: "%d %b %Y"}}</span>
+<section class="bg-sage-200 relative pb-20"> 
+  <div class="container">
+    <p class="w-[35vw] py-20">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut maximus odio. Nunc fringilla nisi ac turpis feugiat vehicula. Morbi tristique ornare leo, ac hendrerit nibh. Maecenas eget enim turpis. In eu aliquet magna. In hac habitasse platea dictumst. Donec hendrerit finibus pellentesque. Curabitur laoreet imperdiet rutrum.
+      <br><br>
+      Nullam eget magna ut diam posuere euismod sit amet vitae lectus. Sed gravida dolor sed mauris aliquet, eu posuere purus sollicitudin. Aenean ultrices ligula ac tincidunt efficitur. Donec scelerisque auctor interdum. Nunc et urna neque.
+    </p>  
+  </div>
+
+  <!------------------ Map ------------------>
+  <div class="absolute top-20 right-10">
+    <img src="/assets/images/italy_map-1.png" class="w-[50vw]">
+  </div>
+
+  <!------------------ Images ------------------>
+  <div class="container pl-20">
+    <img src="/assets/images/bana_hills/elsewhere_blog_bana_hills_1.jpg" class="inline-block object-cover h-[20vw] w-[30vw] pr-5">
+    <img src="/assets/images/bana_hills/elsewhere_blog_bana_hills_2.jpg" class="inline-block object-cover h-[20vw] w-[30vw]">
+  </div>
+
+</section>
+
+<!------------------------------ Content ------------------------------>
+
+<section class="py-20 container">
+  <div class="text-center">
+    <h2 class="text-[5rem] leading-[5.5rem]">Day 1-3: Milan</h2>
+    <p class="pt-10 pb-16">Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+  </div>
+
+  <div class="flex justify-center">
+    <img src="/assets/images/bana_hills/elsewhere_blog_bana_hills_1.jpg" class="inline-block object-cover h-[40vw] w-[30vw] pr-5">
+    <img src="/assets/images/bana_hills/elsewhere_blog_bana_hills_2.jpg" class="inline-block object-cover h-[40vw] w-[30vw]">
+  </div>
+</section>
+
+<!------------------------------ Grid ------------------------------>
+
+<section class="container">
+  <div class="grid grid-cols-5 gap-24">
+    <div class="col-span-2">
+      <h3 class="text-[2rem]">Where to eat</h2>
+      <h6>Obicà Mozzarella Bar</h6>
+      <p>This pizzeria is located on the 7th Floor of Rinascente Milan in Piazza Duomo and offers a great view of the Duomo. Great place to start of your trip with some delicious mozzarella and Aperol Spritz.</p>
+    </div>
+    <div class="col-span-3">
+      
+      <!------------------ 3 images ------------------>
+      <div class="grid grid-cols-12 grid-rows-12 gap-10 border pb-16">
+
+        <div class="border col-start-1 col-end-8 row-start-1 row-end-3">
+          <img src="/assets/images/bana_hills/elsewhere_blog_bana_hills_2.jpg" 
+            class="object-cover h-full w-full">
+          <p class="text-xs pt-2">Lorem ipsum dolor sit amet.</p>  
+        </div>
+
+        <div class="border col-start-8 col-end-13 row-start-2 row-end-4 h-[40vh]">
+          <img src="/assets/images/bana_hills/elsewhere_blog_bana_hills_2.jpg" 
+            class="object-cover h-full w-full">
+          <p class="text-xs pt-2">Lorem ipsum dolor sit amet.</p>  
+        </div>
+
+        <div class="border col-start-3 col-end-8 row-start-3 row-end-5 h-[40vh]">
+          <img src="/assets/images/bana_hills/elsewhere_blog_bana_hills_2.jpg" 
+            class="object-cover h-full w-full">
+          <p class="text-xs pt-2">Lorem ipsum dolor sit amet.</p>  
+        </div>
+
+      </div>
+
+      <!------------------ 3 images ------------------>
+      <div class="grid grid-cols-12 grid-rows-12 gap-10 border pb-16">
+
+        <div class="border col-start-5 col-end-13 row-start-1 row-end-3">
+          <img src="/assets/images/bana_hills/elsewhere_blog_bana_hills_2.jpg" 
+            class="object-cover h-full w-full">
+          <p class="text-xs pt-2">Lorem ipsum dolor sit amet.</p>  
+        </div>        
+
+        <div class="border col-start-1 col-end-5 row-start-2 row-end-7">
+          <p class="text-xs pb-2">Lorem ipsum dolor sit amet.</p> 
+          <img src="/assets/images/bana_hills/elsewhere_blog_bana_hills_2.jpg" 
+            class="object-cover h-full w-full"> 
+        </div>
+
+      </div>
+
+      <!------------------ 3 images ------------------>
+      <div class="grid grid-cols-12 grid-rows-12 gap-10 border pb-16">
+
+        <div class="border col-start-3 col-end-8 row-start-1 row-end-3 h-[40vh]">
+          <img src="/assets/images/bana_hills/elsewhere_blog_bana_hills_2.jpg" 
+            class="object-cover h-full w-full">
+          <p class="text-xs pt-2">Lorem ipsum dolor sit amet.</p>  
+        </div>
+
+        <div class="border col-start-8 col-end-13 row-start-2 row-end-4 h-[40vh]">
+          <img src="/assets/images/bana_hills/elsewhere_blog_bana_hills_2.jpg" 
+            class="object-cover h-full w-full">
+          <p class="text-xs pt-2">Lorem ipsum dolor sit amet.</p>  
+        </div>
+
+      </div>
+      
+        
+    </div>
+  </div>
 </section>
 
 <!------------------ Social sharing ------------------>
