@@ -13,8 +13,8 @@ assets:
 
 _select_data:
   background-colors:
-    bg-sky-200: Light Background
-    bg-sky-500: Dark Background
+    bg-sage-200: Light Background
+    bg-sage-500: Dark Background
     bg-white: White Background
   col-sizes:
     md:grid-cols-1: 1 Column
@@ -68,7 +68,13 @@ _array_structures:
         _id: flex_content_section
         title: Flex_content section
         col-size: md:grid-cols-2
-        background-color: bg-white        
+        background-color: bg-white   
+    - label: Blog content
+      icon: article
+      value:    
+        _id: blog-content
+        title: Blog Conent
+        background-color: bg-white            
 
   columns:
     - label: Image

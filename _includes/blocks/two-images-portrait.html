@@ -1,0 +1,16 @@
+<div class="grid grid-cols-12 grid-rows-12 gap-10 border pb-16">
+  {% for item in block.gallery %}
+  <div class="border col-start-3 col-end-8 row-start-1 row-end-3 h-[45vh]">
+    <img src="{{item.image-6}}" 
+      class="object-cover h-full w-full">
+    <p class="text-xs pt-2">{{item.caption-6}}</p>  
+  </div>
+
+  <div class="border col-start-8 col-end-13 row-start-2 row-end-4 h-[45vh]">
+    <img src="{{item.image-7}}" 
+      class="object-cover h-full w-full">
+    <p class="text-xs pt-2">{{item.caption-7}}</p>  
+  </div>
+  {% endfor %}
+
+</div>
