@@ -86,7 +86,33 @@ _array_structures:
       value:    
         _id: recommendations-right
         title: Recommendations right
-        background-color: bg-white                     
+        background-color: bg-white
+        eat:
+          - name: Obica
+            link-url: www.google.de
+            description: >-
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corporis
+              voluptatum saepe quidem! Itaque dolorem alias repellat nulla enim
+              labore laudantium sequi! Temporibus est neque ipsam dignissimos cum!
+              Modi, officia.
+        stay:
+          - title: Obica
+            link-url: www.google.de
+            description: >-
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corporis
+              voluptatum saepe quidem! Itaque dolorem alias repellat nulla enim
+              labore laudantium sequi! Temporibus est neque ipsam dignissimos cum!
+              Modi, officia.
+        see:
+          - title: Obica
+            url: www.google.de
+            description: >-
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corporis
+              voluptatum saepe quidem! Itaque dolorem alias repellat nulla enim
+              labore laudantium sequi! Temporibus est neque ipsam dignissimos cum!
+              Modi, officia.
+        gallery:
+          - _type: three-images                 
 
   columns:
     - label: Image
