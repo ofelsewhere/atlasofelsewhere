@@ -95,5 +95,25 @@ _array_structures:
         title: text
         image: 
 
-     
-      
+
+  gallery:
+    - label: three-images
+      icon: photo_camera
+      value:    
+        _type: three-images
+        1-image:
+        1-caption-text: 
+        2-image:
+        2-caption-text: 
+        3-image:
+        3-caption-text: 
+        _type: two-images-small
+        1-image:
+        1-caption-text: 
+        2-image:
+        2-caption-text: 
+        _type: two-images-portrait
+        1-image:
+        1-caption-text: 
+        2-image:
+        2-caption-text:         

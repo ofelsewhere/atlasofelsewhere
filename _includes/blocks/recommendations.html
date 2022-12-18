@@ -6,7 +6,7 @@
       
       <!------------------ Where to eat ------------------>
 
-      <h2 class="pb-5 editable">Headline</h2>
+      <h2 class="pb-5 editable">{{item.headline}}</h2>
 
       {% for item in block.eat %}
 
@@ -18,7 +18,7 @@
       {% endfor %}
       
       <hr>
-
+      
       <!------------------ Where to stay ------------------>
 
       <h2 class="pt-10 pb-5 editable">Headline</h2>
@@ -54,21 +54,21 @@
     <!------------------ Gallery ------------------>
     <div class="col-span-3">
       
-      <!------------------ 3 images ------------------>
-
-      {% include /blocks/three-images.html %}
-
-      <!------------------ 2 images / small portrait + landscape ------------------>
-      {% include /blocks/two-images-small.html %}
-
-      <!------------------ 2 images / portrait ------------------>
-      {% include /blocks/two-images-portrait.html %}
+      {% for item in block.columns %}
+    
+      <!------------------ Text ------------------>
+      {% if item._type == 'three-images' %}
+  
+      {% include blocks/three-images.html %}
+  
+      <!------------------ Image ------------------>
+      {% elsif item._type == 'two-images-small' %}
       
-      <!------------------ 1 image / landscape ------------------>
-      {% include /blocks/one-image-landscape.html %}
-
-      <!------------------ 1 image / portrait ------------------>
-      {% include /blocks/one-image-portrait.html %}
+      {% include blocks/two-images-small.html %}
+      
+      {% endif %}
+      
+      {% endfor %}
         
     </div>
   </div>
