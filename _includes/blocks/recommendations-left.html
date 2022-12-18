@@ -1,6 +1,6 @@
 <!------------------------------ Grid ------------------------------>
 
-<section class="container">
+<section class="container my-20">
   <div class="grid grid-cols-5 gap-24">
     <div class="col-span-2">
       
@@ -12,7 +12,7 @@
 
       <div class="pb-10">
         <a href="{{item.url}}" class="underline font-medium">{{item.name}}</a>
-        <p>{{item.description}}</p>
+        <p>{{item.description-html}}</p>
       </div>
 
       {% endfor %}
@@ -27,7 +27,7 @@
 
       <div class="pb-10">
         <a href="{{item.url}}" class="underline font-medium">{{item.name}}</a>
-        <p>{{item.description}}</p>
+        <p>{{item.description-html}}</p>
       </div>
 
       {% endfor %}
@@ -42,7 +42,7 @@
 
       <div class="pb-10">
         <a href="{{item.url}}" class="underline font-medium">{{item.name}}</a>
-        <p>{{item.description}}</p>
+        <p>{{item.description-html}}</p>
       </div>
 
       {% endfor %}
@@ -85,4 +85,4 @@
       {% endfor %}
         
     </div>
-  </div>
+  </section>

@@ -1,9 +1,5 @@
 ---
 layout: default
-heading: Post title
-featured-image:
-banner-text: 
-overlay: true
 ---
 
 <!------------------------------ Title section ------------------------------>
@@ -57,20 +53,64 @@ overlay: true
   {% include /blocks/{{block._id}}.html %}
 {% endfor %}
 
+
+<!------------------ Social sharing ------------------>
+
+<section class="bg-sage-200">
+  <div class="mx-52 grid grid-cols-2 gap-10 pb-20">
+    <div class="col-span-2">
+      <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
+        <i class="fab fa-twitter hover:opacity-60"></i>
+      </a>
+      <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
+        <i class="fab fa-facebook-f hover:opacity-60"></i>
+      </a>
+      <a href="http://pinterest.com/pin/create/link/?url={{page.url}}&description={{page.title}}" rel="nofollow" target="_blank" title="Share on Pinterest">
+        <i class="fab fa-pinterest-p hover:opacity-60"></i>
+      </a>
+    </div>
+
+
+    <div class="col-span-1">
+      <img src="/assets/images/elsewhere_blog_bologna.jpg">
+    </div>
+    <div class="col-span-1">
+      <img src="/assets/images/elsewhere_blog_bologna.jpg">
+    </div>
+  </div>
+
+  <hr>
+</section>
+
 <!------------------ Related posts ------------------>
 
-<section class="border-t border-t-black container mx-auto p-6 text-center mt-10">
-	<h4 class="my-10"> You may also enjoy:</h4>
-	<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+<section class="bg-sage-200 py-20">
+  <div class="container">
+    <h4 class=""> You may also enjoy:</h4>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
 
-		{% assign pageCategory = page.categories[0] %}
-		{% assign relevant = site.categories[pageCategory] | where_exp:"post","post.url != page.url" %}
-  		{% for post in relevant limit:3 %}
+      {% assign pageCategory = page.categories[0] %}
+      {% assign relevant = site.categories[pageCategory] | where_exp:"post","post.url != page.url" %}
+        {% for post in relevant limit:3 %}
 
-        {% include post-preview.html %}
-      		
-  		{% endfor %}
-  		
-	</div>
-
+          <a href="{{post.url}}" class="bg-sage-200 hover:bg-sage-300/30 border text-center pb-28">
+  
+            <img class="h-[60vh] w-full object-cover mb-16" src="{{post.featured-image}}">
+          
+            <span class="block">
+              {% for item in post.categories %}
+                <div class="mx-1 inline-block border-b pb-1 tinytitle">{{item}}</div>
+              {% endfor %}
+            </span>
+          
+            <h2 class="text-center inline-block font-display font-light tracking-[.03em] text-6xl featured-text my-8">{{post.title}}</h2>
+            
+            <span class="tinytitle block"><strong>{{post.date | date: "%d %b %Y"}}</strong></span>
+          
+          </a>
+            
+        {% endfor %}
+        
+    </div>
+  </div>
 </section>

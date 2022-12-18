@@ -35,76 +35,41 @@ page_blocks: []
 
 _array_structures:
   page_blocks:
-    - label: Title section
-      icon: article
-      value: 
-        _id: title_section
-        title: Title section
-        heading: What to do in Vancouver
-        author: Tara Hunka
-        category: travel
-        date: 2022-11-21
-    - label: Social Sharing
-      icon: article
-      value: 
-        _id: social_sharing   
-      icon: article
-      value: 
-        _id: cta_banner
-        title: CTA banner
-        cta-banner: true
-        cta-link: https://images.unsplash.com/photo-1511489731872-324afc650052?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80   
-    - label: Image banner
-      icon: article
-      value: 
-        _id: image_banner
-        title: Image banner
-        text: Write your text here
-        featured-image: https://images.unsplash.com/photo-1511489731872-324afc650052?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80
-        overlay: true
-    - label: Flex content section
-      icon: article
-      value:    
-        _id: flex_content_section
-        title: Flex_content section
-        col-size: md:grid-cols-2
-        background-color: bg-white   
     - label: Blog content
       icon: article
       value:    
         _id: blog-content
         title: Blog Conent
-        background-color: bg-white   
-    - label: recommendations-left
+        background-color: bg-white
+        headline-html: Headline
+        description-html: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corporis
+              voluptatum saepe quidem!
+        left-image: /assets/images/elsewhere_blog_hoi_an.jpg
+        right-image: /assets/images/elsewhere_blog_hoi_an.jpg
+    - label: Recommendations (L)
       icon: article
       value:    
         _id: recommendations-left
-        title: Recommendations Left
+        title: Recommendations (L)
         background-color: bg-white
         eat:
           - name: Obica
             link-url: www.google.de
-            description: >-
+            description-html: >-
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corporis
-              voluptatum saepe quidem! Itaque dolorem alias repellat nulla enim
-              labore laudantium sequi! Temporibus est neque ipsam dignissimos cum!
-              Modi, officia.
+              voluptatum saepe quidem!
         stay:
-          - title: Obica
+          - name: Obica
             link-url: www.google.de
-            description: >-
+            description-html: >-
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corporis
-              voluptatum saepe quidem! Itaque dolorem alias repellat nulla enim
-              labore laudantium sequi! Temporibus est neque ipsam dignissimos cum!
-              Modi, officia.
+              voluptatum saepe quidem!
         see:
-          - title: Obica
+          - name: Obica
             url: www.google.de
-            description: >-
+            description-html: >-
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corporis
-              voluptatum saepe quidem! Itaque dolorem alias repellat nulla enim
-              labore laudantium sequi! Temporibus est neque ipsam dignissimos cum!
-              Modi, officia.
+              voluptatum saepe quidem!
         gallery:
           - _type: three-images
             first-image:
@@ -129,7 +94,7 @@ _array_structures:
           - _type: one-image-portrait
             first-image:
             first-caption-html:                   
-    - label: recommendations-right
+    - label: Recommendations (R)
       icon: article
       value:    
         _id: recommendations-right
@@ -138,27 +103,21 @@ _array_structures:
         eat:
           - name: Obica
             link-url: www.google.de
-            description: >-
+            description-html: >-
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corporis
-              voluptatum saepe quidem! Itaque dolorem alias repellat nulla enim
-              labore laudantium sequi! Temporibus est neque ipsam dignissimos cum!
-              Modi, officia.
+              voluptatum saepe quidem!
         stay:
-          - title: Obica
+          - name: Obica
             link-url: www.google.de
-            description: >-
+            description-html: >-
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corporis
-              voluptatum saepe quidem! Itaque dolorem alias repellat nulla enim
-              labore laudantium sequi! Temporibus est neque ipsam dignissimos cum!
-              Modi, officia.
+              voluptatum saepe quidem! 
         see:
-          - title: Obica
+          - name: Obica
             url: www.google.de
-            description: >-
+            description-html: >-
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corporis
-              voluptatum saepe quidem! Itaque dolorem alias repellat nulla enim
-              labore laudantium sequi! Temporibus est neque ipsam dignissimos cum!
-              Modi, officia.
+              voluptatum saepe quidem! 
         gallery:
           - _type: three-images
             first-image:
