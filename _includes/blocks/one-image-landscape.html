@@ -1,9 +1,9 @@
 <div class="grid grid-cols-12 grid-rows-12 gap-10 border pb-16">
   {% for item in block.gallery %}
   <div class="border col-start-1 col-end-10 row-start-1 row-end-3">
-    <img src="{{item.image-8}}" 
+    <img src="{{item.first-image}}" 
       class="object-cover h-full w-full">
-    <p class="text-xs pt-2">{{item.caption-8}}</p>  
+    <p class="text-xs pt-2">{{item.first-caption-html}}</p>  
   </div> 
   {% endfor %}
 </div>

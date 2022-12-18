@@ -75,12 +75,18 @@ _array_structures:
         _id: blog-content
         title: Blog Conent
         background-color: bg-white   
-    - label: recommendations
+    - label: recommendations-left
       icon: article
       value:    
-        _id: recommendations
-        title: Recommendations
-        background-color: bg-white                 
+        _id: recommendations-left
+        title: Recommendations Left
+        background-color: bg-white     
+    - label: recommendations-right
+      icon: article
+      value:    
+        _id: recommendations-right
+        title: Recommendations right
+        background-color: bg-white                     
 
   columns:
     - label: Image
@@ -100,8 +106,12 @@ _array_structures:
       icon: photo_camera
       value:    
         _type: three-images
-        image:
-        caption-html:
+        first-image:
+        first-caption-html:
+        second-image:
+        second-caption-html:
+        third-image:
+        third-caption-html:                
     - label: two-images-small
       icon: photo_camera
       value:    
