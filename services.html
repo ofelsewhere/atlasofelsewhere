@@ -113,6 +113,15 @@ image-banner:
 
 </section>  
 
+<!--------------- Testimonials --------------->
+
+{% assign testimonials = site.data.testimonials %}
+<section class="p-10">
+
+    {% include testimonials.html %}
+
+</section>
+
 <!-------------------------- Image banner -------------------------->
 
 {% for item in page.image-banner limit:1 offset:1 %}
@@ -124,12 +133,3 @@ image-banner:
   </div>
 </section>
 {% endfor %}
-
-<!--------------- Testimonials --------------->
-
-{% assign testimonials = site.data.testimonials %}
-<section class="bg-sage-200 p-6">
-
-    {% include testimonials.html %}
-
-</section>
