@@ -6,9 +6,40 @@
       
       <!------------------ Where to eat ------------------>
 
+      <h2 class="pb-5 editable">Headline</h2>
 
-      {% for item in block.recommendations %}
+      {% for item in block.eat %}
+
+      <div class="pb-10">
+        <a href="{{item.url}}" class="underline font-medium">{{item.name}}</a>
+        <p>{{item.description}}</p>
+      </div>
+
+      {% endfor %}
       
+      <hr>
+
+      <!------------------ Where to stay ------------------>
+
+      <h2 class="pt-10 pb-5 editable">Headline</h2>
+
+      {% for item in block.stay %}
+
+      <div class="pb-10">
+        <a href="{{item.url}}" class="underline font-medium">{{item.name}}</a>
+        <p>{{item.description}}</p>
+      </div>
+
+      {% endfor %}
+      
+      <hr>
+
+      <!------------------ What to see ------------------>
+
+      <h2 class="pt-10 pb-5 editable">Headline</h2>
+
+      {% for item in block.see %}
+
       <div class="pb-10">
         <a href="{{item.url}}" class="underline font-medium">{{item.name}}</a>
         <p>{{item.description}}</p>
