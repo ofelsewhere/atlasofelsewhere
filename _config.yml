@@ -74,7 +74,13 @@ _array_structures:
       value:    
         _id: blog-content
         title: Blog Conent
-        background-color: bg-white            
+        background-color: bg-white   
+    - label: recommendations
+      icon: article
+      value:    
+        _id: recommendations
+        title: Recommendations
+        background-color: bg-white                 
 
   columns:
     - label: Image
@@ -88,4 +94,6 @@ _array_structures:
         _type: text
         title: text
         image: 
+
+     
       

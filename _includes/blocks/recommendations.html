@@ -1,0 +1,42 @@
+<!------------------------------ Grid ------------------------------>
+
+<section class="container">
+  <div class="grid grid-cols-5 gap-24">
+    <div class="col-span-2">
+      
+      <!------------------ Where to eat ------------------>
+
+
+      {% for item in block.recommendations %}
+      
+      <div class="pb-10">
+        <a href="{{item.url}}" class="underline font-medium">{{item.name}}</a>
+        <p>{{item.description}}</p>
+      </div>
+
+      {% endfor %}
+      <hr>
+
+    </div>
+
+    <!------------------ Gallery ------------------>
+    <div class="col-span-3">
+      
+      <!------------------ 3 images ------------------>
+
+      {% include /blocks/three-images.html %}
+
+      <!------------------ 2 images / small portrait + landscape ------------------>
+      {% include /blocks/two-images-small.html %}
+
+      <!------------------ 2 images / portrait ------------------>
+      {% include /blocks/two-images-portrait.html %}
+      
+      <!------------------ 1 image / landscape ------------------>
+      {% include /blocks/one-image-landscape.html %}
+
+      <!------------------ 1 image / portrait ------------------>
+      {% include /blocks/one-image-portrait.html %}
+        
+    </div>
+  </div>
