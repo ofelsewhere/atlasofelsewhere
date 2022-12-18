@@ -112,7 +112,29 @@ _array_structures:
               labore laudantium sequi! Temporibus est neque ipsam dignissimos cum!
               Modi, officia.
         gallery:
-          - _type: three-images                 
+          - _type: three-images
+            first-image:
+            first-caption-html:
+            second-image:
+            second-caption-html:
+            third-image:
+            third-caption-html:
+          - _type: two-images-small
+            first-image:
+            first-caption-html:
+            second-image:
+            second-caption-html:
+          - _type: two-images-portrait
+            first-image:
+            first-caption-html:
+            second-image:
+            second-caption-html:
+          - _type: one-image-landscape
+            first-image:
+            first-caption-html:
+          - _type: one-image-portrait
+            first-image:
+            first-caption-html:                                                     
 
   columns:
     - label: Image
@@ -131,33 +153,20 @@ _array_structures:
     - label: three-images
       icon: photo_camera
       value:    
-        _type: three-images
-        first-image:
-        first-caption-html:
-        second-image:
-        second-caption-html:
-        third-image:
-        third-caption-html:                
+        _type: three-images          
     - label: two-images-small
       icon: photo_camera
       value:    
-        _type: three-images
         _type: two-images-small
     - label: two-images-portrait
       icon: photo_camera
       value:    
-        _type: two-images-portrait
-        image:
-        caption-html:        
+        _type: two-images-portrait       
     - label: one-image-landscape
       icon: photo_camera
       value:    
         _type: one-image-landscape
-        image:
-        caption-html:   
     - label: one-image-portrait
       icon: photo_camera
       value:    
-        _type: one-image-portrait
-        image:
-        caption-html:                   
+        _type: one-image-portrait                
