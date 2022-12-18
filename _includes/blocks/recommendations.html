@@ -6,7 +6,7 @@
       
       <!------------------ Where to eat ------------------>
 
-      <h2 class="pb-5 editable">{{item.headline}}</h2>
+      <h2 class="pb-5 editable">Headline</h2>
 
       {% for item in block.eat %}
 
@@ -46,15 +46,14 @@
       </div>
 
       {% endfor %}
-      
-      <hr>
+
 
     </div>
 
     <!------------------ Gallery ------------------>
     <div class="col-span-3">
       
-      {% for item in block.columns %}
+      {% for item in block.gallery %}
     
       <!------------------ Text ------------------>
       {% if item._type == 'three-images' %}
@@ -65,6 +64,21 @@
       {% elsif item._type == 'two-images-small' %}
       
       {% include blocks/two-images-small.html %}
+
+      <!------------------ Image ------------------>
+      {% elsif item._type == 'two-images-portrait' %}
+
+      {% include blocks/two-images-portrait.html %}
+
+      <!------------------ Image ------------------>
+      {% elsif item._type == 'one-image-landscape' %}
+
+      {% include blocks/one-image-landscape.html %}
+
+      <!------------------ Image ------------------>
+      {% elsif item._type == 'one-image-portrait' %}
+
+      {% include blocks/one-image-portrait.html %}
       
       {% endif %}
       
