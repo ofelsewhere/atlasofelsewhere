@@ -1,0 +1,117 @@
+---
+layout: default
+---
+
+<!-------------------------- Intro -------------------------->
+
+<section class="bg-sage-200 max-h-[100vh] -mt-[20vh] bg-cover bg-center z-30 overflow-hidden" style="background-image: url('{{page.bg-image}}');">
+
+  <div class="container grid grid-cols-2 gap-20 py-44">
+
+    <!------------- Left column ------------->
+    <div class="col-span-1 pt-20 w-[40vw]">
+      <span class="tinytitle">{{page.title}}</span>
+      <h1 class="text-[4.5vw] leading-[5vw] mb-10 mt-5">
+        {{page.headline-html}}
+      </h1>
+      <p class="pb-10">{{page.description-html}}</p>
+      <span class="tinytitle">{{page.tagline}}</span>  
+    </div>
+
+    <!------------- Right column ------------->
+    <div class="col-span-1 relative mt-20 z-0">
+      <img src="{{page.featured-image}}" class="h-[50vh] w-full object-cover">
+    </div>  
+  </div>
+</section>
+
+<!------------- Gallery ------------->
+
+<section class="container -mt-40 py-20">
+
+  {% for item in page.gallery limit:3 %}
+  <div class="flex {{item.direction}}">
+    <img src="{{item.image}}" class="w-[80%] mb-10">
+  </div>
+  {% endfor %}
+
+</section>
+
+<!------------- Full width ------------->
+
+<section class="py-20">
+
+  <div class="container grid grid-cols-3">
+    <div class="col-span-1">
+      <img src="/assets/images/emye_me.png">
+      <span>Me</span>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque reprehenderit sed dicta deserunt sunt quaerat velit ducimus accusamus corrupti incidunt dignissimos fuga, fugit molestiae aliquam alias iure. Omnis, ad accusamus?</p>
+    </div>
+    <div class="col-span-1">
+      <img src="/assets/images/emye_me.png">
+      <span>Me</span>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque reprehenderit sed dicta deserunt sunt quaerat velit ducimus accusamus corrupti incidunt dignissimos fuga, fugit molestiae aliquam alias iure. Omnis, ad accusamus?</p>
+    </div>
+    <div class="col-span-1">
+      <img src="/assets/images/emye_me.png">
+      <span>Me</span>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque reprehenderit sed dicta deserunt sunt quaerat velit ducimus accusamus corrupti incidunt dignissimos fuga, fugit molestiae aliquam alias iure. Omnis, ad accusamus?</p>
+    </div>
+  </div>
+
+</section>
+
+<!------------- Gallery ------------->
+
+<section class="container -mt-40 py-20">
+
+  {% for item in page.gallery limit:2 offset:3 %}
+  <div class="flex {{item.direction}}">
+    <img src="{{item.image}}" class="w-[80%] mb-10">
+  </div>
+  {% endfor %}
+
+</section>
+
+<!------------- Full image ------------->
+
+<section class="bg-sage-200 py-20">
+
+  {% for item in page.gallery limit:1 offset:5 %}
+  <div class="container flex justify-center -mt-40">
+    <img src="{{item.image}}" class="w-[80%] mb-10">
+  </div>
+  {% endfor %}
+
+</section>
+
+<!------------- Full image ------------->
+
+<section>
+  <div class="container grid grid-cols-2">
+    <div class="col-span-1">
+      <h2>Lorem Ipsum</h2>
+    </div>
+    <div class="col-span-1">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit fuga aliquid molestias! Incidunt facere delectus nemo voluptatum sed distinctio veniam ullam saepe! Distinctio omnis iure officia maiores alias quaerat explicabo?</p>
+    </div>
+  </div>
+</section>
+
+<!------------- Full width grid ------------->
+
+<section class="py-10 bg-sage-200 max-w-[100%] overflow-hidden">
+
+  <div class="flex flex-row -ml-60">
+    <div class="col-span-1">
+      <img src="/assets/images/emye_stilprinzip_01-1536x1154.png">
+    </div>  
+    <div class="col-span-1 -mx-20">
+      <img src="/assets/images/emye_stilprinzip_01-1536x1154.png">
+    </div>  
+    <div class="col-span-1 -mr-60">
+      <img src="/assets/images/emye_stilprinzip_01-1536x1154.png">
+    </div>  
+  </div>
+
+</section>

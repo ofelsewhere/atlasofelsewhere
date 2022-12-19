@@ -4,6 +4,9 @@ collections:
     permalink: /posts/:slug
   archives:
     output: true
+  projects:
+    output: true
+
 
 assets:
    sources:
