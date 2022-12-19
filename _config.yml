@@ -160,7 +160,8 @@ _array_structures:
         _id: custom-code
         title: Custom code
         background-color: bg-white
-            
+        code: 
+
 
 
   columns:
