@@ -27,7 +27,7 @@ _select_data:
   image-positions:
     left: Left
     right: Right
-  width:
+  widths:
     container: Container
     w-full: Full-Width  
 
@@ -154,7 +154,7 @@ _array_structures:
         image-position: left
         caption-html:
         width: container
-        margin-top: mt-0
+        overlap: mt-0
 
 
   columns:
