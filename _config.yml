@@ -43,7 +43,14 @@ _array_structures:
         _id: content_section
         title: Content Section
         col-size: md:grid-cols-2
-        background-color: bg-white    
+        background-color: bg-white
+        columns:
+          - _type: image
+            image: /assets/images/elsewhere_blog_hoi_an.jpg
+            column-width: '1'
+          - _type: text
+            description-html: Lorem ipsum dolor sit
+            column-width: '1'  
     - label: Blog Intro
       icon: article
       value:    
