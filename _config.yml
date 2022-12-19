@@ -153,7 +153,14 @@ _array_structures:
         background-color: bg-white
         image: /assets/images/SiennaPhoto9.jpg
         image-position: left
-        caption-html: 
+        caption-html:
+    - label: Custom code
+      icon: article
+      value:    
+        _id: custom-code
+        title: Custom code
+        background-color: bg-white
+            
 
 
   columns:

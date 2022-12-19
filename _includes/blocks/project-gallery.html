@@ -1,0 +1,17 @@
+<!------------- Gallery ------------->
+{% for item in block.gallery %}
+<section class="{% if item.container == 'true' %} container {% endif %} {{item-margin-top}}">
+  <div class="mb-16">
+    <div class="flex items-end h-full w-full">
+      <!------------- Caption ------------->
+      <div class="{% if item.image-position == 'left' %} order-1 pl-10 text-left {% else %} pr-10 text-right {% endif %} w-[30vw]">
+        <p class="">{{item.caption-html}}</p>
+      </div>
+      <!------------- Image ------------->
+      <div>
+        <img src="{{item.image}}" class="h-[35rem] w-[70vw] object-cover">
+      </div>
+    </div>
+  </div>
+  <section>
+  {% endfor %}
