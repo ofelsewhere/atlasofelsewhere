@@ -19,7 +19,7 @@ _select_data:
     bg-sage-200: Light Background
     bg-sage-500: Dark Background
     bg-white: White Background
-  col-sizes:
+  grid-sizes:
     md:grid-cols-1: 1 Column
     md:grid-cols-2: 2 Columns
     md:grid-cols-3: 3 Columns
@@ -29,7 +29,12 @@ _select_data:
     right: Right
   widths:
     container: Container
-    w-full: Full-Width  
+    w-full: Full-Width
+  col-sizes:
+    col-span-1: 1 Column
+    col-span-2: 1 Column  
+    col-span-3: 1 Column  
+    col-span-4: 1 Column    
 
 # This is for Page blocks
 
@@ -42,15 +47,15 @@ _array_structures:
       value:    
         _id: content_section
         title: Content Section
-        col-size: md:grid-cols-2
+        grid-size: md:grid-cols-2
         background-color: bg-white
         columns:
           - _type: image
             image: /assets/images/elsewhere_blog_hoi_an.jpg
-            column-width: '1'
+            col-size: col-span-1
           - _type: text
             description-html: Lorem ipsum dolor sit
-            column-width: '1'  
+            col-size: col-span-1
     - label: Blog Intro
       icon: article
       value:    
@@ -128,13 +133,15 @@ _array_structures:
       icon: photo_camera
       value:    
         _type: image
-        image: 
+        image:
+        column-width: 1 
     - label: Text
       icon: description
       value:    
         _type: text
         title: text
         description-html: Lorem ipsum dolor sit amet
+        column-width: 1
 
   gallery:
     - label: three-images
