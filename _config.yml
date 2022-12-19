@@ -73,7 +73,7 @@ _array_structures:
             description-html: >-
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corporis
               voluptatum saepe quidem!
-        gallery:
+        blog-gallery:
           - _type: three-images
             first-image:
             first-caption-html:
@@ -144,7 +144,17 @@ _array_structures:
             first-caption-html:
           - _type: one-image-portrait
             first-image:
-            first-caption-html:                                                     
+            first-caption-html:    
+    - label: Project Gallery
+      icon: article
+      value:    
+        _id: project-gallery
+        title: Project Gallery
+        background-color: bg-white
+        image: /assets/images/SiennaPhoto9.jpg
+        image-position: left
+        caption-html: 
+
 
   columns:
     - label: Image
