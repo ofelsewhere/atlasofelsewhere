@@ -10,7 +10,7 @@ collections:
 
 assets:
    sources:
-       -_assets/fonts
+       -assets/fonts
 
 # This is for CloudCannon options 
 
