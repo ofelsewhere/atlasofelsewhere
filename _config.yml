@@ -27,10 +27,9 @@ _select_data:
   image-positions:
     left: Left
     right: Right
-  aspect-ratios:
-    aspect-[4/3]: Landscape
-    aspect-[3/4]: Portrait
-    aspect-square: Square        
+  width:
+    container: Container
+    w-full: Full-Width  
 
 # This is for Page blocks
 
@@ -154,6 +153,7 @@ _array_structures:
         image: /assets/images/SiennaPhoto9.jpg
         image-position: left
         caption-html:
+        width: 
     - label: Custom code
       icon: article
       value:    

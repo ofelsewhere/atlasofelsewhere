@@ -12,10 +12,10 @@ layout: default
     <!------------- Left column ------------->
     <div class="col-span-1 mt-20 w-[40vw]">
       <span class="tinytitle">{{page.title}}</span>
-      <h1 class="text-[4.5vw] leading-[5vw] mb-16 mt-5">
-        {{page.headline-html}}
+      <h1 class="text-[4.5vw] leading-[5vw] mt-5 pb-6">
+        {{page.headline}}
       </h1>
-      <p class="pb-10">{{page.description-html}}</p>
+      <p class="pb-6">{{page.description-html}}</p>
       <span class="tinytitle">{{page.tagline}}</span>  
     </div>
 
@@ -35,7 +35,7 @@ layout: default
 
 <!------------- Gallery ------------->
 
-<section class="container -mt-20">
+<section class="container {{item-margin-top}}">
 
   {% for item in page.gallery limit:3 %}
   <div class="mb-16">
