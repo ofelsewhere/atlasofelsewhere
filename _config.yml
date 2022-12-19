@@ -37,22 +37,29 @@ page_blocks: []
 
 _array_structures:
   page_blocks:
-    - label: Blog content
+    - label: Content Section
+    icon: article
+    value:    
+      _id: content_section
+      title: Content Section
+      col-size: md:grid-cols-2
+      background-color: bg-white    
+    - label: Blog Intro
       icon: article
       value:    
-        _id: blog-content
-        title: Blog Conent
+        _id: blog-intro
+        title: Blog Intro
         background-color: bg-white
         headline-html: Headline
         description-html: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corporis
               voluptatum saepe quidem!
         left-image: /assets/images/elsewhere_blog_hoi_an.jpg
         right-image: /assets/images/elsewhere_blog_hoi_an.jpg
-    - label: Recommendations (L)
+    - label: Recommendations
       icon: article
       value:    
         _id: recommendations-left
-        title: Recommendations (L)
+        title: Recommendations
         background-color: bg-white
         eat:
           - name: Obica
@@ -96,54 +103,6 @@ _array_structures:
           - _type: one-image-portrait
             first-image:
             first-caption-html:                   
-    - label: Recommendations (R)
-      icon: article
-      value:    
-        _id: recommendations-right
-        title: Recommendations right
-        background-color: bg-white
-        eat:
-          - name: Obica
-            link-url: www.google.de
-            description-html: >-
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corporis
-              voluptatum saepe quidem!
-        stay:
-          - name: Obica
-            link-url: www.google.de
-            description-html: >-
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corporis
-              voluptatum saepe quidem! 
-        see:
-          - name: Obica
-            url: www.google.de
-            description-html: >-
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corporis
-              voluptatum saepe quidem! 
-        gallery:
-          - _type: three-images
-            first-image:
-            first-caption-html:
-            second-image:
-            second-caption-html:
-            third-image:
-            third-caption-html:
-          - _type: two-images-small
-            first-image:
-            first-caption-html:
-            second-image:
-            second-caption-html:
-          - _type: two-images-portrait
-            first-image:
-            first-caption-html:
-            second-image:
-            second-caption-html:
-          - _type: one-image-landscape
-            first-image:
-            first-caption-html:
-          - _type: one-image-portrait
-            first-image:
-            first-caption-html:    
     - label: Project Gallery
       icon: article
       value:    
@@ -168,7 +127,7 @@ _array_structures:
       value:    
         _type: text
         title: text
-        image: 
+        description-html: Lorem ipsum dolor sit amet
 
   gallery:
     - label: three-images
