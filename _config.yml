@@ -38,8 +38,8 @@ page_blocks: []
 _array_structures:
   page_blocks:
     - label: Content Section
-    icon: article
-    value:    
+      icon: article
+      value:    
       _id: content_section
       title: Content Section
       col-size: md:grid-cols-2
