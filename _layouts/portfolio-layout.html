@@ -33,72 +33,6 @@ layout: default
   {% include /blocks/{{block._id}}.html %}
 {% endfor %}
 
-<!------------- Gallery ------------->
-
-<section class="container {{item-margin-top}}">
-
-  {% for item in page.gallery limit:3 %}
-  <div class="mb-16">
-    <div class="flex items-end h-full w-full">
-      <!------------- Caption ------------->
-      <div class="{% if item.image-position == 'left' %} order-1 pl-10 text-left {% else %} pr-10 text-right {% endif %} w-[30vw]">
-        <p class="">{{item.caption-html}}</p>
-      </div>
-      <!------------- Image ------------->
-      <div>
-        <img src="{{item.image}}" class="h-[35rem] w-[70vw] object-cover">
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-
-</section>
-
-<!------------- Grid ------------->
-
-<section class="py-20">
-
-  <div class="container grid grid-cols-3 gap-20 px-20">
-    <div class="col-span-1 text-center">
-      <img src="/assets/images/emye_me.png" class="w-40 mx-auto pb-10">
-      <h3 class="text-2xl"><em>Me</em></h3>
-      <p class="pt-6">The personal and individual needs of the clients are represented in this part of the name and logo.</p>
-    </div>
-    <div class="col-span-1 text-center">
-      <img src="/assets/images/emye_me.png" class="w-40 mx-auto pb-10">
-      <h3 class="text-2xl"><em>Me</em></h3>
-      <p class="pt-6">The personal and individual needs of the clients are represented in this part of the name and logo.</p>
-    </div>
-    <div class="col-span-1 text-center">
-      <img src="/assets/images/emye_me.png" class="w-40 mx-auto pb-10">
-      <h3 class="text-2xl"><em>Me</em></h3>
-      <p class="pt-6">The personal and individual needs of the clients are represented in this part of the name and logo.</p>
-    </div>
-  </div>
-
-</section>
-
-<!------------- Gallery ------------->
-
-<section class="container pt-10 pb-60">
-
-  {% for item in page.gallery limit:2 offset:3 %}
-  <div class="mb-16">
-    <div class="flex items-end h-full w-full">
-      <!------------- Caption ------------->
-      <div class="{% if item.image-position == 'left' %} order-1 pl-10 text-left {% else %} pr-10 text-right {% endif %} w-[30vw]">
-        <p class="">{{item.caption-html}}</p>
-      </div>
-      <!------------- Image ------------->
-      <div>
-        <img src="{{item.image}}" class="h-[35rem] w-[70vw] object-cover">
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-
-</section>
-
 <!------------- Full image ------------->
 
 <section class="bg-sage-200 py-20">
@@ -106,87 +40,6 @@ layout: default
   {% for item in page.gallery limit:1 offset:5 %}
   <div class="container flex justify-center -mt-60">
     <img src="{{item.image}}" class="w-[80%] mb-10">
-  </div>
-  {% endfor %}
-
-</section>
-
-<!------------- Text section ------------->
-
-<section class="bg-sage-200">
-  <div class="container grid grid-cols-2 items-center">
-    <div class="col-span-1">
-      <h2>Comfort <br><em>and individuality.</em></h2>
-    </div>
-    <div class="col-span-1">
-      <p>Elegant typography and warm, recognizable colors give the brand a consistently friendly, yet sophisticated appearance across all media, such as their website, various e-books and their social media profiles.</p>
-    </div>
-  </div>
-</section>
-
-<!------------- Full width grid ------------->
-
-<section class="bg-sage-200 max-w-[100%] overflow-hidden pt-20 pb-60">
-
-  <div class="flex flex-row -ml-60">
-    <div class="col-span-1">
-      <img src="/assets/images/emye_stilprinzip_01-1536x1154.png">
-    </div>  
-    <div class="col-span-1 -mx-20">
-      <img src="/assets/images/emye_stilprinzip_01-1536x1154.png">
-    </div>  
-    <div class="col-span-1 -mr-60">
-      <img src="/assets/images/emye_stilprinzip_01-1536x1154.png">
-    </div>  
-  </div>
-
-</section>
-
-<!------------- Gallery ------------->
-
-<section class="pt-10 -mt-40">
-
-  {% for item in page.gallery limit:1 offset:6 %}
-  <div class="mb-16">
-    <div class="flex items-end h-full w-full">
-      <!------------- Caption ------------->
-      <div class="{% if item.image-position == 'left' %} order-1 pl-10 text-left {% else %} pr-10 text-right {% endif %} w-[30vw]">
-        <p class="">{{item.caption-html}}</p>
-      </div>
-      <!------------- Image ------------->
-      <div>
-        <img src="{{item.image}}" class="h-[35rem] w-[70vw] object-cover">
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-
-</section>
-
-<!------------- Text section ------------->
-
-<section class="container">
-  <div class="flex flex-start w-[40vw]">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nam. Recusandae voluptatibus exercitationem perferendis vitae illo iusto temporibus ipsa, aliquam adipisci, quod veniam! Non quaerat, eveniet atque eos sapiente est.</p>
-  </div>
-</section>
-
-<!------------- Gallery ------------->
-
-<section class="pt-10 -mb-20">
-
-  {% for item in page.gallery limit:1 offset:7 %}
-  <div class="mb-16">
-    <div class="flex items-end h-full w-full">
-      <!------------- Caption ------------->
-      <div class="{% if item.image-position == 'left' %} order-1 pl-10 text-left {% else %} pr-10 text-right {% endif %} w-[30vw]">
-        <p class="">{{item.caption-html}}</p>
-      </div>
-      <!------------- Image ------------->
-      <div>
-        <img src="{{item.image}}" class="h-[35rem] w-[70vw] object-cover">
-      </div>
-    </div>
   </div>
   {% endfor %}
 
@@ -224,9 +77,9 @@ layout: default
 <section class="bg-sage-200 py-20">
   <div class="container">
   <div class="flex flex-row">
-    <div class="self-start button"><a href="#"></a>Previous project</div>
+    <div class="self-start button"><a href="{{page.previous.url}}"></a>Previous project</div>
     <hr class="mx-auto w-[68%] mt-5">
-    <div class="self-end button"><a href="#"></a>Next project</div>
+    <div class="self-end button"><a href="{{page.next.url}}"></a>Next project</div>
   </div>
 </div>
 </section>
