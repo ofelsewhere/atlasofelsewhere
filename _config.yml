@@ -32,9 +32,9 @@ _select_data:
     w-full: Full-Width
   col-sizes:
     col-span-1: 1 Column
-    col-span-2: 1 Column  
-    col-span-3: 1 Column  
-    col-span-4: 1 Column    
+    col-span-2: 2 Columns  
+    col-span-3: 3 Columns  
+    col-span-4: 4 Columns    
 
 # This is for Page blocks
 
@@ -134,14 +134,14 @@ _array_structures:
       value:    
         _type: image
         image:
-        column-width: 1 
+        col-size: 
     - label: Text
       icon: description
       value:    
         _type: text
         title: text
         description-html: Lorem ipsum dolor sit amet
-        column-width: 1
+        col-size: 
 
   gallery:
     - label: three-images
