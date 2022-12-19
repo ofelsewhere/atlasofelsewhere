@@ -27,7 +27,7 @@ _select_data:
   image-positions:
     left: Left
     right: Right
-  widths:
+  width:
     container: Container
     w-full: Full-Width  
 
