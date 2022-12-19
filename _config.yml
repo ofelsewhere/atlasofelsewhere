@@ -27,7 +27,7 @@ _select_data:
   image-positions:
     left: Left
     right: Right
-  width:
+  widths:
     container: Container
     w-full: Full-Width  
 
@@ -153,15 +153,8 @@ _array_structures:
         image: /assets/images/SiennaPhoto9.jpg
         image-position: left
         caption-html:
-        width: 
-    - label: Custom code
-      icon: article
-      value:    
-        _id: custom-code
-        title: Custom code
-        background-color: bg-white
-        code: 
-
+        width: container
+        margin-top: mt-0
 
 
   columns:
