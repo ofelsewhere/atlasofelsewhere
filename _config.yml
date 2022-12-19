@@ -40,10 +40,10 @@ _array_structures:
     - label: Content Section
       icon: article
       value:    
-      _id: content_section
-      title: Content Section
-      col-size: md:grid-cols-2
-      background-color: bg-white    
+        _id: content_section
+        title: Content Section
+        col-size: md:grid-cols-2
+        background-color: bg-white    
     - label: Blog Intro
       icon: article
       value:    
