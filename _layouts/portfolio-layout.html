@@ -5,23 +5,23 @@ layout: default
 
 <!-------------------------- Intro -------------------------->
 
-<section class="bg-sage-200 max-h-[100vh] -mt-[20vh] bg-cover bg-center z-30 overflow-hidden" style="background-image: url('{{page.bg-image}}');">
+<section class="bg-sage-200 md:max-h-[100vh] -mt-[20vh] bg-cover bg-center z-30 overflow-hidden" style="background-image: url('{{page.bg-image}}');">
 
-  <div class="container grid grid-cols-2 gap-20 pt-40 pb-60">
+  <div class="container grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 pt-40 pb-60">
 
     <!------------- Left column ------------->
-    <div class="col-span-1 mt-20 w-[40vw] h-full">
+    <div class="col-span-1 mt-20 md:w-[40vw] md:h-full px-10 md:px-0">
       <span class="tinytitle">{{page.title}}</span>
-      <h1 class="text-[4.5vw] leading-[5vw] mt-5 pb-6">
+      <h1 class="md:text-[4.5vw] md:leading-[5vw] mt-5 pb-6">
         {{page.headline}}
       </h1>
-      <p class="pb-6">{{page.description-html}}</p>
-      <span class="tinytitle">{{page.tagline}}</span>  
+      <p class="">{{page.description-html}}</p>
+      <p class="tinytitle pt-6">{{page.tagline}}</p>  
     </div>
 
     <!------------- Right column ------------->
-    <div class="col-span-1 mt-20 z-0 relative">
-      <img src="{{page.featured-image}}" class="absolute h-full w-full object-cover">
+    <div class="col-span-1 md:mt-20 z-0 md:relative">
+      <img src="{{page.featured-image}}" class="px-10 md:px-0 md:absolute h-full w-full object-cover">
     </div>  
   </div>
 </section>
@@ -35,7 +35,7 @@ layout: default
 
 <!------------- Testimonial ------------->
 
-<section class="{{page.bottom-color}} -mt-60">
+<section class="{{page.bottom-color}} -mt-40 md:-mt-60">
   <div class="pt-60 pb-10 w-full md:max-w-4xl mx-auto text-center">
 
     <h4 class="mb-10 border-b pb-2 inline-block">Client Feedback:</h4>
@@ -64,10 +64,10 @@ layout: default
 
 <section class="{{page.bottom-color}} bg-sage-200 py-20">
   <div class="container">
-  <div class="flex flex-row">
-    <div class="self-start button"><a href="{{page.previous.url}}"></a>Previous</div>
-    <hr class="mx-auto w-[80%] mt-5">
-    <div class="self-end button"><a href="{{page.next.url}}"></a>Next</div>
+  <div class="flex md:flex-row justify-center">
+    <div class="md:self-start button mr-3"><a href="{{page.previous.url}}"></a>Previous</div>
+    <hr class="mx-auto md:w-[80%] mt-5 hidden md:block">
+    <div class="md:self-end button ml-3"><a href="{{page.next.url}}"></a>Next</div>
   </div>
 </div>
 </section>

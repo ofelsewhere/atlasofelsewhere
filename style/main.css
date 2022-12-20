@@ -15,7 +15,7 @@ nav         { @apply inline-block py-3 px-6 text-xs font-semibold uppercase trac
 
 .subtitle   { @apply text-sm uppercase tracking-[.2em] }
 
-.tinytitle  { @apply text-xs uppercase tracking-[.3em] font-semibold }
+.tinytitle  { @apply text-xs uppercase tracking-[.3em] leading-6 font-semibold }
 
 li          { @apply border-b border-black text-xs uppercase tracking-[.3em] font-semibold py-2 }
 
