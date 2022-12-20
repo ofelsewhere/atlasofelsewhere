@@ -20,10 +20,10 @@ _select_data:
     bg-sage-500: Dark Background
     bg-white: White Background
   grid-sizes:
-    md:grid-cols-1: 1 Column
-    md:grid-cols-2: 2 Columns
-    md:grid-cols-3: 3 Columns
-    md:grid-cols-4: 4 Columns
+    grid-cols-1: 1 Column
+    grid-cols-2: 2 Columns
+    grid-cols-3: 3 Columns
+    grid-cols-4: 4 Columns
   image-positions:
     left: Left
     right: Right
