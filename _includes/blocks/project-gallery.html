@@ -1,17 +1,15 @@
 <!------------- Gallery ------------->
-{% for item in block.gallery %}
 <section class="">
-  <div class="{{item.overlap}} mb-16 {% if item.width == 'container' %} container {% else %} w-full {% endif %}">
+  <div class="{{block.overlap}} mb-16 {% if block.width == 'container' %} container {% else %} w-full {% endif %}">
     <div class="flex items-end h-full w-full">
       <!------------- Caption ------------->
-      <div class="{% if item.image-position == 'left' %} order-1 pl-10 text-left {% else %} pr-10 text-right {% endif %} w-[30vw]">
+      <div class="{% if block.image-position == 'left' %} order-1 pl-10 text-left {% else %} pr-10 text-right {% endif %} w-[30vw]">
         <p class="">{{item.caption-html}}</p>
       </div>
       <!------------- Image ------------->
       <div>
-        <img src="{{item.image}}" class="h-[35rem] w-[70vw] object-cover">
+        <img src="{{block.image}}" class="h-[35rem] w-[70vw] object-cover">
       </div>
     </div>
   </div>
   <section>
-  {% endfor %}
