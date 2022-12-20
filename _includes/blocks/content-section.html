@@ -8,7 +8,9 @@
     <!------------------ Text ------------------>
     {% if item._type == 'text' %}
 
-    <div class="h-auto {{block.col-size}}">{{item.description-html}}</div>
+    <div class="h-auto {{block.col-size}}">
+      <div>{{item.description-html}}</div>
+    </div>
 
     <!------------------ Image ------------------>
     {% elsif item._type == 'image' %}
