@@ -1,7 +1,7 @@
 <!------------------ Text / Image block ------------------>
 
-<section class="{{block.background-color}} py-6">
-  <div class="grid {{block.grid-size}} gap-20 my-10 container mx-auto">
+<section class="{{block.background-color}} {{block.overlap}}">
+  <div class="grid {{block.grid-size}} items-center h-full gap-20 {{block.padding-top}} {{block.padding-bottom}} container mx-auto">
     
     {% for item in block.columns %}
     
