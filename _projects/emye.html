@@ -20,7 +20,7 @@ page_blocks:
     image-position: right
     caption-html:
     width: container
-    overlap: mt-0
+    overlap: '-mt-40'
   - _id: project-gallery
     title: Project Gallery
     background-color: bg-white
@@ -50,7 +50,7 @@ page_blocks:
     colums:
       - image: /assets/images/emye_me.png
         title: Me
-        description-html: Lorem ipsum dolor
+        description-html: <p>Lorem ipsum dolor</p>
       - image: /assets/images/emye_me.png
         title: Me
         description-html: Lorem ipsum dolor
@@ -81,13 +81,14 @@ page_blocks:
     overlap: mt-0
   - _id: content-section
     title: Content Section
-    grid-size: md:grid-cols-2
+    grid-size: md:grid-cols-4
     background-color: bg-sage-200
+    width: container
     overlap: '-mt-80'
     padding-top: pt-80
+    padding-bottom:
     columns:
       - _type: text
-        title: Text
         description-html: <h3>Individuality</h3><h3><em>and comfort</em></h3>
         col-size: col-span-2
       - _type: text
@@ -113,14 +114,6 @@ page_blocks:
     caption-html:
     width: container
     overlap: '-mt-40'
-  - _id: project-gallery
-    title: Project Gallery
-    background-color: bg-white
-    image: /assets/images/SiennaPhoto9.jpg
-    image-position: right
-    caption-html:
-    width: container
-    overlap: mt-0
   - _id: content-section
     title: Content Section
     grid-size: md:grid-cols-2
