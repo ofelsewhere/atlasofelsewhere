@@ -155,10 +155,9 @@ _array_structures:
         background-color: bg-white
         padding-top: pt-20
         padding-bottom: pb-20
-        colums:
-          - image-1: /assets/images/emye_stilprinzip_01-1536x1154.png
-          - image-2: /assets/images/emye_stilprinzip_01-1536x1154.png
-          - image-3: /assets/images/emye_stilprinzip_01-1536x1154.png          
+        first-image: /assets/images/emye_stilprinzip_01-1536x1154.png
+        second-image: /assets/images/emye_stilprinzip_01-1536x1154.png
+        third-image: /assets/images/emye_stilprinzip_01-1536x1154.png          
 
 
   columns:
