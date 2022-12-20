@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
  
+body { @apply bg-sage-200 }
 
 /* ------------ Typography styles ------------ */
 
