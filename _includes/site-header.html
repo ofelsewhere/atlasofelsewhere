@@ -1,6 +1,41 @@
+<!------------------ Site-Header ------------------>
+
+<header class="relative {{page.header-bg}}">
+  <!------------------ Nav bar ------------------>
+  <div class="flex flex-row items-center justify-between min-h-[20vh] px-10"> 
+    <a href="/index.html"><img class="h-20" src="/assets/logos/atlasofelsewhere_logo.svg"></a>
+    <div class="hidden lg:block">
+      <nav class="flex space-x-12 items-center">
+        <a href="/services.html" class="hover:border-b pb-2">Services</a>
+        <a href="/portfolio.html" class="hover:border-b pb-2">Portfolio</a>
+        <a href="/blog.html" class="hover:border-b pb-2">Travel</a>
+        <a href="/about.html" class="hover:border-b pb-2">About</a>
+        <a href="/contact.html" class="button mb-2">Let's connect</a>
+      </nav>
+    </div>
+    <div class="block lg:hidden">
+      <a href="#" class="text-2xl z-50 relative burger"><i class="fa-solid fa-bars"></i></a>
+    </div>
+  </div>
+
+  <!------------------ Mobile menu ------------------>
+  <div class="md:hidden bg-sage-500 fixed inset-0 h-screen w-screen z-40 transition-all duration-500 mobile-menu mobile-menu-hidden text-beige">
+    <div class="h-screen">
+      <div class="flex flex-col text-white items-center justify-center space-y-10 pt-40">
+        <a href="/services.html" class="font-display font-light text-[2.5rem] tracking-[.02em]">Services</a>
+        <a href="/portfolio.html" class="font-display font-light text-[2.5rem] tracking-[.02em]">Portfolio</a>
+        <a href="/blog.html" class="font-display font-light text-[2.5rem] tracking-[.02em]">Travel</a>
+        <a href="/about.html" class="font-display font-light text-[2.5rem] tracking-[.02em]">About</a>
+        <div class="pt-4"><a href="/contact.html" class="button-white">Let's connect</a></div>
+      </div>      
+    </div>
+  </div>
+
+</header>
+
 <!------------------ Header ------------------>
 
-<header class="bg-sage-200">
+<!-- <header class="bg-sage-200">
   <div class="flex justify-between min-h-[20vh] px-10 items-center z-10">
     <a href="/index.html"><img class="h-20" src="/assets/logos/atlasofelsewhere_logo.svg"></a>
     <nav class="flex space-x-12 items-center">
@@ -11,4 +46,4 @@
       <a href="/contact.html" class="button mb-2">Let's connect</a>
     </nav>
   </div>
-</header>
+</header> -->

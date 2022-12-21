@@ -102,3 +102,28 @@ li          { @apply border-b border-black text-xs uppercase tracking-[.3em] fon
   align-items: center;
   justify-content: center;
 }
+
+/* ------------ Mobile menu ------------ */
+
+.mobile-menu-hidden {
+  left: 100vh;
+  right: -100vh;
+}
+
+.burger.active {
+  color: white;
+}
+
+
+.shopify-buy__btn-wrapper {
+  margin-top: 0;
+}
+
+.shopify-buy__btn-wrapper {
+  margin-top: 0px;
+}
+
+.shopify-buy__btn {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
