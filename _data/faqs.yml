@@ -31,3 +31,24 @@
   data: 5
   answer: 
     •&ensp; Such as business cards or signage
+
+- question: Design Strategy
+  product-type: index
+  data: 1
+  answer: 
+    •&ensp; Such as business cards or signage    
+- question: Brand Design
+  product-type: index
+  data: 2
+  answer: 
+    •&ensp; Such as business cards or signage    
+- question: Web Design & Development
+  product-type: index
+  data: 3
+  answer: 
+    •&ensp; Such as business cards or signage
+- question: Editorial Design
+  product-type: index
+  data: 4
+  answer: 
+    •&ensp; Such as business cards or signage                                    
