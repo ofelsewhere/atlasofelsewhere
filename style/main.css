@@ -72,25 +72,7 @@ li          { @apply border-b border-black text-xs uppercase tracking-[.3em] fon
   font-size: 20px;
   line-height: 1;
   opacity: .75;
-  color: #fff;
-  color: rgb(90, 90, 90);
-}
-
-.slick-prev::before {
-  content: '←';
-}
-
-.slick-next::before {
-  content: '→';
-}
-
-.slick-prev {
-  left: -4rem;
-  z-index: 6;
-}
-
-.slick-next {
-  right: -4rem;
+  @apply text-sage-200
 }
 
 .slick-track {
