@@ -2,31 +2,31 @@
 layout: default
 title: About me
 about:
-  - image: /assets/images/CarmenPHOTO10.jpg
+  - image: assets/images/moods/elsewhere-mood-business-cards-1.jpg
     title: Clients
     description-html: 'EMYE, Michael Driever, Savills, Moysies & Partners, Nunos, Onkel Ferdi
     <br><br><strong>KW43 Branddesign (2015-2021):</strong> GALERIA, GVV Direkt, Römerturm, delfort, Wobenzym, Merck, SARAM, Weber, Disgusting Food Museum, ALDI Süd, Trei Real Estate, GROHE, Deichmann, ZEISS, Kaufland'
-  - image: /assets/images/CarmenPHOTO10.jpg
+  - image: assets/images/moods/elsewhere-mood-business-cards-1.jpg
     title: Skills & Services
     description-html: 'Branding,  Web Design & Development, Editorial, Packaging, Art Direction
     <br><strong>Software:</strong> Adobe Creative Suite, Keynote, Visual Studio Code
     <br><strong>Languages:</strong> German, Englisch'
-  - image: /assets/images/CarmenPHOTO10.jpg
+  - image: assets/images/moods/elsewhere-mood-business-cards-1.jpg
     title: Awards
     description-html: '<a href="https://ifworlddesignguide.com/entry/280808-saram-human-identity" target="_blank">iF Design Award 2020</a>, <a href="https://www.ddc.de/de/wettbewerb/gute-gestaltung-2019/identity/saram-human-identity.php" target="_blank">DDC 2019</a>, ADC 2019, <a href="https://www.red-dot.org/de/project/saram-human-identity-40703" target="_blank">Red Dot 2019</a>, <a href="https://ifworlddesignguide.com/entry/256924-romerturm-paper-tradition-fit-for-the-future" target="_blank">iF Design Award 2019</a>, <a href="https://www.corporate-design-preis.de/nc/alle-preistraeger/cdp-2018/id/2163/projekt/2/" target="_blank">Corporate Design Preis 2018</a>, <a href="https://ifworlddesignguide.com/entry/201522-inec-the-real-time-brand" target="_blank">DDC 2017</a> <a href="https://ifworlddesignguide.com/entry/201522-inec-the-real-time-brand" target="_blank">iF Design Award 2017</a>, Cannes Lions 2016, <a href="https://www.red-dot.org/de/project/the-real-time-brand-13780-13780" target="_blank">Red Dot 2016</a>'
-  - image: /assets/images/CarmenPHOTO10.jpg
+  - image: assets/images/moods/elsewhere-mood-business-cards-1.jpg
     title: Things I <em>love</em>
     description-html: 'Belgium, Canada, France, Germany, Indonesia, Netherlands, Taiwan, Vietnam'
-  - image: /assets/images/CarmenPHOTO10.jpg
+  - image: assets/images/moods/elsewhere-mood-business-cards-1.jpg
     title: Countries <em>I've visited</em>
     description-html: 'Belgium, Canada, France, Germany, Indonesia, Netherlands, Taiwan, Vietnam'
-  - image: /assets/images/CarmenPHOTO10.jpg
+  - image: assets/images/moods/elsewhere-mood-business-cards-1.jpg
     title: Friends
     description-html: 'Branding,  Web Design & Development, Editorial, Packaging, Art Direction
     <br><strong>Software:</strong> Adobe Creative Suite, Keynote, Visual Studio Code
     <br><strong>Languages:</strong> German, Englisch'                    
 image-banner:
-  - bg-image: /assets/images/tbd/MoyoFreePhoto28.jpg
+  - bg-image: assets/images/moods/elsewhere-mood-plants-1.jpg
     text: Let’s work<br><em>together</em>
     link-text: Apply now
     link-url: 
@@ -34,7 +34,7 @@ image-banner:
 ---
 
 <!------------- About me ------------->
-<section class="z-10 relative overflow-hidden p-6">
+<section class="z-10 relative overflow-hidden p-6 bg-sage-200">
   <div class="container grid grid-cols-1 lg:grid-cols-2 gap-20 items-center py-20">
     
     <!------------- Description ------------->
@@ -53,24 +53,24 @@ image-banner:
   </div>
 
   <!------------- Illustration ------------->
-  <img class="opacity-20 h-60 md:h-64 absolute -top-6 md:-top-10 xl:top-24 left-[50vw] md:left-[60vw] lg:left-[32vw] z-0" src="/assets/images/illustrations/birds.svg"> 
+  <img class="opacity-20 h-60 md:h-64 absolute -top-6 md:top-0 xl:top-24 left-[50vw] md:left-[60vw] lg:left-[35vw] z-0" src="/assets/images/illustrations/birds.svg"> 
   <img class="hidden md:block opacity-20 w-72 absolute bottom-0 -right-10 z-0" src="/assets/images/illustrations/cloud.svg">    
 
 </section>
 
 <!------------- Details ------------->
 
-<section class="pb-20 p-6">
+<section class="pb-20 p-6 bg-sage-200">
   <div class="container grid grid-col-1 lg:grid-cols-3 gap-10">
     
     {% for item in page.about %}
     <!------------- Services ------------->
     <div class="border flex flex-col md:flex-row lg:flex-col items-center p-6">
       <div class="">
-        <img src="{{item.image}}" class="h-full md:h-72 w-full object-cover">
+        <img src="{{item.image}}" class="h-full md:h-60 w-full md:w-[50vw] lg:w-full object-cover">
       </div>
 
-      <div class="md:pl-6 lg:pl-0 pt-6 md:pt-0 lg:pt-6">
+      <div class="w-full md:pl-6 lg:pl-0 pt-6 md:pt-0 lg:pt-6">
         <h2 class="text-3xl pb-2">{{item.title}}</h2>
         <p class="text-[0.8rem] leading-6">{{item.description-html}}
       </div>
@@ -80,17 +80,12 @@ image-banner:
   </div>
 </section>
 
-
-    <!------------- Illustration ------------->
-    <img class="hidden md:block opacity-20 h-48 absolute -bottom-10 -left-16" src="/assets/images/illustrations/cloud.svg">
-</section>
-
 <!------------- Image banner ------------->
 {% for item in page.image-banner limit:1 %}
 <section> 
   <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/50 text-white {% endif %} bg-fixed bg-cover h-[60vh] bg-center flex flex-col justify-center items-center"
   style="background-image: url('{{item.bg-image}}')">
-    <h2 class="text-[5rem] leading-[5.5rem] pb-6 text-center">{{item.text}}</h2>
+    <h2 class="text-[4rem] leading-[4.5rem] md:text-[5rem] md:leading-[5.5rem] pb-6 text-center">{{item.text}}</h2>
     <a href="{{item.link-url}}" class="button-white">{{item.link-text}}</a>
   </div>
 </section>

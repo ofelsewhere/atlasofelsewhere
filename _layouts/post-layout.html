@@ -59,17 +59,21 @@ layout: default
 <section class="bg-sage-200">
   <div class="mx-52 grid grid-cols-2 gap-10 p-20">
     <div class="col-span-2 text-center">
-
       <h3>Share on socials:</h3>
-      <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
-        <i class="fab fa-twitter hover:opacity-60"></i>
-      </a>
-      <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
-        <i class="fab fa-facebook hover:opacity-60"></i>
-      </a>
-      <a href="http://pinterest.com/pin/create/link/?url={{page.url}}&description={{page.title}}" rel="nofollow" target="_blank" title="Share on Pinterest">
-        <i class="fab fa-pinterest hover:opacity-60"></i>
-      </a>
+      <div class="flex space-x-8 justify-center py-6">
+        <a href="http://pinterest.com/pin/create/link/?url={{page.url}}&description={{page.title}}" rel="nofollow" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest-p border rounded-full p-2 w-10 h-10 flex justify-center items-center hover:bg-sage-300/40"></i>
+        </a>
+        <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook-f border rounded-full p-2 w-10 h-10 flex justify-center items-center hover:bg-sage-300/40"></i>
+        </a>
+        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter border rounded-full p-2 w-10 h-10 flex justify-center items-center hover:bg-sage-300/40"></i>
+        </a>
+        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
+          <i class="fa-regular fa-envelope border rounded-full p-2 w-10 h-10 flex justify-center items-center hover:bg-sage-300/40"></i>
+        </a>
+      </div>
     </div>
 
 

@@ -74,9 +74,10 @@ _array_structures:
     - label: Recommendations
       icon: article
       value:    
-        _id: recommendations-left
+        _id: recommendations
         title: Recommendations
         background-color: bg-white
+        position: left
         eat:
           - name: Obica
             link-url: www.google.de
