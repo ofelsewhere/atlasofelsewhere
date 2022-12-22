@@ -5,7 +5,7 @@ layout: default
 
 <!-------------------------- Intro -------------------------->
 
-<section class="bg-sage-200 md:max-h-[100vh] -mt-[20vh] bg-cover bg-center z-30 overflow-hidden" style="background-image: url('{{page.bg-image}}');">
+<section class="{{page.header-color}} md:max-h-[100vh] -mt-[20vh] bg-cover bg-center z-30 overflow-hidden" style="background-image: url('{{page.header-image}}');">
 
   <div class="container grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 pt-40 pb-60">
 
@@ -65,9 +65,13 @@ layout: default
 <section class="{{page.bottom-color}} bg-sage-200 py-20">
   <div class="container">
   <div class="flex md:flex-row justify-center">
-    <div class="md:self-start button mr-3"><a href="{{page.previous.url}}"></a>Previous</div>
+    <div class="md:self-start mr-3">
+      <a href="{{page.previous.url}}" class="button">Previous</a>
+    </div>
     <hr class="mx-auto md:w-[80%] mt-5 hidden md:block">
-    <div class="md:self-end button ml-3"><a href="{{page.next.url}}"></a>Next</div>
+    <div class="md:self-end ml-3">
+      <a href="{{page.next.url}}" class="button">Next</a>
+    </div>
   </div>
 </div>
 </section>
