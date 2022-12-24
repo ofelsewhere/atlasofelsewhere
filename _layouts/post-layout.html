@@ -6,13 +6,13 @@ layout: default
 
 <section class="bg-sage-200 py-20">
   <div class="container text-center">
-    {% for item in page.categories %}
-    <a href="/archives/{{item}}" class="mx-1 inline-block border-b border-b-orange-400 pb-1 text-xs uppercase tracking-[.3em]">{{item}}</a>
-    {% endfor %}
+    <span class="tinytitle block">{{page.date | date: "%d %b %Y"}}</span>
 
-    <h1 class="text-[5rem] leading-[5.5rem] mt-4">{{page.title}}</h1>
-    <span class="text-sm block py-5 italic">by {{page.author}}</span>
-    <span class="text-xs uppercase tracking-[.3em] block">{{page.date | date: "%d %b %Y"}}</span>
+    <h1 class="text-[5rem] leading-[5.5rem] my-10">{{page.title}}</h1>
+
+    {% for item in page.categories %}
+    <a href="/archives/{{item}}" class="mx-1 inline-block border-b pb-1 tinytitle">{{item}}</a>
+    {% endfor %}
   </div>
 </section>
 
@@ -36,13 +36,13 @@ layout: default
 
   <!------------------ Map ------------------>
   <div class="absolute top-10 right-10">
-    <img src="/assets/images/italy_map-1.png" class="w-[50vw]">
+    <img src="{{page.map}}" class="w-[50vw]">
   </div>
 
   <!------------------ Images ------------------>
   <div class="container pl-20">
-    <img src="/assets/images/bana_hills/elsewhere_blog_bana_hills_1.jpg" class="inline-block object-cover h-[20vw] w-[30vw] pr-5">
-    <img src="/assets/images/bana_hills/elsewhere_blog_bana_hills_2.jpg" class="inline-block object-cover h-[20vw] w-[30vw]">
+    <img src="{{page.intro-left-image}}" class="inline-block object-cover h-[20vw] w-[30vw] pr-5">
+    <img src="{{page.intro-left-image}}" class="inline-block object-cover h-[20vw] w-[30vw]">
   </div>
 
 </section>

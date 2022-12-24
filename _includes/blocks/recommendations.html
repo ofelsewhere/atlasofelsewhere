@@ -1,8 +1,8 @@
 <!------------------------------ Grid ------------------------------>
 
 <section class="container my-20">
-  <div class="grid grid-cols-5 gap-24">
-    <div class="col-span-2 {% if block.position == 'right' %} order-2 {% endif %}">
+  <div class="grid grid-cols-1 lg:grid-cols-5 gap-x-36">
+    <div class="col-span 1 lg:col-span-2 {% if block.position == 'right' %} lg:order-2 {% endif %}">
       
       <!------------------ Where to eat ------------------>
 
@@ -16,7 +16,14 @@
       </div>
 
       {% endfor %}
-      
+
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:hidden mb-10">
+        {% for item in block.eat %}
+        <div><img src="{{item.image}}"></div>
+        {% endfor %}
+      </div>
+
       <hr>
       
       <!------------------ Where to stay ------------------>
@@ -28,6 +35,14 @@
       <div class="pb-10">
         <a href="{{item.url}}" class="underline font-medium">{{item.name}}</a>
         <p>{{item.description-html}}</p>
+      </div>
+
+      {% endfor %}
+
+      {% for item in block.stay %}
+
+      <div class="block lg:hidden mb-10">
+        <img src="{{item.image}}">
       </div>
 
       {% endfor %}
@@ -47,11 +62,18 @@
 
       {% endfor %}
 
+      {% for item in block.see %}
+
+      <div class="block lg:hidden mb-10">
+        <img src="{{item.image}}">
+      </div>
+
+      {% endfor %}
 
     </div>
 
     <!------------------ Gallery ------------------>
-    <div class="col-span-3">
+    <div class="hidden lg:grid col-span-1 lg:col-span-3">
       
       {% for item in block.gallery %}
     

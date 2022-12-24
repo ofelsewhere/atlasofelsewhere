@@ -88,8 +88,8 @@ li          { @apply border-b border-black text-xs uppercase tracking-[.3em] fon
 /* ------------ Mobile menu ------------ */
 
 .mobile-menu-hidden {
-  left: 100vh;
-  right: -100vh;
+  left: 100vw;
+  right: -100vw;
 }
 
 .burger.active {
