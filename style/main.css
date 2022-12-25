@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+  scroll-behavior: smooth;
+}  
+
 /* ------------ Typography styles ------------ */
 
 h1, h2, h3  { @apply font-display font-light text-[3.5rem] leading-[4.5rem] tracking-[.02em]; }

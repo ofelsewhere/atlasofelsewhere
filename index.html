@@ -8,7 +8,7 @@ image-banner:
     link-text: My services
     link-url: 
     overlay: true
-  - bg-image: assets/images/moods/elsewhere-mood-plants-1.jpg
+  - bg-image: assets/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg
     text: So much world.<br><em>So little time.</em>
     link-text: Read the blog
     link-url: 
@@ -22,7 +22,6 @@ image-banner:
 ---
 
 <!-------------------------- Intro -------------------------->
-
 <section class="bg-sage-200 h-full -mt-[20vh] bg-cover bg-center z-30 overflow-hidden pt-40 lg:pt-60 pb-10 lg:pb-40" style="background-image: url('/assets/images/moods/elsewhere-mood-palmtree-shadow.png');">
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 p-10 md:p-20 lg:p-0">
@@ -32,13 +31,13 @@ image-banner:
         <h1 class="text-[3rem] leading-[3.5rem] md:text-[4rem] md:leading-[4.5rem] xl:text-[4.5rem] xl:leading-[5rem] pb-10">
           Designing and discovering <em>unique, intentional brands</em> across the world.
         </h1>
-        <a href="" class="button">Explore more</a>
+        <a href="#categories" class="button">Explore more</a>
       </div>
 
       <!------------- Right column ------------->
       <div class="col-span-1 z-10 lg:mr-24 lg:relative">
-        <img src="/assets/images/moods/elsewhere-mood-plants-1.jpg" class="lg:absolute h-[50vh] lg:h-full w-full object-cover">
-        <img src="/assets/images/moods/elsewhere-mood-business-cards-2.jpg" class="h-0 w-0 lg:absolute lg:h-[40%] lg:w-[50%] -bottom-20 -left-20 object-cover">
+        <img src="/assets/images/index_picture.png" class="lg:absolute h-[50vh] lg:h-full w-full object-cover">
+        <img src="/assets/images/projects.gif" class="h-0 w-0 lg:absolute lg:h-[40%] lg:w-[50%] -bottom-20 -left-28 object-cover">
       </div>  
     </div>
 </section>
@@ -56,18 +55,18 @@ image-banner:
 
 <!-------------------------- Categories -------------------------->
 
-<section class="">
+<section class="" id="categories">
   <div class="grid grid-cols-1 md:grid-cols-2 text-center items-center">
 
     <!------------- Design ------------->
-    <a href="" class="border-b md:border-b-0 md:border-r py-40 md:py-64 bg-cover bg-top relative w-full h-full" style="background-image: url('/assets/images/moods/elsewhere-mood-marble.jpg');">
+    <a href="/services.html" class="border-b md:border-b-0 md:border-r py-40 md:py-64 bg-cover bg-top relative w-full h-full" style="background-image: url('/assets/images/moods/elsewhere-mood-marble.jpg');">
       <div class="absolute text-center text-white inset-0 flex justify-center items-center cursor-pointer bg-black/[.3] hover:bg-black/[.5] transition duration-300">
       <h2 class="z-20 text-[5rem]">Design</h2>
       </div>
     </a>
 
     <!------------- Travel ------------->
-    <a href="" class="md:border-r py-40 md:py-64 bg-cover bg-center relative w-full h-full" style="background-image: url('/assets/images/moods/elsewhere-mood-plants-2.jpg');">
+    <a href="/blog.html" class="md:border-r py-40 md:py-64 bg-cover bg-center relative w-full h-full" style="background-image: url('/assets/images/moods/elsewhere-mood-plants-2.jpg');">
       <div class="absolute text-center text-white inset-0 flex justify-center items-center cursor-pointer bg-black/[.2] hover:bg-black/[.3] transition duration-300">
       <h2 class="z-20 text-[5rem]">Travel</h2>
       </div>
@@ -85,10 +84,10 @@ image-banner:
     <div class="hidden lg:block">
       <img src="/assets/logos/elsewherebranddesign.svg"
            class="w-36 absolute top-36 left-20 z-40">
-      <img src="/assets/images/moods/elsewhere-mood-business-cards-2.jpg"
+      <img src="/assets/images/MadelinePhoto19.jpg"
            class="h-[35vh] w-[30vw] object-cover absolute top-60 left-48 z-20">
-      <img src="/assets/images/moods/elsewhere-mood-plants-1.jpg"
-           class="h-[45vh] w-[25vw] object-cover absolute top-[28rem] left-24 mb-20">
+      <img src="/assets/images/index_picture_4.png"
+           class="h-[45vh] w-[25vw] object-cover absolute top-[30rem] left-24 mb-20">
     </div>
 
     <!------------- Right column ------------->
@@ -112,7 +111,7 @@ image-banner:
 
 {% for item in page.image-banner limit:1 offset:1 %}
 <section> 
-  <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/50 text-white {% endif %} bg-fixed bg-cover h-[60vh] bg-center flex flex-col justify-center items-center"
+  <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/30 text-white {% endif %} bg-fixed bg-cover h-[60vh] bg-center flex flex-col justify-center items-center"
   style="background-image: url('{{item.bg-image}}')">
     <h2 class="text-[4rem] leading-[4.5rem] md:text-[5rem] md:leading-[5.5rem] pb-6 text-center">{{item.text}}</h2>
     <a href="{{item.link-url}}" class="button-white">{{item.link-text}}</a>

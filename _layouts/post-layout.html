@@ -23,29 +23,7 @@ layout: default
   </div>
 </section>
 
-<!------------------------------ Description ------------------------------>
-
-<section class="bg-sage-200 relative pb-28"> 
-  <div class="container">
-    <p class="w-[35vw] py-20">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut maximus odio. Nunc fringilla nisi ac turpis feugiat vehicula. Morbi tristique ornare leo, ac hendrerit nibh. Maecenas eget enim turpis. In eu aliquet magna. In hac habitasse platea dictumst. Donec hendrerit finibus pellentesque. Curabitur laoreet imperdiet rutrum.
-      <br><br>
-      Nullam eget magna ut diam posuere euismod sit amet vitae lectus. Sed gravida dolor sed mauris aliquet, eu posuere purus sollicitudin. Aenean ultrices ligula ac tincidunt efficitur. Donec scelerisque auctor interdum. Nunc et urna neque.
-    </p>  
-  </div>
-
-  <!------------------ Map ------------------>
-  <div class="absolute top-10 right-10">
-    <img src="{{page.map}}" class="w-[50vw]">
-  </div>
-
-  <!------------------ Images ------------------>
-  <div class="container pl-20">
-    <img src="{{page.intro-left-image}}" class="inline-block object-cover h-[20vw] w-[30vw] pr-5">
-    <img src="{{page.intro-left-image}}" class="inline-block object-cover h-[20vw] w-[30vw]">
-  </div>
-
-</section>
+{{content}}
 
 <!------------------ Blocks ------------------>
 
@@ -56,10 +34,10 @@ layout: default
 
 <!------------------ Social sharing ------------------>
 
-<section class="bg-sage-200">
-  <div class="mx-52 grid grid-cols-2 gap-10 p-20">
-    <div class="col-span-2 text-center">
-      <h3>Share on socials:</h3>
+<section class="bg-sage-200 py-20">
+  <div class="container">
+    <div class="md:col-span-2 text-center">
+      <h3 class="mx-10 md:mx-0">Share on socials:</h3>
       <div class="flex space-x-8 justify-center py-6">
         <a href="http://pinterest.com/pin/create/link/?url={{page.url}}&description={{page.title}}" rel="nofollow" target="_blank" title="Share on Pinterest">
           <i class="fab fa-pinterest-p border rounded-full p-2 w-10 h-10 flex justify-center items-center hover:bg-sage-300/40"></i>
@@ -76,18 +54,19 @@ layout: default
       </div>
     </div>
 
-
-    <div class="col-span-1">
-      <img src="/assets/images/elsewhere_blog_bologna.jpg">
+    <div class="lg:mx-40 grid grid-cols-1 md:grid-cols-2 gap-5 pt-10">
+      <div class="">
+        <img src="/assets/images/posts/italy/elsewhere-travel-pinterest-1.jpg">
+      </div>
+      <div class="">
+        <img src="/assets/images/posts/italy/elsewhere-travel-pinterest-2.jpg">
+      </div>
     </div>
-    <div class="col-span-1">
-      <img src="/assets/images/elsewhere_blog_bologna.jpg">
-    </div>
+    
   </div>
-
-  <hr>
 </section>
 
+<hr>
 <!------------------ Related posts ------------------>
 
 <section class="bg-sage-200 py-16">
