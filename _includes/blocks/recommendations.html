@@ -1,8 +1,9 @@
+
 <!------------------------------ Grid ------------------------------>
 
 <section class="container my-20">
   <div class="grid grid-cols-1 lg:grid-cols-5 gap-x-36">
-    <div class="col-span 1 lg:col-span-2 {% if block.position == 'right' %} lg:order-2 {% endif %}">
+    <div class="col-span-1 lg:col-span-2 {% if block.position == 'right' %} lg:order-2 {% endif %}">
       
       <!------------------ Where to eat ------------------>
 
@@ -72,39 +73,13 @@
 
     </div>
 
-    <!------------------ Gallery ------------------>
-    <div class="hidden lg:grid col-span-1 lg:col-span-3">
+    <div class="hidden lg:block lg:col-span-3">
       
-      {% for item in block.gallery %}
-    
-      <!------------------ Text ------------------>
-      {% if item._type == 'three-images' %}
-  
       {% include blocks/three-images.html %}
-  
-      <!------------------ Image ------------------>
-      {% elsif item._type == 'two-images-small' %}
-      
       {% include blocks/two-images-small.html %}
-
-      <!------------------ Image ------------------>
-      {% elsif item._type == 'two-images-portrait' %}
-
       {% include blocks/two-images-portrait.html %}
-
-      <!------------------ Image ------------------>
-      {% elsif item._type == 'one-image-landscape' %}
-
       {% include blocks/one-image-landscape.html %}
-
-      <!------------------ Image ------------------>
-      {% elsif item._type == 'one-image-portrait' %}
-
       {% include blocks/one-image-portrait.html %}
-      
-      {% endif %}
-      
-      {% endfor %}
         
     </div>
   </section>

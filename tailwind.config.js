@@ -13,9 +13,6 @@ module.exports = {
       center: true,
       padding: '1rem',
     },
-    gridRow: {
-      'span-16': 'span 16 / span 16',
-    },
     listStyleType: {
       none: 'none',
       disc: 'disc',
