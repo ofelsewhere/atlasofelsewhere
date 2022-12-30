@@ -8,15 +8,15 @@
     <!------------------ Text ------------------>
     {% if item._type == 'text' %}
 
-    <div class="h-auto px-10 md:p-0 {{block.col-size}}">
+    <div class="h-auto px-10 md:p-0 {{item.col-size}}">
       <div>{{item.description-html}}</div>
     </div>
 
     <!------------------ Image ------------------>
     {% elsif item._type == 'image' %}
     
-    <div class="relative {{block.col-size}}">
-      <img src="{{item.image}}" class="absolute h-full w-full object-cover">
+    <div class="{{item.col-size}}">
+      <img src="{{item.image}}" class="h-full w-full object-cover">
     </div>    
     
     {% endif %}

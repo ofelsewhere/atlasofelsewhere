@@ -40,6 +40,12 @@ module.exports = {
         'terracotta': '#BE8C7D',
         'dustyblue': '#C3CDD7', 
       },
+      'dfm': {
+        DEFAULT: '#004344',
+        'peach': '#fac8aa',
+        'mint': '#8cdcb4', 
+        'rose': '#e6b9b4', 
+      },      
       'graphit': {
         DEFAULT: '#444444',
         '50': '#A0A0A0',

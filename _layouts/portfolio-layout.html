@@ -5,12 +5,12 @@ layout: default
 
 <!-------------------------- Intro -------------------------->
 
-<section class="{{page.header-color}} md:max-h-[100vh] -mt-[20vh] bg-cover bg-center z-30 overflow-hidden" style="background-image: url('{{page.header-image}}');">
+<section class="{{page.header-color}} lg:max-h-[120vh] -mt-[20vh] bg-cover bg-center z-30 overflow-hidden" style="background-image: url('{{page.header-image}}');">
 
-  <div class="container grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 pt-40 pb-60">
+  <div class="container grid grid-cols-1 lg:grid-cols-5 gap-10 md:gap-20 pt-40 pb-60">
 
     <!------------- Left column ------------->
-    <div class="col-span-1 mt-20 md:w-[40vw] md:h-full px-10 md:px-0">
+    <div class="col-span-2 mt-20 md:h-full px-10 md:px-0">
       <span class="tinytitle">{{page.title}}</span>
       <h1 class="md:text-[4.5vw] md:leading-[5vw] mt-5 pb-6">
         {{page.headline}}
@@ -20,8 +20,8 @@ layout: default
     </div>
 
     <!------------- Right column ------------->
-    <div class="col-span-1 md:mt-20 z-0 md:relative">
-      <img src="{{page.featured-image}}" class="px-10 md:px-0 md:absolute h-full w-full object-cover">
+    <div class="col-span-3 lg:mt-20 z-0 ">
+      <img src="{{page.featured-image}}" class="px-10 md:px-0  h-full w-full object-cover">
     </div>  
   </div>
 </section>
