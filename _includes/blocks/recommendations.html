@@ -75,11 +75,41 @@
 
     <div class="hidden lg:block lg:col-span-3">
       
-      {% include blocks/three-images.html %}
-      {% include blocks/two-images-small.html %}
-      {% include blocks/two-images-portrait.html %}
-      {% include blocks/one-image-landscape.html %}
-      {% include blocks/one-image-portrait.html %}
+<!------------------ Gallery ------------------>
+<div class="hidden lg:grid col-span-1 lg:col-span-3">
+      
+  {% for item in block.gallery %}
+
+  <!------------------ Text ------------------>
+  {% if item._type == 'three-images' %}
+
+  {% include blocks/three-images.html %}
+
+  <!------------------ Image ------------------>
+  {% elsif item._type == 'two-images-small' %}
+  
+  {% include blocks/two-images-small.html %}
+
+  <!------------------ Image ------------------>
+  {% elsif item._type == 'two-images-portrait' %}
+
+  {% include blocks/two-images-portrait.html %}
+
+  <!------------------ Image ------------------>
+  {% elsif item._type == 'one-image-landscape' %}
+
+  {% include blocks/one-image-landscape.html %}
+
+  <!------------------ Image ------------------>
+  {% elsif item._type == 'one-image-portrait' %}
+
+  {% include blocks/one-image-portrait.html %}
+  
+  {% endif %}
+  
+  {% endfor %}
+    
+</div>
         
     </div>
   </section>

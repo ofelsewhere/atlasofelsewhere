@@ -34,7 +34,11 @@ module.exports = {
         '600': '#5B6150',
         '700': '#464B3D',
         '800': '#31352B',
-        '900': '#1C1E19'
+        '900': '#1C1E19' },
+      'emye': {
+        DEFAULT: '#E6E1DC',
+        'terracotta': '#BE8C7D',
+        'dustyblue': '#C3CDD7', 
       },
       'graphit': {
         DEFAULT: '#444444',
