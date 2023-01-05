@@ -44,7 +44,11 @@ module.exports = {
         DEFAULT: '#004344',
         'peach': '#fac8aa',
         'mint': '#8cdcb4', 
-        'rose': '#e6b9b4', 
+        'rose': '#e6b9b4',
+      },   
+      'camino': {
+        DEFAULT: '#c5aca4',
+        'blue': '#a1c5d9',
       },      
       'graphit': {
         DEFAULT: '#444444',
