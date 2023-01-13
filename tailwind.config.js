@@ -49,7 +49,16 @@ module.exports = {
       'camino': {
         DEFAULT: '#c5aca4',
         'blue': '#a1c5d9',
-      },      
+      },
+      'galeria': {
+        DEFAULT: '#D2D6EF',
+        'blue': '#C3E6F5',
+      },  
+      'rdl': {
+        DEFAULT: '#C8DCEB',
+        'darkblue': '#1E375F',
+        'orange': '#FF641E',
+      },        
       'graphit': {
         DEFAULT: '#444444',
         '50': '#A0A0A0',

@@ -21,7 +21,7 @@ layout: default
 
     <!------------- Right column ------------->
     <div class="col-span-3 lg:mt-20 z-0 ">
-      <img src="{{page.featured-image}}" class="px-10 md:px-0  h-full w-full object-cover">
+      <img src="{{page.featured-image}}" class="{% if page.image-hidden == true %} hidden {% endif %}px-10 md:px-0  h-full w-full object-cover">
     </div>  
   </div>
 </section>
@@ -34,7 +34,7 @@ layout: default
 {% endfor %}
 
 <!------------- Testimonial ------------->
-
+{% if page.testimonial == true %}
 <section class="{{page.bottom-color}} -mt-40 md:-mt-60">
   <div class="pt-60 pb-10 w-full md:max-w-4xl mx-auto text-center">
 
@@ -59,10 +59,11 @@ layout: default
   
   </div>   
 </section>
+{% endif %}
 
 <!-------------------------- Arrows -------------------------->
 
-<section class="{{page.bottom-color}} bg-sage-200 py-20">
+<section class="{{page.bottom-color}} bg-sage-200 py-20 {% if page.testimonial != true %} md:-mt-60 pt-40 {% endif %}">
   <div class="container">
   <div class="flex md:flex-row justify-center">
     <div class="md:self-start mr-3">

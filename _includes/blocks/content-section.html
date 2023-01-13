@@ -1,14 +1,14 @@
 <!------------------ Text / Image block ------------------>
 
-<section class="{{block.background-color}} {{block.overlap}}">
-  <div class="grid grid-col-1 md:{{block.grid-size}} items-center h-full gap-5 md:gap-10 {{block.padding-top}} {{block.padding-bottom}} {{block.width}}">
+<section class="{{block.background-color}} {{block.overlap}} overflow-hidden">
+  <div class="grid {{block.grid-size}} {{block.position}} h-full gap-5 md:gap-10 {{block.padding-top}} {{block.padding-bottom}} {{block.width}}">
     
     {% for item in block.columns %}
     
     <!------------------ Text ------------------>
     {% if item._type == 'text' %}
 
-    <div class="h-auto px-10 md:p-0 {{item.col-size}}">
+    <div class="h-auto md:p-0 {{item.col-size}}">
       <div>{{item.description-html}}</div>
     </div>
 
