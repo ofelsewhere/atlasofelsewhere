@@ -1,0 +1,211 @@
+---
+layout: default
+title: Homepage
+header-bg: bg-sage-200/0
+image-banner:
+  - bg-image: /assets/images/moods/elsewhere-mood-plants-1.jpg
+    text: Are you ready to take<br>your business to the next level?
+    link-text: My services
+    link-url: /services.html
+    overlay: true
+  - bg-image: /assets/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg
+    text: So much world.<br><em>So little time.</em>
+    link-text: Read the blog
+    link-url: /blog.html
+    overlay: true    
+  - bg-image: /assets/images/moods/elsewhere-mood-plants-1.jpg
+    text: Let’s work<br><em>together</em>
+    link-text: Apply now
+    link-url: /contact.html
+    overlay: true    
+
+---
+
+<!-------------------------- Intro -------------------------->
+<section class="bg-sage-200 h-full -mt-[20vh] bg-cover bg-center z-30 overflow-hidden pt-40 lg:pt-60 pb-10 lg:pb-40" style="background-image: url('/assets/images/moods/elsewhere-mood-palmtree-shadow.png');">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 p-10 md:p-20 lg:p-0">
+
+      <!------------- Left column ------------->
+      <div class="col-span-1 lg:ml-24 lg:py-10">
+        <h1 class="text-[3rem] leading-[3.5rem] md:text-[4rem] md:leading-[4.5rem] xl:text-[4.5rem] xl:leading-[5rem] pb-10">
+          Designing and discovering <em>unique, intentional brands</em> across the world.
+        </h1>
+        <a href="#categories" class="button">Explore more</a>
+      </div>
+
+      <!------------- Right column ------------->
+      <div class="col-span-1 z-10 lg:mr-24 lg:relative">
+        <img src="/assets/images/index_picture.png" class="lg:absolute h-[50vh] lg:h-full w-full object-cover">
+        <img src="/assets/images/projects.gif" class="h-0 w-0 lg:absolute lg:h-[40%] lg:w-[50%] -bottom-20 -left-28 object-cover">
+      </div>  
+    </div>
+</section>
+
+
+<!-------------------------- CTA -------------------------->
+
+<hr>
+
+<section class="text-center py-3 bg-sage-200">
+  <span class="text-sm">This space is dedicated to my two passions in life: Design & Travel</span>
+</section>
+
+<hr>
+
+<!-------------------------- Categories -------------------------->
+
+<section class="" id="categories">
+  <div class="grid grid-cols-1 md:grid-cols-2 text-center items-center">
+
+    <!------------- Design ------------->
+    <a href="/services.html" class="border-b md:border-b-0 md:border-r py-40 md:py-64 bg-cover bg-top relative w-full h-full" style="background-image: url('/assets/images/moods/elsewhere-mood-marble.jpg');">
+      <div class="absolute text-center text-white inset-0 flex justify-center items-center cursor-pointer bg-black/[.3] hover:bg-black/[.5] transition duration-300">
+      <h2 class="z-20 text-[5rem]">Design</h2>
+      </div>
+    </a>
+
+    <!------------- Travel ------------->
+    <a href="/blog.html" class="md:border-r py-40 md:py-64 bg-cover bg-center relative w-full h-full" style="background-image: url('/assets/images/moods/elsewhere-mood-plants-2.jpg');">
+      <div class="absolute text-center text-white inset-0 flex justify-center items-center cursor-pointer bg-black/[.2] hover:bg-black/[.3] transition duration-300">
+      <h2 class="z-20 text-[5rem]">Travel</h2>
+      </div>
+    </a>
+  </div>
+  <hr>
+</section>
+
+<!-------------------------- Services -------------------------->
+
+<section class="py-20 lg:py-32 lg:relative w-full h-full"> 
+  <div class="container grid grid-cols-1 lg:grid-cols-2 gap-20">
+
+    <!------------- Left column ------------->
+    <div class="hidden lg:block">
+      <img src="/assets/logos/elsewherebranddesign.svg"
+           class="w-36 absolute top-36 left-20 z-40">
+      <img src="/assets/images/portfolio/emye/design-emye-candle.png"
+           class="h-[35vh] w-[30vw] object-cover absolute top-60 left-48 z-20">
+      <img src="/assets/images/index_picture_4.png"
+           class="h-[45vh] w-[25vw] object-cover absolute top-[30rem] left-24 mb-20">
+    </div>
+
+    <!------------- Right column ------------->
+    <div class="flex-col items-center px-6 md:px-0">
+      <span class="tinytitle">Elsewhere Design Studio</span>
+      <h1 class="my-5">Uncover your brands<br><em>full potential.</em></h1>
+      <p class="my-5">Beautiful design is nice to look at but without a strategic foundation it lacks the longevity of a successful branding. Together we will get to the core of your brand and discover what sets you apart from the competition.</p>
+      <p class="my-5">Services I offer include:</p>
+      <ul class="">
+        <div class="">
+          {% assign faqs = site.data.faqs | where:'product-type','index' %}
+          {% include faqs.html %}
+        </div>
+        <a href="#" class="button mt-10 mr-5">The packages</a> <a href="#" class="button">Portfolio</a>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-------------------------- Image banner -------------------------->
+
+{% for item in page.image-banner limit:1 offset:1 %}
+<section> 
+  <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/30 text-white {% endif %} bg-fixed bg-cover h-[60vh] bg-center flex flex-col justify-center items-center"
+  style="background-image: url('{{item.bg-image}}')">
+    <h2 class="text-[4rem] leading-[4.5rem] md:text-[5rem] md:leading-[5.5rem] pb-6 text-center">{{item.text}}</h2>
+    <a href="{{item.link-url}}" class="button-white">{{item.link-text}}</a>
+  </div>
+</section>
+{% endfor %}
+
+<!-------------------------- Travel blog -------------------------->
+
+<section class="bg-sage-200 pt-20">
+
+  <!------------- Blog description ------------->
+  <div class="grid grid-cols-1 md:grid-cols-7 container items-center px-6 md:px-0">
+    <div class="md:col-start-1 md:col-end-4 mb-10 md:mb-20">
+      <h2 class="text-[5rem] leading-[5.5rem]">Always inspired<br><em>by travel.</em></h2>
+    </div>
+    <div class="md:col-start-5 md:col-end-8 mb-20">
+      <p>Discovering new cities, exploring museums, trying new food and learning about different cultures – this is where my inspiration comes from. Design plays an important part – while deciding on hotels, restaurant or shops I always try to spot the most aesthetic place (while keeping it budget-friendly). If you love travelling as much as me I hope I can give you some valuable insight for your next trip. </p>
+    </div>
+  </div>
+  <hr>
+
+  <!------------- Blog preview (Desktop) ------------->
+  <div class="hidden lg:block">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3">
+
+  		{% for post in site.posts limit:3 %}
+
+        {% include post-preview.html %}
+      		
+  		{% endfor %}
+ 		
+	  </div>
+    
+    <hr>
+
+    <!------------- Blog link ------------->
+    <div class="text-center items-center relative">
+      <div class="absolute -top-6 w-full mx-auto"><a href="/blog.html" class="button bg-sage-200 hover:bg-sage-300">More posts</a></div>
+    </div>   
+  </div>
+
+  <!------------- Blog preview (Mobile) ------------->
+    
+  <div class="lg:hidden">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+  		{% for post in site.posts limit:4 %}
+
+        {% include post-preview.html %}
+      		
+  		{% endfor %}
+ 		
+	</div>
+  <hr>
+
+    <!------------- Blog link ------------->
+    <div class="text-center items-center relative">
+      <div class="absolute -top-6 w-full mx-auto"><a href="" class="button bg-sage-200 hover:bg-sage-300">More posts</a></div>
+   </div>   
+  </div>
+
+</section>
+
+<!-------------------------- About me -------------------------->
+
+<section class="bg-sage-200">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center py-32 container px-10 md:px-0">
+    
+    <!------------- Description ------------->
+    <div class="col-span-1">
+      <h2>Hey, my name is <em>Tara.</em></h2>
+      <p class="my-10">
+        Branding is my favorite part of design. A thoughtful and consistent brand elevates the customer's experience, connects you with your target audience and helps you reach your business goals.
+        <br><br>
+        After 6 years working in design agencies I realized, that you don’t necessarily need an office to construct unique and strategic brands. Luckily I can take my creativity and experience wherever I go – which leads us to Atlas of Elsewhere, a space where I combine my two passions: Design & Travel.</p>
+      <a href="/about.html" class="button">Learn more</a>
+    </div>
+
+    <!------------- Image ------------->
+    
+    <div class="col-span-1">
+      <img src="/assets/images/tara_3.png" class="lg:h-[85vh] w-full object-cover object-bottom border p-6">
+    </div>
+  </div>
+</section>
+
+<!-------------------------- Image banner -------------------------->
+{% for item in page.image-banner limit:1 offset:2 %}
+<section> 
+  <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/50 text-white {% endif %} bg-fixed bg-cover h-[60vh] bg-center flex flex-col justify-center items-center"
+  style="background-image: url('{{item.bg-image}}')">
+    <h2 class="text-[4rem] leading-[4.5rem] md:text-[5rem] md:leading-[5.5rem] pb-6 text-center">{{item.text}}</h2>
+    <a href="{{item.link-url}}" class="button-white">{{item.link-text}}</a>
+  </div>
+</section>
+{% endfor %}
