@@ -76,7 +76,7 @@ module.exports = {
     fontFamily: {
       sans: ['Montserrat', 'sans-serif'],
       serif: ['EB Garamond', 'serif'],
-      display: ['Canela-Thin', 'serif'],
+      display: ['Canela', 'serif'],
       handwritten: ['Anderson', 'serif'],
     },
   },
