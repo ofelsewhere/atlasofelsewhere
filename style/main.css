@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Canela";
-  src: url("/assets/fonts/Canela-Thin.otf");
+  font-family: 'canelathin';
+  src: url('/assets/fonts/canela-thin-webfont.woff2') format('woff2'),
+       url('/assets/fonts/canela-thin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 
