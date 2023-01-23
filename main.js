@@ -105,3 +105,6 @@ function openMobileMenu() {
 }
 
 burgerButton.addEventListener('click', openMobileMenu)
+
+/////// Animate on scroll /////// 
+AOS.init();

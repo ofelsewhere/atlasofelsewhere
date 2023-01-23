@@ -122,3 +122,18 @@ li          { @apply border-b border-black text-xs uppercase tracking-[.3em] fon
 .burger.active {
   color: white;
 }
+
+.scroll-text {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: .1em;
+  display: flex;
+  animation: scrollText 30s infinite linear;
+  transition: all 1s ease;
+  margin-bottom: 0; 
+  text-decoration: dotted; }
+
+  @keyframes scrollText {
+      0%   {transform: translate(0);}
+      100%  {transform: translate(-200%);}
+    }
