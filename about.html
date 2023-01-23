@@ -7,25 +7,31 @@ about:
     title: Clients
     description-html: 'EMYE, Michael Driever, Savills, Moysies & Partners, Nunos, Onkel Ferdi
     <br><br><strong>KW43 Branddesign (2015-2021):</strong> GALERIA, GVV Direkt, Römerturm, delfort, Wobenzym, Merck, SARAM, Weber, Disgusting Food Museum, ALDI Süd, Trei Real Estate, GROHE, Deichmann, ZEISS, Kaufland'
+    delay: 0
   - image: assets/images/MadelinePhoto5.jpg
     title: Skills & Services
     description-html: 'Branding,  Web Design & Development, Editorial, Packaging, Art Direction
     <br><strong>Software:</strong> Adobe Creative Suite, Keynote, Visual Studio Code
     <br><strong>Languages:</strong> German, Englisch'
-  - image: assets/images/PalomaPhoto14.jpg
+    delay: 300
+  - image: /assets/images/kaboompics_new-years-eve-party-mess-confetti-disco-balls-29363.jpg
     title: Awards
     description-html: '<a href="https://ifworlddesignguide.com/entry/280808-saram-human-identity" target="_blank">iF Design Award 2020</a>, <a href="https://www.ddc.de/de/wettbewerb/gute-gestaltung-2019/identity/saram-human-identity.php" target="_blank">DDC 2019</a>, ADC 2019, <a href="https://www.red-dot.org/de/project/saram-human-identity-40703" target="_blank">Red Dot 2019</a>, <a href="https://ifworlddesignguide.com/entry/256924-romerturm-paper-tradition-fit-for-the-future" target="_blank">iF Design Award 2019</a>, <a href="https://www.corporate-design-preis.de/nc/alle-preistraeger/cdp-2018/id/2163/projekt/2/" target="_blank">Corporate Design Preis 2018</a>, <a href="https://ifworlddesignguide.com/entry/201522-inec-the-real-time-brand" target="_blank">DDC 2017</a> <a href="https://ifworlddesignguide.com/entry/201522-inec-the-real-time-brand" target="_blank">iF Design Award 2017</a>, Cannes Lions 2016, <a href="https://www.red-dot.org/de/project/the-real-time-brand-13780-13780" target="_blank">Red Dot 2016</a>'
-  - image: assets/images/moods/elsewhere-mood-business-cards-1.jpg
+    delay: 600
+  - image: /assets/images/kaboompics_magazine-and-grapes-in-a-bowl-on-a-linen-couch-26942.jpg
     title: Things I <em>love</em>
     description-html: 'Belgium, Canada, France, Germany, Indonesia, Netherlands, Taiwan, Vietnam'
+    delay: 0
   - image: assets/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg
     title: Countries <em>I've visited</em>
     description-html: 'Belgium, Canada, France, Germany, Indonesia, Netherlands, Taiwan, Vietnam'
-  - image: assets/images/moods/elsewhere-mood-business-cards-1.jpg
+    delay: 300
+  - image: /assets/images/lemon.jpg
     title: Friends
     description-html: 'Branding,  Web Design & Development, Editorial, Packaging, Art Direction
     <br><strong>Software:</strong> Adobe Creative Suite, Keynote, Visual Studio Code
-    <br><strong>Languages:</strong> German, Englisch'                    
+    <br><strong>Languages:</strong> German, Englisch'   
+    delay: 600                 
 image-banner:
   - bg-image: assets/images/moods/elsewhere-mood-plants-1.jpg
     text: Let’s work<br><em>together</em>
@@ -40,14 +46,14 @@ image-banner:
     
     <!------------- Description ------------->
     <div class="lg:pl-10 mt-10 lg:m-0">
-      <h2 class="text-[5rem] leading-[5.5rem]">Hey, my name<br>is <em>Tara.</em></h2>
-      <p class="my-10">
+      <h2 class="text-[5rem] leading-[5.5rem]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Hey, my name<br>is <em>Tara.</em></h2>
+      <p class="my-10" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
         I was born in beautiful Canada, but grew up in Germany. After graduating from design school, I spent the next six years making my way from intern to Senior Art Director at an award winning design agency in Düsseldorf. Sounds like a pretty straightforward resume. That is until my husband and I decided to pack up our life and move across the globe. Which is when I started this location independent design studio and travel blog from our current base in Ho Chi Minh City, Vietnam. Xin chào!</p>
         <p class="text-xs leading-5"><em>Even though I am currently based in Vietnam, I am open to travel within Asia for your project. Send me a message so we can discuss details.</em></p>
     </div>
 
     <!------------- Image ------------->
-    <div class="z-20">
+    <div class="z-20" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="">
       <img src="/assets/images/tara_2.png" class="h-full w-full object-cover">
     </div>  
 
@@ -61,12 +67,12 @@ image-banner:
 
 <!------------- Details ------------->
 
-<section class="pb-20 p-6 bg-sage-200">
+<section class="pb-40 p-6 bg-sage-200">
   <div class="container grid grid-col-1 lg:grid-cols-3 gap-10">
     
     {% for item in page.about %}
     <!------------- Services ------------->
-    <div class="border flex flex-col md:flex-row lg:flex-col items-center p-6 mt-4 hover:shadow-lg">
+    <div class="border flex flex-col md:flex-row lg:flex-col items-center p-6 mt-4 hover:shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="{{item.delay}}">
       
       <div class="max-h-[40vh] md:h w-full">
         <img src="{{item.image}}" class="h-full md:h-60 w-full md:w-[50vw] lg:w-full object-cover">
@@ -88,7 +94,7 @@ image-banner:
   <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/50 text-white {% endif %} bg-fixed bg-cover h-[60vh] bg-center flex flex-col justify-center items-center"
   style="background-image: url('{{item.bg-image}}')">
     <h2 class="text-[4rem] leading-[4.5rem] md:text-[5rem] md:leading-[5.5rem] pb-6 text-center">{{item.text}}</h2>
-    <a href="{{item.link-url}}" class="button-white">{{item.link-text}}</a>
+    <a href="{{item.link-url}}" class="button-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">{{item.link-text}}</a>
   </div>
 </section>
 {% endfor %}

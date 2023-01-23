@@ -128,7 +128,7 @@ li          { @apply border-b border-black text-xs uppercase tracking-[.3em] fon
   font-size: 0.8rem;
   letter-spacing: .1em;
   display: flex;
-  animation: scrollText 30s infinite linear;
+  animation: scrollText 60s infinite linear;
   transition: all 1s ease;
   margin-bottom: 0; 
   text-decoration: dotted; }
