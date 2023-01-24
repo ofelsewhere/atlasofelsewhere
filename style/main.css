@@ -123,17 +123,34 @@ li          { @apply border-b border-black text-xs uppercase tracking-[.3em] fon
   color: white;
 }
 
+/* ------------ Scroll Text ------------ */
+
 .scroll-text {
   text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: .1em;
+  font-weight: 500;
+  font-size: 0.7rem;
+  letter-spacing: .2em;
   display: flex;
   animation: scrollText 60s infinite linear;
   transition: all 1s ease;
-  margin-bottom: 0; 
-  text-decoration: dotted; }
+  margin-bottom: 0; }
 
   @keyframes scrollText {
-      0%   {transform: translate(0);}
-      100%  {transform: translate(-200%);}
+    from {transform:translate(0);}
+    to {transform:translate(-200%);}
+}
+
+  .bg-image-rotate {
+    display: flex;
+    width: max-content;
+    animation: spin 10s infinite linear;
+    transition: all 1s ease;
+    margin-bottom: 0;  }
+
+    @keyframes spin {
+        0% {transform:rotate(-5deg);}
+        50% {transform:rotate(7deg);}
+        100% {transform:rotate(-5deg);}
     }
+    
+    

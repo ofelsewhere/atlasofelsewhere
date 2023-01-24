@@ -3,7 +3,7 @@ layout: default
 title: Homepage
 header-bg: bg-sage-200
 image-banner:
-  - bg-image: /assets/images/MoyoFreePhoto9.jpg
+  - bg-image: /assets/images/kaboompics_home-office-on-the-sofa-books-laptop-macbook-29691.jpg
     text: Let's take your brand<br><em>to the next level</em>
     link-text: Apply now
     link-url: 
@@ -67,35 +67,10 @@ image-banner:
 <!------------- Service package | Branding ------------->
 
 <section class="grid grid-cols-1 lg:grid-cols-8 border-b">
-    
-    <!------------- Package details ------------->
-    <div class="col-span-1 md:col-span-5 bg-sage-200 p-10 lg:p-20 lg:border-r">
-      <h3 class="text-[5rem] leading-[5.5rem] pb-4">Strategic<br><em>brand design</em></h3>
-      <div class="lg:pr-32">
-        <p>Every brand and project is unique, so I tailor each proposal to your specific needs. To get an overview of what goes into a branding project, here are some of the (recommended) steps:</p>
-      </div>
-      <div class="">
-        {% assign faqs = site.data.faqs | where:'product-type','branding' %}
-        {% include faqs.html %}
-      </div>
-    </div>
-
-    <!------------- Image + info ------------->
-    <div class="col-span-1 md:col-span-3 w-full bg-sage-200 px-10 lg:p-20">
-      <img src="assets/images/portfolio/emye/design-emye-business-cards.png" class="h-96 object-cover">
-      <span class="tinytitle block mt-8"><strong>Timing:</strong> 6-8 weeks</span>
-      <span class="tinytitle block mt-1 mb-6">Investment starts at 3500€</span>
-      <a href="" class="button mb-20">Get in touch</a>
-    </div>
-</section>
-
-<!------------- Service package | Branding ------------->
-
-<section class="grid grid-cols-1 lg:grid-cols-8 border-b">
 
   <!------------- Package details ------------->
   <div class="lg:order-2 col-span-1 md:col-span-5 bg-sage-200 p-10 lg:p-20">
-    <h3 class="text-[5rem] leading-[5.5rem] pb-4">Web design<br><em>& development</em></h3>
+    <h3 class="text-[5rem] leading-[5.5rem] pb-4">Strategic<br><em>brand design</em></h3>
     <div class="lg:pr-32">
       <p>Every brand and project is unique, so I tailor each proposal to your specific needs. To get an overview of what goes into a branding project, here are some of the (recommended) steps:</p>
     </div>
@@ -107,12 +82,37 @@ image-banner:
 
   <!------------- Image + info ------------->
   <div class="col-span-1 md:col-span-3 w-full bg-sage-200 px-10 lg:p-20 lg:border-r">
-    <img src="/assets/images/portfolio/emye/design-emye-website.png" class="h-96 object-cover">
+    <img src="/assets/images/portfolio/galeria/elsewhere-design-galeria-flyer.png" class="lg:h-[60vh] object-cover">
     <span class="tinytitle block mt-8"><strong>Timing:</strong> 6-8 weeks</span>
     <span class="tinytitle block mt-1 mb-6">Investment starts at 2500€</span>
     <a href="" class="button mb-20">Get in touch</a>
   </div>
 
+</section>
+
+<!------------- Service package | Branding ------------->
+
+<section class="grid grid-cols-1 lg:grid-cols-8 border-b">
+    
+  <!------------- Package details ------------->
+  <div class="col-span-1 md:col-span-5 bg-sage-200 p-10 lg:p-20 lg:border-r">
+    <h3 class="text-[5rem] leading-[5.5rem] pb-4">Web design<br><em>& development</em></h3>
+    <div class="lg:pr-32">
+      <p>Every brand and project is unique, so I tailor each proposal to your specific needs. To get an overview of what goes into a branding project, here are some of the (recommended) steps:</p>
+    </div>
+    <div class="">
+      {% assign faqs = site.data.faqs | where:'product-type','branding' %}
+      {% include faqs.html %}
+    </div>
+  </div>
+
+  <!------------- Image + info ------------->
+  <div class="col-span-1 md:col-span-3 w-full bg-sage-200 px-10 lg:p-20">
+    <img src="/assets/images/portfolio/emye/design-emye-website-home.jpg" class="lg:h-[60vh] object-cover">
+    <span class="tinytitle block mt-8"><strong>Timing:</strong> 6-8 weeks</span>
+    <span class="tinytitle block mt-1 mb-6">Investment starts at 3500€</span>
+    <a href="" class="button mb-20">Get in touch</a>
+  </div>
 </section>
 
 <!--------------- Testimonials --------------->
@@ -130,7 +130,7 @@ image-banner:
 <section> 
   <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/50 text-white {% endif %} bg-fixed bg-cover h-[60vh] bg-center flex flex-col justify-center items-center"
   style="background-image: url('{{item.bg-image}}')">
-    <h2 class="text-[4rem] leading-[4.5rem] md:text-[5rem] md:leading-[5.5rem] pb-6 text-center">{{item.text}}</h2>
+    <h2 class="text-[4rem] leading-[4.5rem] md:text-[5rem] md:leading-[5.5rem] pb-10 text-center">{{item.text}}</h2>
     <a href="{{item.link-url}}" class="button-white">{{item.link-text}}</a>
   </div>
 </section>
