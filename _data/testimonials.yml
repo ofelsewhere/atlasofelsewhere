@@ -1,15 +1,9 @@
-- name: Anna
-  quote: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, magnam? Et, nemo ducimus, tempora eligendi est enim minima similique repellat culpa dignissimos deleniti molestiae commodi quaerat illo? Maiores, quisquam quae!
-  product-type: ebook
-- name: Lea
-  quote: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, magnam? Et, nemo ducimus, tempora eligendi est enim minima similique repellat culpa dignissimos deleniti molestiae commodi quaerat illo? Maiores, quisquam quae!
-  product-type: ebook  
-- name: Tom
-  quote: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, magnam? Et, nemo ducimus, tempora eligendi est enim minima similique repellat culpa dignissimos deleniti molestiae commodi quaerat illo? Maiores, quisquam quae!
-  product-type: preset    
-- name: Tom
-  quote: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, magnam? Et, nemo ducimus, tempora eligendi est enim minima similique repellat culpa dignissimos deleniti molestiae commodi quaerat illo? Maiores, quisquam quae!
-  product-type: preset    
-- name: Tom
-  quote: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, magnam? Et, nemo ducimus, tempora eligendi est enim minima similique repellat culpa dignissimos deleniti molestiae commodi quaerat illo? Maiores, quisquam quae!
-  product-type: preset      
+- name: Emye
+  quote: Throughout the process Tara not only paid attention to the design but also helped us structure our thoughts and pointed out details we wouldn't have thought of ourselves.
+  product-type: branding
+- name: KW43 Branddesign 
+  quote: Tara works with dedication and focus. She identifies with her tasks and clients and has a natural intuition for excellent design.
+  product-type: freelance    
+- name: RDL
+  quote: It was easy to identify with our new brand. We were so excited about it, we started printing materials and merchandise for our employees right away.
+  product-type: branding

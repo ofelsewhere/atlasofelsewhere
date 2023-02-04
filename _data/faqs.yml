@@ -31,6 +31,33 @@
   data: 5
   answer: 
     •&ensp; Such as business cards or signage
+- question: Structure & Wireframing
+  product-type: digital
+  data: 6
+  answer: 
+    •&ensp; Basic analysis of competion + target groups
+    <br>•&ensp; Website structure through wireframing  
+- question: Web Design
+  product-type: digital
+  data: 7
+  answer: 
+    •&ensp; Research & first ideas
+    <br>•&ensp; Adobe XD layout
+    <br>•&ensp; Definition logo colors and typography
+    <br>•&ensp; Sourcing icons and imagery
+- question: Web Development
+  product-type: digital
+  data: 8
+  answer: 
+    •&ensp; Custom HTML & CSS
+    <br>•&ensp; Basic Javascript animations
+    <br>•&ensp; Editable moduls for CloudCannon (optional)
+- question: Hosting & Maintenance
+  product-type: digital
+  data: 9
+  answer: 
+    •&ensp; Set up domain & hosting
+    <br>•&ensp; Editable moduls (optional)             
 
 - question: Design Strategy
   product-type: index
@@ -41,7 +68,7 @@
   product-type: index
   data: 2
   answer: 
-    By crafting a logo with purpose and setting the mood with strategic colors & typography we are building a brand your audience trusts. Additional design elements set you apart from the competion.
+    By crafting a logo with purpose and setting the mood with strategic colors and typography we are building a brand your audience trusts. Additional design elements grab your customer’s attention and enhance your recognizability.
 - question: Web Design & Development
   product-type: index
   data: 3
