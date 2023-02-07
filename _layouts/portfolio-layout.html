@@ -5,12 +5,12 @@ layout: default
 
 <!-------------------------- Intro -------------------------->
 
-<section class="{{page.header-color}} lg:max-h-[120vh] -mt-[20vh] bg-cover bg-center z-30 overflow-hidden" style="background-image: url('{{page.header-image}}');">
+<section class="{{page.header-color}} lg:max-h-[120vh] -mt-[20vh] bg-cover bg-center z-30 overflow-hidden p-6 md:p-0" style="background-image: url('{{page.header-image}}');">
 
   <div class="container grid grid-cols-1 lg:grid-cols-5 gap-10 md:gap-20 pt-40 pb-60">
 
     <!------------- Left column ------------->
-    <div class="col-span-2 mt-20 md:h-full px-10 md:px-0">
+    <div class="col-span-1 md:col-span-2 mt-20 md:h-full">
       <span class="tinytitle">{{page.title}}</span>
       <h1 class="md:text-[4.5vw] md:leading-[5vw] mt-5 pb-6">
         {{page.headline}}
@@ -20,8 +20,8 @@ layout: default
     </div>
 
     <!------------- Right column ------------->
-    <div class="col-span-3 lg:mt-20 z-0 ">
-      <img src="{{page.featured-image}}" class="{% if page.image-hidden == true %} hidden {% endif %}px-10 md:px-0  h-full w-full object-cover">
+    <div class="col-span-1 md:col-span-3 lg:mt-20 z-0 ">
+      <img src="{{page.featured-image}}" class="{% if page.image-hidden == true %} hidden {% endif %} h-full w-full object-cover">
     </div>  
   </div>
 </section>
@@ -35,7 +35,7 @@ layout: default
 
 <!------------- Testimonial ------------->
 {% if page.testimonial == true %}
-<section class="{{page.bottom-color}} -mt-40 md:-mt-60">
+<section class="{{page.bottom-color}} -mt-40 md:-mt-72">
   <div class="pt-60 pb-10 w-full md:max-w-4xl mx-auto text-center">
 
     <h4 class="mb-10 border-b pb-2 inline-block">Client Feedback:</h4>
@@ -63,7 +63,7 @@ layout: default
 
 <!-------------------------- Arrows -------------------------->
 
-<section class="{{page.bottom-color}} bg-sage-200 py-20 {% if page.testimonial != true %} md:-mt-60 pt-40 {% endif %}">
+<section class="{{page.arrow-color}} py-20 {% if page.testimonial != true %} md:-mt-60 pt-40 {% endif %}">
   <div class="container">
   <div class="flex md:flex-row justify-center">
     <div class="md:self-start mr-3">
@@ -78,6 +78,7 @@ layout: default
 </section>
 
 <!-------------------------- Image banner -------------------------->
+
 {% for item in page.image-banner %}
 <section> 
   <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/50 text-white {% endif %} bg-fixed bg-cover h-[60vh] bg-center flex flex-col justify-center items-center"

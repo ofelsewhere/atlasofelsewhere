@@ -21,19 +21,19 @@ image-banner:
     <!------------- Left column ------------->
     <div class="col-span-5 xl:col-span-3 xl:pt-16 md:px-10 xl:pl-24">
       <div class="xl:hidden flex justify-end mb-10"><img src="/assets/logos/ofelsewherestudio_logo.svg" class="h-32"></div>
-      <span class="hidden md:block tinytitle">Elsewhere Brand Design | Services</span>
-      <h1 class="text-[2rem] leading-[2.5rem] md:text-[4.5rem] md:leading-[5rem] pt-6">
-        I've been lucky to work with some amazing clients. Here are of my <em>favorite recent projects.</em>
+      <span class="hidden md:block tinytitle">Of Elsewhere Studio | Portfolio</span>
+      <h1 class="text-[2rem] leading-[2.5rem] md:text-[4rem] md:leading-[4.5rem] pt-6">
+        I've had the privilege to work with some amazing clients. Have a look at some of my <em>favorite recent projects.</em>
       </h1>
     </div>
     
     <!------------- Right column ------------->
     <div class="col-span-5 xl:col-span-2 xl:pt-10 md:px-10 xl:pr-24 xl:pl-10 flex-col items-center mb-20 md:pb-0">
       <div class="hidden xl:flex justify-end -mt-6 xl:mt-0"><img src="/assets/logos/ofelsewherestudio_logo.svg" class="h-32"></div>
-        <p class="mt-10 xl:-mt-20 xl:md-0 xl:pt-60 pb-10 w-full md:w-[50vw] xl:w-full">
-          During my time in the agency I worked on many projects for a variety of industries. It never got boring and I learned you can even turn the most mundane business into a modern and aesthetic brand. 
+        <p class="mt-10 xl:-mt-20 xl:pt-40 pb-10 w-full md:w-[50vw] xl:w-full">
+          Working in a design agency for six years I got to work on a variety of projects from all kinds of different industries. During that time I learned that you can turn any business, as boring as it may initially sound, into a nuanced and resonating brand. What these clients have in common? They value design, are willing to take risks and know the impact a thoughtful brand can make on their business.
         </p>
-        <a href="/_portfolio/emye.html" class="button mr-5 mb-5">Explore more</a><a href="#" class="button">Explore more</a>
+        <a href="#projects" class="button mr-5 mb-5">Explore more</a>
     </div>
 
   </div>
@@ -45,7 +45,7 @@ image-banner:
 
 <!---------------------- EMYE ---------------------->
 
-<section class="grid grid-cols-1 lg:grid-cols-8 odd:space-x-reverse">
+<section class="grid grid-cols-1 lg:grid-cols-8 odd:space-x-reverse" id="projects">
     
   {% for item in site.projects limit:1 %}
   <!------------- Project image ------------->
@@ -58,7 +58,7 @@ image-banner:
   <div class="col-span-1 lg:col-span-3 pb-10 md:pb-20 px-10 md:px-20 lg:p-20 border-b">
     <span class="tinytitle">{{item.title}}</span>
     <h2 class="text-[3rem] leading-[3.5rem] md:text-[4rem] md:leading-[4.5rem] mt-5">{{item.headline}}</h2>
-    <p class="py-5">{{item.description-html}}</p>
+    <p class="py-5 mb-5">{{item.description-html}}</p>
     <a href="{{item.url}}" class="button mr-5">Explore more</a>
   </div>
   {% endfor %}
@@ -75,7 +75,7 @@ image-banner:
   <div class="col-span-1 lg:col-span-3 pb-10 md:pb-20 px-10 md:px-20 lg:p-20 lg:border-r border-b">
     <span class="tinytitle">{{item.title}}</span>
     <h2 class="text-[3rem] leading-[3.5rem] md:text-[4rem] md:leading-[4.5rem] mt-5">{{item.headline}}</h2>
-    <p class="py-5">{{item.description-html}}</p>
+    <p class="py-5 mb-5">{{item.description-html}}</p>
     <a href="{{item.url}}" class="button mr-5">Explore more</a>
   </div>
   {% endfor %}  
@@ -97,8 +97,8 @@ image-banner:
   <div class="col-span-1 lg:col-span-3 pb-10 md:pb-20 px-10 md:px-20 lg:p-20 border-b">
     <span class="tinytitle">{{item.title}}</span>
     <h2 class="text-[3rem] leading-[3.5rem] md:text-[4rem] md:leading-[4.5rem] mt-5">{{item.headline}}</h2>
-    <p class="py-5">{{item.description-html}}</p>
-    <a href="{{item.url}}" class="button mr-5">Explore more</a>
+    <p class="py-5 mb-5">{{item.description-html}}</p>
+    <a href="{{item.url}}" class="button">Explore more</a>
   </div>
   {% endfor %}
 
@@ -114,8 +114,8 @@ image-banner:
   <div class="col-span-1 lg:col-span-3 pb-10 md:pb-20 px-10 md:px-20 lg:p-20 lg:border-r border-b">
     <span class="tinytitle">{{item.title}}</span>
     <h2 class="text-[3rem] leading-[3.5rem] md:text-[4rem] md:leading-[4.5rem] mt-5">{{item.headline}}</h2>
-    <p class="py-5">{{item.description-html}}</p>
-    <a href="{{item.url}}" class="button mr-5">Explore more</a>
+    <p class="py-5 mb-5">{{item.description-html}}</p>
+    <a href="{{item.url}}" class="button">Explore more</a>
   </div>
   {% endfor %}  
 
@@ -134,7 +134,7 @@ image-banner:
       <h2 class="text-[3rem] leading-[3.5rem] md:text-[4rem] md:leading-[4.5rem] lg:text-[3rem] lg:leading-[3.5rem] mt-5">
         {{item.headline}}
       </h2>
-      <p class="py-5">{{item.description-html}}</p>
+      <p class="py-5 mb-5">{{item.description-html}}</p>
       <a href="{{item.url}}" class="button">Explore more</a>
     </div>
     {% endfor %}

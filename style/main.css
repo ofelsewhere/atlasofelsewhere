@@ -27,7 +27,7 @@ html {
 
 /* ------------ Typography styles ------------ */
 
-h1, h2, h3  { @apply font-display font-light text-[3.5rem] leading-[4.5rem] tracking-[.02em]; }
+h1, h2, h3  { @apply font-display font-light text-[3.5rem] leading-[4.5rem] tracking-[.02em] pb-3; }
 
 p           { @apply leading-8 text-[0.9rem] tracking-[0.03em]; }
 
@@ -143,13 +143,13 @@ li          { @apply border-b border-black text-xs uppercase tracking-[.3em] fon
   .bg-image-rotate {
     display: flex;
     width: max-content;
-    animation: spin 8s infinite linear;
+    animation: spin 9s infinite linear;
     transition: all 1s ease;
     margin-bottom: 0;  }
 
     @keyframes spin {
         0% {transform:rotate(-5deg);}
-        50% {transform:rotate(7deg);}
+        50% {transform:rotate(5deg);}
         100% {transform:rotate(-5deg);}
     }
     
