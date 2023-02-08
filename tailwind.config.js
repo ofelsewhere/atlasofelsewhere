@@ -47,7 +47,7 @@ module.exports = {
         'rose': '#e6b9b4',
       },   
       'camino': {
-        DEFAULT: '#c5aca4',
+        DEFAULT: '#d8cfcf',
         'blue': '#a1c5d9',
       },
       'galeria': {

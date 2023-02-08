@@ -5,18 +5,17 @@ layout: default
 
 <!-------------------------- Intro -------------------------->
 
-<section class="{{page.header-color}} lg:max-h-[120vh] -mt-[20vh] bg-cover bg-center z-30 overflow-hidden p-6 md:p-0" style="background-image: url('{{page.header-image}}');">
+<section class="{{page.header-color}} lg:h-screen -mt-[20vh] bg-cover bg-center z-30 overflow-hidden p-6 md:p-0" style="background-image: url('{{page.header-image}}');">
 
   <div class="container grid grid-cols-1 lg:grid-cols-5 gap-10 md:gap-20 pt-40 pb-60">
 
     <!------------- Left column ------------->
     <div class="col-span-1 md:col-span-2 mt-20 md:h-full">
-      <span class="tinytitle">{{page.title}}</span>
-      <h1 class="md:text-[4.5vw] md:leading-[5vw] mt-5 pb-6">
+      <div class="tinytitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">{{page.title}}</div>
+      <h1 class="md:text-[4.5vw] md:leading-[5vw] mt-5 pb-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         {{page.headline}}
       </h1>
-      <p class="">{{page.description-html}}</p>
-      <p class="tinytitle pt-6">{{page.tagline}}</p>  
+      <p class="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">{{page.description-html}}</p>
     </div>
 
     <!------------- Right column ------------->
