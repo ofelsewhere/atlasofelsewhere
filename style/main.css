@@ -27,7 +27,7 @@ html {
 
 /* ------------ Typography styles ------------ */
 
-h1, h2, h3  { @apply font-display font-light text-[3.5rem] leading-[4.5rem] tracking-[.02em] pb-3; }
+h1, h2, h3  { @apply font-display font-light text-[3.5rem] leading-[4.5rem] tracking-[.01em] pb-3; }
 
 p           { @apply leading-8 text-[0.9rem] tracking-[0.03em]; }
 
@@ -48,7 +48,7 @@ li          { @apply border-b border-black text-xs uppercase tracking-[.3em] fon
 }
 
 .button-white { 
-  @apply inline-block py-3 px-6 text-xs font-semibold uppercase tracking-[.2em] no-underline rounded-full text-white border-white border hover:bg-white/20 transition; 
+  @apply inline-block py-3 px-6 text-xs font-semibold uppercase tracking-[.2em] no-underline rounded-full text-white border-white border hover:bg-white/10 transition; 
 }
 
 /* ------------ Cookie banner ------------ */
@@ -129,7 +129,7 @@ li          { @apply border-b border-black text-xs uppercase tracking-[.3em] fon
   text-transform: uppercase;
   font-weight: 500;
   font-size: 0.7rem;
-  letter-spacing: .2em;
+  letter-spacing: .3em;
   display: flex;
   animation: scrollText 60s infinite linear;
   transition: all 1s ease;
