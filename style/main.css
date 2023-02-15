@@ -29,7 +29,7 @@ html {
 
 h1, h2, h3  { @apply font-display font-light text-[3.5rem] leading-[4.5rem] tracking-[.01em] pb-3; }
 
-p           { @apply leading-8 text-[0.9rem] tracking-[0.03em]; }
+p           { @apply leading-7 text-[0.8rem] tracking-[0.03em]; }
 
 p a         { @apply underline }
 
@@ -44,7 +44,7 @@ li          { @apply border-b border-black text-xs uppercase tracking-[.3em] fon
 /* ------------ Button styles ------------ */
 
 .button { 
-  @apply inline-block py-3 px-6 text-xs font-semibold uppercase tracking-[.2em] no-underline rounded-full text-black border-black border hover:bg-sage-500/20 transition; 
+  @apply inline-block py-3 px-6 text-xs font-semibold uppercase tracking-[.2em] no-underline rounded-full text-black border-black border hover:bg-graphit/10 transition; 
 }
 
 .button-white { 

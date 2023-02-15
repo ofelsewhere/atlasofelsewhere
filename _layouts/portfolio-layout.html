@@ -1,6 +1,5 @@
 ---
 layout: default
-
 ---
 
 <!-------------------------- Intro -------------------------->
@@ -15,7 +14,10 @@ layout: default
       <h1 class="md:text-[4.5vw] md:leading-[5vw] mt-5 pb-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         {{page.headline}}
       </h1>
-      <p class="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">{{page.description-html}}</p>
+      <p class="mb-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">{{page.description-html}}</p>
+      {% if page.link-target != nil %}
+      <a href="{{page.link-target}}" target="_blank" class="button z-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">{{page.link-description}}</a>
+      {% endif %}
     </div>
 
     <!------------- Right column ------------->
@@ -34,19 +36,21 @@ layout: default
 
 <!------------- Testimonial ------------->
 {% if page.testimonial == true %}
-<section class="{{page.bottom-color}} -mt-40 md:-mt-72">
-  <div class="pt-60 pb-10 w-full md:max-w-4xl mx-auto text-center">
+<section class="{{page.bottom-color}} {{page.bottom-overlap}}">
+  <div class="pb-10 w-full md:max-w-4xl mx-auto text-center">
 
     <h4 class="mb-10 border-b pb-2 inline-block">Client Feedback:</h4>
   
     <div class="">
       {% for item in page.testimonials %}
-      <div class="">
+      <div class="items-center justify-center flex-col flex">
+        {% if item.client-image != nil %}
+        <img src="{{item.client-image}}" class="rounded-full aspect-square object-cover w-60 mb-10">
+        {% endif %}
         <div class="flex flex-row items-center">
           <div class="p-5 md:p-10 text-6xl text-medium-beige opacity-50">“</div>
   
             <div>
-              <h2>{{item.name}}</h2>
               <p>{{item.quote}}</p>
             </div>
   
@@ -62,7 +66,7 @@ layout: default
 
 <!-------------------------- Arrows -------------------------->
 
-<section class="{{page.arrow-color}} py-20 {% if page.testimonial != true %} md:-mt-60 pt-40 {% endif %}">
+<section class="{{page.arrow-color}} py-20 {% if page.testimonial != true %} md:-mt-60 pt-60 {% endif %}">
   <div class="container">
   <div class="flex md:flex-row justify-center">
     <div class="md:self-start mr-3">
@@ -75,15 +79,3 @@ layout: default
   </div>
 </div>
 </section>
-
-<!-------------------------- Image banner -------------------------->
-
-{% for item in page.image-banner %}
-<section> 
-  <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/50 text-white {% endif %} bg-fixed bg-cover h-[60vh] bg-center flex flex-col justify-center items-center"
-  style="background-image: url('{{item.bg-image}}')">
-    <h2 class="text-[4rem] leading-[4.5rem] md:text-[5rem] md:leading-[5.5rem] pb-6 text-center">{{item.text}}</h2>
-    <a href="{{item.link-url}}" class="button-white">{{item.link-text}}</a>
-  </div>
-</section>
-{% endfor %}
