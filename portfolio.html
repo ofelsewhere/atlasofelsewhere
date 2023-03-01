@@ -124,9 +124,9 @@ image-banner:
 <!---------------------- Small projects ---------------------->
 
 <section>
-<div class="grid grid-cols-1 lg:grid-cols-8 lg:border-b">
+<div class="grid grid-cols-1 lg:grid-cols-8">
     
-    {% for item in site.projects limit:2 offset:4 %}
+    {% for item in site.projects limit:0 offset:4 %}
     <!------------- Project left ------------->
     <div class="col-span-1 lg:col-span-4 lg:border-b-0 border-b lg:border-r last:border-r-0 p-10 md:p-20">
       <img src="{{item.featured-image}}" class="h-[60vh] lg:h-[50vh] w-full object-cover pb-10">
