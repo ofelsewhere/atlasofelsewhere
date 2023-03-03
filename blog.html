@@ -10,26 +10,29 @@ site-header: travel
 
     <!------------- Title ------------->
     <div class="col-span-3 pt-20 text-center px-10">
-      <span class="tinytitle">Travel Journal & Recommendations</span>
-      <h1 class="text-[5rem] leading-[5.5rem] pt-6">Life is not meant to<br>be lived in one place.</h1>
-      <p class="md:w-[40vw] mx-auto mt-5 mb-20"> Discovering new cities, exploring museums, trying new food and learning about different cultures – this is where my inspiration comes from. Design plays an important part – while deciding on hotels, restaurant or shops I always try to spot the most aesthetic place (while keeping it budget-friendly).<br>If you love travelling as much as me I hope I can give you some valuable insight for your next trip.</p>
+      <span class="tinytitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Travel Journal & Recommendations</span>
+      <h1 class="text-[5rem] leading-[5.5rem] pt-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Life is not meant to<br>be lived in one place.</h1>
+      <p class="md:w-[40vw] mx-auto mt-5 mb-20" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"> Discovering new cities, exploring museums, trying new food and learning about different cultures – this is where my inspiration comes from. Design plays an important part – while deciding on hotels, restaurant or shops I always try to spot the most aesthetic place (while keeping it budget-friendly). If you love travelling as much as me I hope I can give you some valuable insight for your next trip.</p>
     </div>
 
   <!------------- Illustration ------------->
   <div class="z-0">
-  <img class="opacity-20 w-[60vw] md:w-[30vw] rotate-12 absolute top-72 -left-16 md:-left-32" src="/assets/images/illustrations/palmtree2.svg">
-  <img class="hidden md:block opacity-20 w-[40vw] -rotate-12 absolute top-20 -right-52" src="/assets/images/illustrations/palmtree1.svg">
+   <div class="absolute top-72 -left-16 md:-left-32" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+    <img class="opacity-20 w-[60vw] md:w-[30vw] rotate-12" src="/assets/images/illustrations/palmtree2.svg">
+  </div>
+  <div class="absolute top-20 -right-52" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+    <img class="hidden md:block opacity-20 w-[40vw] -rotate-12" src="/assets/images/illustrations/palmtree1.svg"></div>
   </div>
 </div>
    
 
 <!------------- Categories ------------->
 
-  <div class="container z-40 text-center flex flex-wrap space-x-3 justify-center">
+  <div class="container z-40 text-center flex flex-wrap space-x-3 justify-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
         
         {% for item in site.archives %}
         {% if item.nav-bar == true %}
-        <a class="z-40 button mb-5 last:mr-0" href="{{item.url}}">{{item.title}}</a>
+        <a class="z-40 button mb-5 last:mr-0" href="{{item.url}}" data-filter="{{item.title}}">{{item.title}}</a>
         {% endif %}
         {% endfor %}
   </div>
@@ -37,7 +40,7 @@ site-header: travel
 
 <!------------- Blog preview ------------->
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 container z-40 pt-10 pb-20 lg:pb-40">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 container z-40 pt-10 pb-20 lg:pb-40" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
 
       {% for post in site.posts limit:9 %}
 

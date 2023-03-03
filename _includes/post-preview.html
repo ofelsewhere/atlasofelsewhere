@@ -1,6 +1,6 @@
 <!------------------ This is the blog post preview for index / related posts ------------------>
 
-<a href="{{post.url}}" class="bg-sage-200 hover:bg-sage-300/30 first:border-l border-r text-center pb-28">
+<div class="bg-sage-200 hover:bg-sage-300/30 first:border-l border-r text-center pb-28">
   
   <img class="h-[75vh] w-full object-cover mb-16" src="{{post.featured-image}}">
 
@@ -14,4 +14,6 @@
   
   <span class="tinytitle block"><strong>{{post.date | date: "%d %b %Y"}}</strong></span>
 
-</a>
+</div>
+
+<!-- include in the link: {{post.url}} -->
