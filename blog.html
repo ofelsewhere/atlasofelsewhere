@@ -30,9 +30,10 @@ site-header: travel
 
   <div class="container z-40 text-center flex flex-wrap space-x-3 justify-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
         
+        <a class="z-40 button mb-5 last:mr-0" href="/blog.html">All</a>
         {% for item in site.archives %}
         {% if item.nav-bar == true %}
-        <a class="z-40 button mb-5 last:mr-0" href="{{item.url}}" data-filter="{{item.title}}">{{item.title}}</a>
+        <a class="z-40 button mb-5 last:mr-0" href="{{item.url}}">{{item.title}}</a>
         {% endif %}
         {% endfor %}
   </div>

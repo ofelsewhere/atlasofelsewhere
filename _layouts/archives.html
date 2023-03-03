@@ -24,14 +24,15 @@ layout: default
 
 <!------------- Categories ------------->
 
-  <div class="container z-20 text-center">
+<div class="container z-40 text-center flex flex-wrap space-x-3 justify-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
         
-        {% for item in site.archives %}
-        {% if item.nav-bar == true %}
-        <a class="inline-block button mr-5 last:mr-0 z-40" href="{{item.url}}">{{item.title}}</a>
-        {% endif %}
-        {% endfor %}
-  </div>
+  <a class="z-40 button mb-5 last:mr-0" href="/blog.html">All</a>
+  {% for item in site.archives %}
+  {% if item.nav-bar == true %}
+  <a class="z-40 button mb-5 last:mr-0" href="{{item.url}}">{{item.title}}</a>
+  {% endif %}
+  {% endfor %}
+</div>
 
 
 <!------------- Blog preview ------------->
