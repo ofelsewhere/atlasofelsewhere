@@ -45,7 +45,7 @@ site-header: travel
 
       {% for post in site.posts limit:9 %}
 
-      <a href="{{post.url}}" class="bg-sage-200 hover:bg-sage-300/30 border text-center pb-20 z-40">
+      <div href="{{post.url}}" class="bg-sage-200 hover:bg-sage-300/30 border text-center pb-20 z-40">
         
         <!------------- Image ------------->
         <img class="h-[60vh] w-full object-cover mb-10 p-4" src="{{post.featured-image}}">
@@ -61,9 +61,10 @@ site-header: travel
         <h2 class="text-center inline-block tracking-[.03em] my-8">{{post.title}}</h2>
         
         <!------------- Date ------------->
-        <span class="text-xs uppercase tracking-[.3em] block"><strong>{{post.date | date: "%d %b %Y"}}</strong></span>
-      
-      </a>
+        <span class="text-xs uppercase tracking-[.3em] block"><strong>Coming soon</strong></span>
+        <!-- <span class="text-xs uppercase tracking-[.3em] block"><strong>{{post.date | date: "%d %b %Y"}}</strong></span>
+       -->
+      </div>
           
       {% endfor %}
 

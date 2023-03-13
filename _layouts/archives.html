@@ -1,5 +1,6 @@
 ---
 layout: default
+site-header: travel
 ---
 
 <!------------- Intro ------------->
@@ -41,7 +42,7 @@ layout: default
 
       {% for post in site.categories[page.category] %}
 
-      <a href="{{post.url}}" class="bg-sage-200 hover:bg-sage-300/30 border text-center pb-20 z-40">
+      <div href="{{post.url}}" class="bg-sage-200 hover:bg-sage-300/30 border text-center pb-20 z-40">
         
         <!------------- Image ------------->
         <img class="h-[60vh] w-full object-cover mb-10 p-4" src="{{post.featured-image}}">
@@ -57,9 +58,10 @@ layout: default
         <h2 class="text-center inline-block font-display font-light tracking-[.03em] text-6xl featured-text my-8">{{post.title}}</h2>
         
         <!------------- Date ------------->
-        <span class="text-xs uppercase tracking-[.3em] block"><strong>{{post.date | date: "%d %b %Y"}}</strong></span>
+        <span class="text-xs uppercase tracking-[.3em] block"><strong>Coming soon</strong></span>
+        <!-- <span class="text-xs uppercase tracking-[.3em] block"><strong>{{post.date | date: "%d %b %Y"}}</strong></span> -->
       
-      </a>
+      </div>
           
       {% endfor %}
 
