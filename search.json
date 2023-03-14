@@ -4,7 +4,7 @@ layout: none
 [
   {% for post in site.posts %}
     {
-      "title"    : "{{ post.title | escape }}",
+      "title"    : "{{ post.title | strip_html }}",
       "categories" : "{{ post.categories | join: ' | ' }}",
       "tags"     : "{{ post.tags | join: ', ' }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",

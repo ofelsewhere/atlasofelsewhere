@@ -8,22 +8,11 @@
 
     <div>
     <!-- HTML elements for search -->
-  <input class="border-b border-white bg-sage-600 text-s font-light uppercase tracking-[.3em] text-xs placeholder-white focus:placeholder-gray-400 focus:outline-none text-white focus:border-gray-400 py-3 w-full" type="text" id="search-input" placeholder="Search">
+  <input class="border-b border-white bg-sage-600 text-s font-light uppercase tracking-[.3em] text-xs placeholder-white focus:placeholder-gray-400 focus:outline-none text-white focus:border-gray-400 py-3 w-full" type="text" id="searchBox" placeholder="Search">
   <ul class="grid grid-cols-1 my-5" id="results-container"></ul>
 
   <!-- or without installing anything -->
   <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
-
-  <!-- Javascript -->
-  <script>
-    var sjs = SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('results-container'),
-      json: '/search.json',
-      searchResultTemplate: '<div class="m-1"><a href="{{ site.url }}{url}" class="p-4 border-b block"><h2>{title}</h2><p class="text-xs uppercase leading-7 tracking-[.2em]">{categories}</p></a></div>',
-      noResultsText: '<div class="">Sorry no luck</div>'
-    })
-  </script>
     </div>
 
   </div>

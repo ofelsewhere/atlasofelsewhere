@@ -129,14 +129,14 @@ const gallery_buttons = document.querySelectorAll('#portfolio-filter a')
         this.classList.add('active');
         
         // Step #5. Making sure it's all working good so far
-        console.log(this)
+        console.log(this.dataset.filter)
         // Step #6. Add a variable that will pull the name of the category from this link
         let filterVal = this.dataset.filter;
 
         // Step #7. We need to loop over the gallery items 
         gallery_items.forEach(item => {
             // Step #8. Because we want a reset, lets add an if statement to see if we have clicked the all button (basically a reset button)
-            if (filterVal == 'all') {
+            if (filterVal == 'All') {
                 // If they did, then remove hidden
                 item.classList.remove('hidden');
             } 
@@ -159,3 +159,25 @@ const gallery_buttons = document.querySelectorAll('#portfolio-filter a')
     gallery_buttons.forEach(button => {
         button.addEventListener('click', filterGallery)
     })
+
+
+
+    /////// Search bar /////// 
+    const searchBox = document.querySelector("#searchBox");
+    const searchLink = document.querySelector(".searchButton")
+
+    function updateSearch() {
+        var searchValue = searchBox.value;
+        searchLink.href = `/search?${searchValue}`
+    }
+    function searchNow(e) {
+        console.log(e)
+            if (e.key === 'Enter' || e.keyCode === 13) {
+            // Do something
+            var searchValue = searchBox.value;
+            window.location = "/search?" + searchValue;
+            }
+        }
+
+    searchBox.addEventListener("change", updateSearch)
+    searchBox.addEventListener("keyup", searchNow)
