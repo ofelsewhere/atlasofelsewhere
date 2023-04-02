@@ -27,9 +27,14 @@ html {
 
 /* ------------ Typography styles ------------ */
 
-h1, h2, h3  { @apply font-display font-light text-[3.5rem] leading-[4.5rem] tracking-[.01em] pb-3; }
+h1, h2, h3 { @apply font-display font-light text-[3.5rem] leading-[4.5rem] tracking-[.01em] pb-3; }
 
-p           { @apply leading-7 text-[0.8rem] tracking-[0.03em]; }
+h1 { @apply text-[3.5rem] leading-[4.5rem] }
+h2 { @apply text-[2.5rem] leading-[3rem] }
+h3 { @apply text-[1.5rem] leading-[1.5rem] tracking-[0.03em] italic}
+h4 { @apply text-xs uppercase tracking-[.05em] leading-6 font-medium}
+
+p           { @apply leading-6 text-[0.7rem] tracking-[0.03em] pb-3; }
 
 p a         { @apply underline }
 
@@ -40,6 +45,10 @@ nav         { @apply inline-block py-3 px-6 text-xs font-semibold uppercase trac
 .tinytitle  { @apply text-xs uppercase tracking-[.3em] leading-6 font-semibold }
 
 li          { @apply border-b border-black text-xs uppercase tracking-[.3em] font-semibold py-2 }
+
+.privacy li {
+@apply leading-6 text-[0.7rem] tracking-[0.03em] pb-3 font-normal my-3 normal-case
+}
 
 /* ------------ Button styles ------------ */
 
