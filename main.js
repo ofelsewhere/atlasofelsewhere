@@ -162,22 +162,22 @@ const gallery_buttons = document.querySelectorAll('#portfolio-filter a')
 
 
 
-    /////// Search bar /////// 
-    const searchBox = document.querySelector("#searchBox");
-    const searchLink = document.querySelector(".searchButton")
+/////// Search bar /////// 
+const searchBox = document.querySelector("#searchBox");
+const searchLink = document.querySelector(".searchButton")
 
-    function updateSearch() {
+function updateSearch() {
+    var searchValue = searchBox.value;
+    searchLink.href = `/search?${searchValue}`
+}
+function searchNow(e) {
+    console.log(e)
+        if (e.key === 'Enter' || e.keyCode === 13) {
+        // Do something
         var searchValue = searchBox.value;
-        searchLink.href = `/search?${searchValue}`
-    }
-    function searchNow(e) {
-        console.log(e)
-            if (e.key === 'Enter' || e.keyCode === 13) {
-            // Do something
-            var searchValue = searchBox.value;
-            window.location = "/search?" + searchValue;
-            }
+        window.location = "/search?" + searchValue;
         }
+    }
 
-    searchBox.addEventListener("change", updateSearch)
-    searchBox.addEventListener("keyup", searchNow)
+searchBox.addEventListener("change", updateSearch)
+searchBox.addEventListener("keyup", searchNow)

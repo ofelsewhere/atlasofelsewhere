@@ -8,7 +8,6 @@
        url('/assets/fonts/canela-thin-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
 @font-face {
@@ -34,7 +33,7 @@ h2 { @apply text-[2.5rem] leading-[3rem] }
 h3 { @apply text-[1.5rem] leading-[1.5rem] tracking-[0.03em] italic}
 h4 { @apply text-xs uppercase tracking-[.05em] leading-6 font-medium}
 
-p           { @apply leading-6 text-[0.7rem] tracking-[0.03em] pb-3; }
+p           { @apply leading-6 text-[0.8rem] tracking-[0.03em] pb-3; }
 
 p a         { @apply underline }
 
