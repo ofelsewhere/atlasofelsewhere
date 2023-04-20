@@ -11,7 +11,7 @@ header-image:
 header-color: bg-emye
 bottom-color: bg-emye-dustyblue
 arrow-color: bg-emye-dustyblue
-bottom-overlap: -mt-40 md:-mt-72 pt-60
+bottom-overlap: -mt-72 pt-60
 testimonial: true
 
 image-banner:
@@ -103,14 +103,14 @@ page_blocks:
 
   - _id: content-section
     title: Content Section
-    grid-size: grid-cols-2
+    grid-size: 'grid-cols-1 md:grid-cols-2'
     background-color: bg-emye-terracotta
     width: container
-    overlap: 'md:-ml-40 md:-mr-40 -mt-60 pt-60'
+    overlap: 'md:-ml-40 md:-mr-40 -mt-80 md:-mt-60 pt-80 md:pt-60'
     position: items-center
     columns:
       - _type: text
-        title: Feeling right<br><em>at home.</em>
+        title: Feeling right <em>at home.</em>
         col-size: col-span-1
       - _type: text
         description-html: >-
@@ -122,8 +122,8 @@ page_blocks:
     grid-size: 'grid-cols-1 lg:grid-cols-3'
     background-color: bg-emye-terracotta
     width: 'max-w-[100%] overflow-hidden'
-    overlap: 'md:-ml-40 md:-mr-40 md:pb-60'
-    gap: gap-10
+    overlap: 'md:-ml-40 md:-mr-40 pb-40 md:pb-60'
+    gap: gap-5 md:gap-10
     position: items-end
     columns:
       - _type: image
@@ -141,7 +141,7 @@ page_blocks:
     grid-size: 'grid-cols-1 lg:grid-cols-6'
     background-color: 
     width: container
-    overlap: '-mt-40'
+    overlap: '-mt-20 md:-mt-40'
     gap: 'gap-5 md:gap-10'
     position: items-start
     columns:
@@ -161,7 +161,7 @@ page_blocks:
       - _type: text
         description-html: >-
           <p>To illustrate the inspirations that influence each individual design project we implemented a moodboard aesthetic, that can be used in various ways without becoming repetive.</p>
-        col-size: 'col-start-1 col-end-4'
+        col-size: 'col-span-6 md:col-span-3'
 
   - _id: content-section
     title: Content Section
