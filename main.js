@@ -98,13 +98,14 @@ $('.slider-container-sneakpeak').slick({
 
 const burgerButton = document.querySelector('.burger')
 const mobileMenu = document.querySelector('.mobile-menu')
+const menuLogo = document.querySelector('.menu-logo')
 
 function openMobileMenu() {
   mobileMenu.classList.toggle('mobile-menu-hidden');
   this.classList.toggle('active');
 }
 
-burgerButton.addEventListener('click', openMobileMenu)
+burgerButton.addEventListener('click', openMobileMenu);
 
 /////// Animate on scroll /////// 
 AOS.init();

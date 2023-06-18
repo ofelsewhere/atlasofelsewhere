@@ -32,16 +32,21 @@ image-banner:
       <!------------- Left column / Headline ------------->
       <div class="col-span-1 lg:ml-20 lg:pt-20 lg:pb-10 relative z-20">
         <span class="hidden md:block tinytitle mb-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Of Elsewhere | Design & Travel</span>
-        <h1 class="text-[3rem] leading-[3.5rem] md:text-[4rem] md:leading-[4.5rem] xl:text-[4.5rem] xl:leading-[5rem] mb-10" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+        <!------------- Desktop ------------->
+        <h1 class="hidden md:block text-[3rem] leading-[3.5rem] md:text-[4rem] md:leading-[4.5rem] xl:text-[4.5rem] xl:leading-[5rem] 2xl:text-[5.5rem] 2xl:leading-[6rem] mb-10" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
         Your <em>creative guide</em><br>on your <em>brand &<br>web design journey.</em>
         </h1>
+        <!------------- Mobile ------------->
+        <h1 class="md:hidden text-[3.5rem] leading-[4rem] mb-10" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+          Your <em>creative guide</em> on your <em>brand & web design journey.</em>
+          </h1>
         <a href="#categories" class="button z-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Explore more</a>
       </div>
 
       <!------------- Right column / Images ------------->
-      <div class="col-span-1 mt-10 lg:mr-20 lg:relative h-[55vh] z-0 border border-white" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+      <div class="col-span-1 md:mt-8 lg:mr-20 lg:relative h-[30vh] md:h-[55vh] z-0" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
         <img src="/assets/images/portfolio/emye/design-emye-website-home.png" class="inset-0 absolute h-full w-full object-cover">
-        <img src="/assets/images/cards-test.png" class=" hidden lg:block lg:absolute h-[40%] aspect-[5/3] -bottom-20 -left-32 object-cover" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+        <img src="/assets/images/MoyoFreeMockup3.jpg" class="hidden lg:block lg:absolute h-[45%] aspect-[6/4] -bottom-24 -left-32 object-cover" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
       </div>  
     </div>
         
@@ -70,14 +75,14 @@ image-banner:
     <!------------- Design ------------->
     <a href="/services.html" class="border-b md:border-b-0 md:border-r py-40 md:py-64 bg-cover bg-bottom relative w-full h-full" style="background-image: url('assets/images/kaboompics_still-life-with-pears-28311.jpg');">
       <div class="absolute text-center text-white inset-0 flex justify-center items-center cursor-pointer bg-black/[.1] hover:bg-black/[.3] transition duration-300 ">
-      <h2 class="z-20 text-[5rem] leading-[5.5rem]">For<br><em>Businesses</em></h2>
+      <h2 class=" text-[5rem] leading-[5rem]">For<br><em>Businesses</em></h2>
       </div>
     </a>
 
     <!------------- Travel ------------->
     <a href="/blog.html" class="md:border-r py-40 md:py-64 bg-cover bg-center relative w-full h-full" style="background-image: url('/assets/images/moods/elsewhere-mood-plants-2.jpg');">
       <div class="absolute text-center text-white inset-0 flex justify-center items-center cursor-pointer bg-black/[.2] hover:bg-black/[.4] transition duration-500 ">
-      <h2 class="z-20 text-[5rem] leading-[5.5rem]">For<br><em>Travellers</em></h2>
+      <h2 class=" text-[5rem] leading-[5rem]">For<br><em>Travellers</em></h2>
       </div>
     </a>
   </div>
@@ -104,13 +109,13 @@ image-banner:
       <span class="tinytitle"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Of Elsewhere Studio</span>
       <h1 class="my-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Uncover your brand’s<br><em>full potential.</em></h1>
       <p class="my-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Beautiful design is nice to look at but without a clear strategic foundation it lacks certainty and is easily replaceable. Together we will get to the core of your brand, discover what sets you apart from the competition and connect with your ideal audience.</p>
-      <p class="my-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Services I offer include:</p>
+      <p class="my-0 md:my-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Services I offer include:</p>
       <ul class="">
         <div class="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
           {% assign faqs = site.data.faqs | where:'product-type','index' %}
           {% include faqs.html %}
         </div>
-        <a href="/services.html" class="button mt-10 mr-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Package details</a> <a href="/portfolio.html" class="button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">My work</a>
+        <a href="/services.html" class="button mt-5 md:mt-10 mr-5 mb-5 md:mb-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Package details</a> <a href="/portfolio.html" class="button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">My work</a>
       </ul>
     </div>
   </div>
@@ -122,7 +127,7 @@ image-banner:
 <section> 
   <div class="{% if item.overlay == true %} bg-blend-multiply bg-black/50 text-white {% endif %} bg-fixed bg-cover h-[60vh] bg-center flex flex-col justify-center items-center"
   style="background-image: url('{{item.bg-image}}')">
-    <h2 class="text-[4rem] leading-[4.5rem] md:text-[5rem] md:leading-[5.5rem] pb-10 text-center">{{item.text}}</h2>
+    <h2 class="text-[4rem] leading-[4.2rem] md:text-[5rem] md:leading-[5.5rem] pb-10 text-center">{{item.text}}</h2>
     <a href="{{item.link-url}}" class="button-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">{{item.link-text}}</a>
   </div>
 </section>
@@ -138,7 +143,7 @@ image-banner:
       <h2 class="text-[5rem] leading-[5.5rem]">Inspired<br><em>by travel.</em></h2>
     </div>
     <div class="md:col-start-5 md:col-end-9 mb-20">
-      <p>Discovering new cities, exploring museums, finding beautiful places and learning about different cultures – I feel the most inspired when I get the chance to explore new corners of the world. Always on the lookout for design-oriented hotels, restaurant and shops (while keeping it budget-friendly) I hope to share these recommendations with you to make your future trips unique and unforgettable.</p>
+      <p>Discovering new cities, exploring museums, finding beautiful places and learning about different cultures – I feel the most inspired when I get the chance to explore new corners of the world. Always on the lookout for design-oriented hotels, restaurants and shops (while keeping it budget-friendly) I hope to share these recommendations with you to make your future trips unique and unforgettable.</p>
     </div>
   </div>
   <hr>
@@ -154,8 +159,6 @@ image-banner:
   		{% endfor %}
  		
 	  </div>
-    
-    <hr>
 
     <!------------- Blog link ------------->
     <div class="text-center items-center relative">
@@ -175,7 +178,6 @@ image-banner:
   		{% endfor %}
  		
 	</div>
-  <hr>
 
     <!------------- Blog link ------------->
     <div class="text-center items-center relative">

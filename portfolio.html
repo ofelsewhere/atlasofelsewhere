@@ -19,24 +19,30 @@ image-banner:
   <div class="grid grid-cols-5 z-20 p-10 xl:p-0">
   
     <!------------- Left column ------------->
-    <div class="col-span-5 xl:col-span-3 xl:pt-16 md:px-10 xl:pl-24">
+    <div class="col-span-5 xl:col-span-3 xl:pt-10 md:px-10 xl:pl-24">
       <div class="xl:hidden flex justify-end mb-10"><img src="/assets/logos/ofelsewherestudio_logo.svg" class="h-32"></div>
-      <span class="hidden md:block tinytitle">Of Elsewhere Studio | Portfolio</span>
-      <h1 class="text-[2rem] leading-[2.5rem] md:text-[4rem] md:leading-[4.5rem] pt-6">
-        Just as my lovely clients, we . Have a look at some of my <em>favorite recent projects.</em>
+      <span class="hidden md:block tinytitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Of Elsewhere Studio | Portfolio</span>
+      <h1 class="text-[2.8rem] leading-[3.3rem] md:text-[4rem] md:leading-[4.5rem] pt-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        Explore the <em>creative adventures</em> I shared with my clients and get inspired by <em>ideas that turned into reality.</em></em>
       </h1>
     </div>
     
     <!------------- Right column ------------->
     <div class="col-span-5 xl:col-span-2 xl:pt-10 md:px-10 xl:pr-24 xl:pl-10 flex-col items-center mb-20 md:pb-0">
-      <div class="hidden xl:flex justify-end -mt-6 xl:mt-0"><img src="/assets/logos/ofelsewherestudio_logo.svg" class="h-32"></div>
-        <p class="mt-10 xl:-mt-20 xl:pt-40 pb-10 w-full md:w-[50vw] xl:w-full">
-          Working in a design agency for six years I got to work on a variety of projects from all kinds of different industries. During that time I learned that you can turn any business into a creative and resonating brand. If you value design, are willing to stand out from the crowd and know the impact a thoughtful brand can have on your business, we can achieve great things together.
+      <div class="hidden xl:flex justify-end -mt-6 xl:mt-0" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300"><img src="/assets/logos/ofelsewherestudio_logo.svg" class="h-32"></div>
+        <p class="mt-10 xl:-mt-20 xl:pt-40 pb-10 w-full md:w-[50vw] xl:w-full" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          Having spent six exciting years in a design agency, I had the chance to dive into an incredible mix of projects across diverse industries. It was during this time that I realized something special: any business has the potential to become a truly captivating and unforgettable brand.
+          <br><br>
+          If you're someone who appreciates the power of design, dares to stand out from the crowd, and understands the game-changing impact a well-crafted brand can have on your business, we can achieve great things together.
         </p>
-        <a href="#projects" class="button mr-5 mb-5">Explore more</a>
+        <a href="#projects" class="button mr-5 mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Explore more</a>
     </div>
 
   </div>
+
+  <!------------- Illustration ------------->
+  <img class="opacity-20 h-32 sm:h-44 absolute -bottom-8 -left-10" src="/assets/images/illustrations/cloud.svg">
+
   </section>
 
   <hr>
@@ -50,7 +56,7 @@ image-banner:
   {% for item in site.projects limit:1 %}
   <!------------- Project image ------------->
   <div class="col-span-1 lg:col-span-5 p-10 md:p-20 lg:border-r lg:border-b">
-    <img src="{{item.featured-image}}" class="h-[60vh] lg:h-full w-full object-cover">
+    <img src="{{item.featured-image}}" class="h-[40vh] lg:h-full w-full object-cover">
   </div>
 
   <!------------- Project description ------------->
@@ -68,7 +74,7 @@ image-banner:
   {% for item in site.projects limit:1 offset:1 %}
   <!------------- Project image ------------->
   <div class="lg:order-2 col-span-1 lg:col-span-5 p-10 md:p-20 lg:border-b">
-    <img src="{{item.featured-image}}" class="h-[60vh] lg:h-full w-full object-cover">
+    <img src="{{item.featured-image}}" class="h-[40vh] lg:h-full w-full object-cover">
   </div>
   <!------------- Project description ------------->
 
@@ -89,7 +95,7 @@ image-banner:
   {% for item in site.projects limit:1 offset:2 %}
   <!------------- Project image ------------->
   <div class="col-span-1 lg:col-span-5 p-10 md:p-20 lg:border-r lg:border-b">
-    <img src="{{item.featured-image}}" class="h-[60vh] lg:h-full w-full object-cover">
+    <img src="{{item.featured-image}}" class="h-[40vh] lg:h-full w-full object-cover">
   </div>
 
   <!------------- Project description ------------->
@@ -107,7 +113,7 @@ image-banner:
   {% for item in site.projects limit:1 offset:3 %}
   <!------------- Project image ------------->
   <div class="lg:order-2 col-span-1 lg:col-span-5 p-10 md:p-20 lg:border-b">
-    <img src="{{item.featured-image}}" class="h-[60vh] lg:h-full lg:min-h-[60vh] w-full object-cover">
+    <img src="{{item.featured-image}}" class="h-[40vh] lg:h-full lg:min-h-[60vh] w-full object-cover object-[70%]">
   </div>
   <!------------- Project description ------------->
 

@@ -3,7 +3,7 @@
   data: 1
   answer: 
     •&ensp; Basic analysis of competion + target groups
-    <br>•&ensp; Definition design strategy
+    <br>•&ensp; Defining a design strategy
     <br>•&ensp; Moodboard
 - question: Logo
   product-type: branding
@@ -11,14 +11,14 @@
   answer: 
     •&ensp; Research & first ideas
     <br>•&ensp; Logo concepts
-    <br>•&ensp; Definition logo colors and typography
+    <br>•&ensp; Defining logo colors and typography
     <br>•&ensp; Revisions
     <br>•&ensp; Final artwork & data preparation</span>
 - question: Basic design elements
   product-type: branding
   data: 3
   answer: 
-    •&ensp; Definition color palette and brand fonts
+    •&ensp; Defining general color palette and brand fonts
     <br>•&ensp; Additional design elements
     <br>•&ensp; First look of imagery
 - question: Brand style guide
@@ -30,7 +30,10 @@
   product-type: branding
   data: 5
   answer: 
-    •&ensp; Such as business cards or signage
+    <br>•&ensp; Stationary
+    <br>•&ensp; Social Media templates
+    <br>•&ensp; Presentation slides
+  
 
 
 - question: Structure & Wireframing
@@ -45,7 +48,7 @@
   answer: 
     •&ensp; Research & first ideas
     <br>•&ensp; Adobe XD layout
-    <br>•&ensp; Definition logo colors and typography
+    <br>•&ensp; Defining colors and typography
     <br>•&ensp; Sourcing icons and imagery
 - question: Web Development
   product-type: digital
