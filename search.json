@@ -4,7 +4,7 @@ layout: none
 
 
 [
-  {% assign products = site.posts | concat: site.projects %}
+  {% assign products = site.projects %}
   {% for item in products %}
     {
       "title"    : "{{ item.title | strip_html }}",
