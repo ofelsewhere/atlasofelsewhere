@@ -111,7 +111,6 @@ burgerButton.addEventListener('click', openMobileMenu);
 AOS.init();
 
 
-
 /////// Portfolio filter /////// 
 const gallery_buttons = document.querySelectorAll('#portfolio-filter a')
     const gallery_items = document.querySelectorAll('#portfolio-grid .gallery-item')
@@ -162,4 +161,24 @@ const gallery_buttons = document.querySelectorAll('#portfolio-filter a')
         button.addEventListener('click', filterGallery)
     })
 
-  
+
+
+/////// Search bar /////// 
+const searchBox = document.querySelector("#searchBox");
+const searchLink = document.querySelector(".searchButton")
+
+function updateSearch() {
+    var searchValue = searchBox.value;
+    searchLink.href = `/search?${searchValue}`
+}
+function searchNow(e) {
+    console.log(e)
+        if (e.key === 'Enter' || e.keyCode === 13) {
+        // Do something
+        var searchValue = searchBox.value;
+        window.location = "/search?" + searchValue;
+        }
+    }
+
+searchBox.addEventListener("change", updateSearch)
+searchBox.addEventListener("keyup", searchNow)
