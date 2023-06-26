@@ -70,16 +70,39 @@ layout: default
   <div class="container">
   <div class="flex md:flex-row justify-center">
     <div class="md:self-start mr-3">
-      <a href="{{page.previous.url}}" class="button">Previous</a>
+
+      {% unless page.previous %}
+
+      {% assign last_page = site.projects | last %}
+
+      <a href="{{ last_page.url }}" class="button">Previous</a>
+
+      {% else %}
+      
+      <a href="{{ page.previous.url }}" class="button">Previous</a>
+      
+      {% endunless %}
+
     </div>
     <hr class="mx-auto md:w-[80%] mt-5 hidden md:block">
     <div class="md:self-end ml-3">
-      <a href="{{page.next.url}}" class="button">Next</a>
+
+      {% unless page.next %}
+
+      {% assign first_page = site.projects | first %}
+      
+      <a href="{{ first_page.url }}" class="button">Next</a>
+      
+      {% else %}
+      
+      <a href="{{ page.next.url }}" class="button">Next</a>
+      
+      {% endunless %}
+
     </div>
   </div>
 </div>
 </section>
-
 
 <!-------------------------- Image banner -------------------------->
 {% for item in page.image-banner limit:1 %}
